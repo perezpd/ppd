@@ -22,3 +22,24 @@ ALTER PLUGGABLE DATABASE open;
 -- >SYS
 -- >HR
 -- and another one -to connect to SQL server
+
+-- (10/11/2020)
+-- formato de columna para la terminal
+COLUMN username format a25;
+
+-- no está HR
+SELECT username, account_status FROM dba_users;
+/*
+GGSYS                     EXPIRED & LOCKED
+ANONYMOUS                 EXPIRED & LOCKED
+HR                        EXPIRED & LOCKED
+*/
+
+ALTER user HR identified by HR account unlock;
+-- deberia estar HR
+SELECT username, account_status FROM dba_users;
+/*
+GGSYS                     EXPIRED & LOCKED
+ANONYMOUS                 EXPIRED & LOCKED
+HR                        OPEN
+*/
