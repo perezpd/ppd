@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="quecovid" id="8B4BA228-5BE9-0CA1-771B-CEABE61C0FE9" version="3.5">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:48:50 UTC</createdTime>
+<ownerDesignName>quecovid</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>8B4BA228-5BE9-0CA1-771B-CEABE61C0FE9</designId>
+</OSDM_Design>

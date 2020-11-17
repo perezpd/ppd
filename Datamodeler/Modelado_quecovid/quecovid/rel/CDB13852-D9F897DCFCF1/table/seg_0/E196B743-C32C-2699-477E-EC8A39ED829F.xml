@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E196B743-C32C-2699-477E-EC8A39ED829F" name="datos_counidades">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 21:11:38 UTC</createdTime>
+<ownerDesignName>quecovid</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="comunidad_autonoma_PK_ca" id="2F690B94-23EF-DAB9-FD4B-A8908A607310">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 21:11:38 UTC</createdTime>
+<ownerDesignName>quecovid</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DE643F2A-CE6D-CCC5-AB11-804D59A05350" referredColumn="CB28AA92-1E50-A12E-467E-22599A489801"/>
+</associations>
+</Column>
+<Column name="Datos_comunidad_PK_datos" id="99CDD1D4-1C64-7644-DFB3-AD85ECCBBBF9">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 21:11:38 UTC</createdTime>
+<ownerDesignName>quecovid</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8D74FF34-E6F4-5F91-E952-3CC968703DF1" referredColumn="3C3B0EEB-A1BF-857E-B53A-67D069F72FD4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B72BFEAA-B775-FE34-2B72-DCCA7CEF0099" name="datos_counidades_PK">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 21:11:38 UTC</createdTime>
+<ownerDesignName>quecovid</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2F690B94-23EF-DAB9-FD4B-A8908A607310"/>
+<colUsage columnID="99CDD1D4-1C64-7644-DFB3-AD85ECCBBBF9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D642DC4F-FFB9-AD3B-CB52-B729EF19C482" name="datos_counidades_comunidad_autonoma_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 21:11:38 UTC</createdTime>
+<generatorID>B3B76B22-090B-0821-AAD8-CE4E96F30562</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2F690B94-23EF-DAB9-FD4B-A8908A607310"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="98380EEF-3D07-A27C-CD09-70253B713AA9" name="datos_counidades_Datos_comunidad_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 21:11:38 UTC</createdTime>
+<generatorID>B3B76B22-090B-0821-AAD8-CE4E96F30562</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99CDD1D4-1C64-7644-DFB3-AD85ECCBBBF9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

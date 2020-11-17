@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F85E3DE5-7C5E-1064-BFD4-807BE1E34D02" name="Provincia">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 21:02:18 UTC</createdTime>
+<generatorID>E0294910-E5AF-393F-8C79-D08040FFCF0C</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="comunidad_autonoma_comunidad_autonoma_ID" id="CDDBE40A-1D5A-EBEA-243C-FF7B050DCDEE">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 21:02:18 UTC</createdTime>
+<ownerDesignName>quecovid</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PK_provincia" id="77994FC9-ABBD-7C35-C795-612CD1F86400">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 21:04:59 UTC</createdTime>
+<generatorID>B55E78A5-3F8F-3FE2-9AD7-0831F7047C2B</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PK_ca" id="50089D79-05BF-D02C-126E-5F3E51C9AE3D">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 21:10:56 UTC</createdTime>
+<generatorID>5035813B-C414-BA4B-2850-0D21AF1E9821</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3C303E7E-56A7-35C1-5926-1A88260922AD" referredColumn="CB28AA92-1E50-A12E-467E-22599A489801"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A486A217-3EB3-C163-C02F-8EF2B962D566" name="Provincia_PK">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 21:10:56 UTC</createdTime>
+<generatorID>568FD098-5C56-3E9E-E6F1-C8117035E37C</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77994FC9-ABBD-7C35-C795-612CD1F86400"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0E1BB607-E415-BAB5-241A-25BFA24AE010" name="Provincia_comunidad_autonoma_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 21:02:18 UTC</createdTime>
+<generatorID>984DE7D8-4DCE-4485-25A2-AD97330279A1</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50089D79-05BF-D02C-126E-5F3E51C9AE3D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
