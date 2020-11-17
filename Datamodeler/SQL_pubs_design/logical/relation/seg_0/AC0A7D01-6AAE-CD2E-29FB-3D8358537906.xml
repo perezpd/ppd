@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK__roysched__title___4D94879B" directorySegmentName="seg_0" id="AC0A7D01-6AAE-CD2E-29FB-3D8358537906">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:45 UTC</createdTime>
+<generatorID>D1210635-A022-87CF-04BC-5DC9292D913C</generatorID>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<engineerTo>
+<item key="96FC992C-17CF-ABFB-9EB9-F5792F2B075B" value="true"/>
+</engineerTo>
+<sourcePk>D5188E78-339E-682A-0917-B3C4E00DB0E5</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9C5F0D53-8151-B086-C31A-AD0B1373C18E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>70010CFE-91A3-381A-D403-724F6BD0AE36</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

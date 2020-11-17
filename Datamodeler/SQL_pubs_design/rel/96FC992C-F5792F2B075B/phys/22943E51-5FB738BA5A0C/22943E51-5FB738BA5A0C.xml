@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StorageDesignSqlServerv2k8 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k8.StorageDesignSqlServerv2k8" name="SQL Server 2008" id="E4E2EC04-0693-EDB1-906E-C997501213CA" siteID="22943E51-0387-1F2A-CED9-5FB738BA5A0C" siteName="SQL Server 2008" siteType="12">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:28 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<dtdialogVisible>false</dtdialogVisible>
+<imported>false</imported>
+</StorageDesignSqlServerv2k8>

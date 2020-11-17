@@ -1,0 +1,211 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E53880CA-93AE-DFB1-C8C8-A739FCCD069D" schemaObject="CC236012-C4CD-4B29-132B-45EC5162B4B9" name="employee">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>employee</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="emp_id" id="84ACC89D-6D9F-01AE-DC83-C8800DBA97A4">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>employee</sourceObjSchema>
+<sourceObjName>emp_id</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<constraintName>CK_emp_id</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>9</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="SQL Server 2008" definition="[emp_id] like &apos;[A-Z][A-Z][A-Z][1-9][0-9][0-9][0-9][0-9][FM]&apos; OR [emp_id] like &apos;[A-Z]-[A-Z][1-9][0-9][0-9][0-9][0-9][FM]&apos;"/>
+</checkConstraint>
+<ownDataTypeParameters>9,9,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fname" id="D97A5F8E-85CA-DB4A-13B4-5DD280BF3A29">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>employee</sourceObjSchema>
+<sourceObjName>fname</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,20,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="minit" id="35ADABEE-0F32-19FB-1607-FE2A43A689E9">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>employee</sourceObjSchema>
+<sourceObjName>minit</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,1,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lname" id="87010399-03A8-36AB-9FBA-DF6956B8EDAE">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>employee</sourceObjSchema>
+<sourceObjName>lname</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,30,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="job_id" id="62921693-6BFB-5B52-1650-792F870E9BF9">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>employee</sourceObjSchema>
+<sourceObjName>job_id</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>2</dataTypeSize>
+<usesDefaultValue>true</usesDefaultValue>
+<defaultValue>(1)</defaultValue>
+<ownDataTypeParameters>2,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E99BFE53-0BDE-6FB2-7326-4FC542C45B7A" referredColumn="2B2273CD-A5F8-6FBD-5C58-469B031FDF6E"/>
+</associations>
+</Column>
+<Column name="job_lvl" id="2D698566-3986-ADFC-531C-CCA4625D5C4B">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>employee</sourceObjSchema>
+<sourceObjName>job_lvl</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>1</dataTypeSize>
+<usesDefaultValue>true</usesDefaultValue>
+<defaultValue>(10)</defaultValue>
+<ownDataTypeParameters>1,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pub_id" id="26957BCF-ABCF-92CA-B60F-EC6BADA621C0">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>employee</sourceObjSchema>
+<sourceObjName>pub_id</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<usesDefaultValue>true</usesDefaultValue>
+<defaultValue>&apos;9952&apos;</defaultValue>
+<ownDataTypeParameters>4,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3A7F010F-1A51-C4A1-F0AA-5640D583AC11" referredColumn="883B2CAA-AC89-CF2A-5E56-EC188C2DCA20"/>
+</associations>
+</Column>
+<Column name="hire_date" id="1AEDBB34-A984-DCF3-36E3-9E8809CD2D79">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>employee</sourceObjSchema>
+<sourceObjName>hire_date</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<dataTypePrecision>23</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<usesDefaultValue>true</usesDefaultValue>
+<defaultValue>getdate()</defaultValue>
+<ownDataTypeParameters>8,23,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="25FADD42-EC2A-B45A-4CB5-B62B3746ABED" name="PK_emp_id">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>PK_emp_id</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="84ACC89D-6D9F-01AE-DC83-C8800DBA97A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="074EC814-A46D-9C3C-98D4-F0E4EFE98BA2" name="employee_ind">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>employee_ind</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="87010399-03A8-36AB-9FBA-DF6956B8EDAE"/>
+<colUsage columnID="D97A5F8E-85CA-DB4A-13B4-5DD280BF3A29"/>
+<colUsage columnID="35ADABEE-0F32-19FB-1607-FE2A43A689E9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4652652E-E435-2225-7060-743F13684DE0" name="FK__employee__job_id__5BE2A6F2">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62921693-6BFB-5B52-1650-792F870E9BF9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="40599D14-95B6-4117-0ACF-CD0DCF80BF1B" name="FK__employee__pub_id__5EBF139D">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26957BCF-ABCF-92CA-B60F-EC6BADA621C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="employee" directorySegmentName="seg_0" id="E53880CA-93AE-DFB1-C8C8-A739FCCD069D">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<schemaObject>CC236012-C4CD-4B29-132B-45EC5162B4B9</schemaObject>
+<database>805A13C1-9AE5-8561-7532-C2D012FCA2B4</database>
+<filegroup>F7273B23-96B8-E143-38B4-371B0ECDCA82</filegroup>
+<schema>1</schema>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="hire_date" id="1AEDBB34-A984-DCF3-36E3-9E8809CD2D79">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<defaultValue>getdate()</defaultValue>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="pub_id" id="26957BCF-ABCF-92CA-B60F-EC6BADA621C0">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<collation>Latin1_General_CI_AS</collation>
+<defaultValue>&apos;9952&apos;</defaultValue>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="job_lvl" id="2D698566-3986-ADFC-531C-CCA4625D5C4B">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<defaultValue>(10)</defaultValue>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="minit" id="35ADABEE-0F32-19FB-1607-FE2A43A689E9">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<collation>Latin1_General_CI_AS</collation>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="job_id" id="62921693-6BFB-5B52-1650-792F870E9BF9">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<defaultValue>(1)</defaultValue>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="emp_id" id="84ACC89D-6D9F-01AE-DC83-C8800DBA97A4">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<collation>Latin1_General_CI_AS</collation>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="lname" id="87010399-03A8-36AB-9FBA-DF6956B8EDAE">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<collation>Latin1_General_CI_AS</collation>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="fname" id="D97A5F8E-85CA-DB4A-13B4-5DD280BF3A29">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<collation>Latin1_General_CI_AS</collation>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.IndexProxySqlServerv2k5" name="employee_ind" id="074EC814-A46D-9C3C-98D4-F0E4EFE98BA2">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<clustered>true</clustered>
+<fileGroup>F7273B23-96B8-E143-38B4-371B0ECDCA82</fileGroup>
+<recomputeStatistics>OFF</recomputeStatistics>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="FK__employee__pub_id__5EBF139D" id="40599D14-95B6-4117-0ACF-CD0DCF80BF1B">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="FK__employee__job_id__5BE2A6F2" id="4652652E-E435-2225-7060-743F13684DE0">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="PK_emp_id" id="25FADD42-EC2A-B45A-4CB5-B62B3746ABED">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<fileGroup>F7273B23-96B8-E143-38B4-371B0ECDCA82</fileGroup>
+<recomputeStatistics>NO</recomputeStatistics>
+</PrimaryKey>
+</primaryKeys>
+</TableProxySqlServerv2k5>

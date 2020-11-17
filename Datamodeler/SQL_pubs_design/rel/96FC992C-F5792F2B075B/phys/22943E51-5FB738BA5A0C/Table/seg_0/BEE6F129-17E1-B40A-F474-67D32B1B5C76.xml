@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="stores" directorySegmentName="seg_0" id="BEE6F129-17E1-B40A-F474-67D32B1B5C76">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<schemaObject>CC236012-C4CD-4B29-132B-45EC5162B4B9</schemaObject>
+<database>805A13C1-9AE5-8561-7532-C2D012FCA2B4</database>
+<filegroup>F7273B23-96B8-E143-38B4-371B0ECDCA82</filegroup>
+<schema>1</schema>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="zip" id="0DB70700-DBC1-6028-7218-DA98038FA82D">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<collation>Latin1_General_CI_AS</collation>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="stor_address" id="1575ACA2-776F-49BC-B2F7-25A901B17F82">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<collation>Latin1_General_CI_AS</collation>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="city" id="4C7BB4EC-1512-17BA-5D50-9ED7550997E8">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<collation>Latin1_General_CI_AS</collation>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="stor_id" id="986603A3-92FE-08B9-E198-6C2B3BAFBA48">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<collation>Latin1_General_CI_AS</collation>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="stor_name" id="B13F067F-C969-DE8A-6732-D744D391E63F">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<collation>Latin1_General_CI_AS</collation>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="state" id="B52B3884-493A-CA32-FEBC-A6BD51F4D9AC">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<collation>Latin1_General_CI_AS</collation>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="UPK_storeid" id="F76003F8-C9C2-0843-E58F-EE7A4CB42B48">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<clustered>true</clustered>
+<fileGroup>F7273B23-96B8-E143-38B4-371B0ECDCA82</fileGroup>
+<recomputeStatistics>NO</recomputeStatistics>
+</PrimaryKey>
+</primaryKeys>
+</TableProxySqlServerv2k5>

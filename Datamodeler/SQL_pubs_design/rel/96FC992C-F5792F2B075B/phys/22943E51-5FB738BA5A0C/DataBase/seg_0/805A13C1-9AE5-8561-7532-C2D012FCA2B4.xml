@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DataBaseSqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.DataBaseSqlServerv2k5" name="pubs" directorySegmentName="seg_0" id="805A13C1-9AE5-8561-7532-C2D012FCA2B4">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjName>pubs</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:32 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<fileGroups>
+<FileGroup class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FileGroupSqlServerv2k5" name="PRIMARY" id="F7273B23-96B8-E143-38B4-371B0ECDCA82">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:32 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<dataFiles>
+<DataFile class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.DataFileSqlServerv2k5" name="DB1_Data.MDF" id="F1348B47-3EA2-0925-8D83-F69375EA43D5">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:32 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<fileName>c:\program files\microsoft sql server\mssql\data\DB1_Data.MDF</fileName>
+</DataFile>
+<DataFile class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.DataFileSqlServerv2k5" name="pubs" id="97D116F4-4F67-4D42-9465-F9B51422979A">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:32 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<fileName>C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\DATA\pubs.mdf</fileName>
+<growthValue>8192</growthValue>
+<initialSize>1024</initialSize>
+</DataFile>
+</dataFiles>
+</FileGroup>
+</fileGroups>
+</DataBaseSqlServerv2k5>

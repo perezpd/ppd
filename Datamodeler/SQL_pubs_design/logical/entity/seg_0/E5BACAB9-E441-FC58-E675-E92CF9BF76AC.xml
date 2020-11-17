@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E5BACAB9-E441-FC58-E675-E92CF9BF76AC" name="stores">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:45 UTC</createdTime>
+<generatorID>BEE6F129-17E1-B40A-F474-67D32B1B5C76</generatorID>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<engineerTo>
+<item key="96FC992C-17CF-ABFB-9EB9-F5792F2B075B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="stor id" id="A3E55AEC-8B5E-5FDC-F7E0-49FC533EAA99">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:45 UTC</createdTime>
+<generatorID>986603A3-92FE-08B9-E198-6C2B3BAFBA48</generatorID>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<engineerTo>
+<item key="96FC992C-17CF-ABFB-9EB9-F5792F2B075B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,4,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="stor name" id="3BC11D37-BEBF-96CE-A73B-874BAB25DC46">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:45 UTC</createdTime>
+<generatorID>B13F067F-C969-DE8A-6732-D744D391E63F</generatorID>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<engineerTo>
+<item key="96FC992C-17CF-ABFB-9EB9-F5792F2B075B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>40</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,40,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="stor address" id="12953D62-DB26-C165-9101-1E841BD9377A">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:45 UTC</createdTime>
+<generatorID>1575ACA2-776F-49BC-B2F7-25A901B17F82</generatorID>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<engineerTo>
+<item key="96FC992C-17CF-ABFB-9EB9-F5792F2B075B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>40</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,40,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="city" id="AAB8F2F0-7D4A-1A8E-3B21-E45AA386A918">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:45 UTC</createdTime>
+<generatorID>4C7BB4EC-1512-17BA-5D50-9ED7550997E8</generatorID>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<engineerTo>
+<item key="96FC992C-17CF-ABFB-9EB9-F5792F2B075B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,20,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="state" id="908A4A14-D0DC-BDD0-AFC9-877B34442FDE">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:45 UTC</createdTime>
+<generatorID>B52B3884-493A-CA32-FEBC-A6BD51F4D9AC</generatorID>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<engineerTo>
+<item key="96FC992C-17CF-ABFB-9EB9-F5792F2B075B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,2,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="zip" id="F9272DD5-0F78-3153-6DA7-A4B94DD4D046">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:45 UTC</createdTime>
+<generatorID>0DB70700-DBC1-6028-7218-DA98038FA82D</generatorID>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<engineerTo>
+<item key="96FC992C-17CF-ABFB-9EB9-F5792F2B075B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,5,0</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EE6826E7-C073-2F29-16EE-1D959BAC41EA" name="UPK storeid">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:45 UTC</createdTime>
+<generatorID>F76003F8-C9C2-0843-E58F-EE7A4CB42B48</generatorID>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<engineerTo>
+<item key="96FC992C-17CF-ABFB-9EB9-F5792F2B075B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A3E55AEC-8B5E-5FDC-F7E0-49FC533EAA99</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

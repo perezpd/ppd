@@ -1,0 +1,200 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CDF3AA1A-509F-49E0-C094-B2D655576590" schemaObject="CC236012-C4CD-4B29-132B-45EC5162B4B9" name="authors">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>authors</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:32 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="au_id" id="0F58AD72-9BBE-3655-3FA7-F1516B600A9A">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>authors</sourceObjSchema>
+<sourceObjName>au_id</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:32 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<constraintName>CK__authors__au_id__37A5467C</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>11</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>11</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="SQL Server 2008" definition="[au_id] like &apos;[0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]&apos;"/>
+</checkConstraint>
+<ownDataTypeParameters>11,11,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="au_lname" id="D9E1AE6D-A9EC-3AD5-DC34-B1145C3AC924">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>authors</sourceObjSchema>
+<sourceObjName>au_lname</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:32 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>40</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,40,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="au_fname" id="816695FE-5F77-6FDA-DD9E-F6565084709B">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>authors</sourceObjSchema>
+<sourceObjName>au_fname</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:32 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,20,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="phone" id="865A5BDA-CA65-7380-0C5D-50AB44F3D747">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>authors</sourceObjSchema>
+<sourceObjName>phone</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:32 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>12</dataTypeSize>
+<usesDefaultValue>true</usesDefaultValue>
+<defaultValue>&apos;UNKNOWN&apos;</defaultValue>
+<ownDataTypeParameters>12,12,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="address" id="AB118D16-4D64-425A-5FE4-0725CAF1FBEF">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>authors</sourceObjSchema>
+<sourceObjName>address</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:32 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>40</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,40,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="city" id="780A699E-EA6F-1385-2A1C-026EB798C475">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>authors</sourceObjSchema>
+<sourceObjName>city</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:32 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,20,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="state" id="7715E0EC-6465-B6F2-DE42-2903D38AF957">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>authors</sourceObjSchema>
+<sourceObjName>state</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:32 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="zip" id="FAF6E510-30AD-48DF-F270-69CD04AFF4E7">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>authors</sourceObjSchema>
+<sourceObjName>zip</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:32 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<constraintName>CK__authors__zip__398D8EEE</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>5</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="SQL Server 2008" definition="[zip] like &apos;[0-9][0-9][0-9][0-9][0-9]&apos;"/>
+</checkConstraint>
+<ownDataTypeParameters>5,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="contract" id="2780FA2C-D596-D9B3-CEAA-8F8748FDAD2F">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>authors</sourceObjSchema>
+<sourceObjName>contract</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:32 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,1,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="140FBDAF-FC6F-A691-FDEA-333407E4B531" name="UPKCL_auidind">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>UPKCL_auidind</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:32 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F58AD72-9BBE-3655-3FA7-F1516B600A9A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EDF0710F-9A1C-5434-5F91-2C291EAEF689" name="aunmind">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>aunmind</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:32 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D9E1AE6D-A9EC-3AD5-DC34-B1145C3AC924"/>
+<colUsage columnID="816695FE-5F77-6FDA-DD9E-F6565084709B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

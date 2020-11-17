@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3EC3D1E1-437E-E7C1-936B-B69B89BAE7ED" schemaObject="CC236012-C4CD-4B29-132B-45EC5162B4B9" name="titleauthor">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>titleauthor</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="au_id" id="7C807272-9A2A-2FEE-C6DA-F8AEB90AC0A3">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>titleauthor</sourceObjSchema>
+<sourceObjName>au_id</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>11</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,11,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6F72FE76-120A-178B-FA64-5B463BABE6D4" referredColumn="0F58AD72-9BBE-3655-3FA7-F1516B600A9A"/>
+</associations>
+</Column>
+<Column name="title_id" id="DEB8A182-3770-DD9B-CAA0-0B413AD50CD2">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>titleauthor</sourceObjSchema>
+<sourceObjName>title_id</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C84FEF90-4F40-BC38-801F-B1F3F54709D2" referredColumn="8768685B-DEA7-5618-688B-D5A851F1544A"/>
+</associations>
+</Column>
+<Column name="au_ord" id="5193AA2D-46FA-820C-7B35-CF45B6A8C035">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>titleauthor</sourceObjSchema>
+<sourceObjName>au_ord</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="royaltyper" id="6C0493B0-2FDC-D5B5-1025-B5C8D0728A4C">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>titleauthor</sourceObjSchema>
+<sourceObjName>royaltyper</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8D5E3E14-79EC-7FBA-F086-B4AE742E7D85" name="UPKCL_taind">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>UPKCL_taind</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C807272-9A2A-2FEE-C6DA-F8AEB90AC0A3"/>
+<colUsage columnID="DEB8A182-3770-DD9B-CAA0-0B413AD50CD2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C39ECC32-6D19-B01F-766D-B0E7D512EF65" name="auidind">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>auidind</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C807272-9A2A-2FEE-C6DA-F8AEB90AC0A3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B1868EE1-B1E3-629F-630A-90C8CA1E164E" name="titleidindv2">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>titleidind</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DEB8A182-3770-DD9B-CAA0-0B413AD50CD2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E4FCAEFF-69F2-65F2-B5B9-DD174E84D4FC" name="FK__titleauth__au_id__44FF419A">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C807272-9A2A-2FEE-C6DA-F8AEB90AC0A3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BD33B29F-919D-433A-03B3-BA08D0F7EC4A" name="FK__titleauth__title__45F365D3">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DEB8A182-3770-DD9B-CAA0-0B413AD50CD2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

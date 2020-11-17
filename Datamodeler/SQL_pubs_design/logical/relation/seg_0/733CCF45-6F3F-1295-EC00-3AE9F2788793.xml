@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK__employee__job_id__5BE2A6F2" directorySegmentName="seg_0" id="733CCF45-6F3F-1295-EC00-3AE9F2788793">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:45 UTC</createdTime>
+<generatorID>E99BFE53-0BDE-6FB2-7326-4FC542C45B7A</generatorID>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<engineerTo>
+<item key="96FC992C-17CF-ABFB-9EB9-F5792F2B075B" value="true"/>
+</engineerTo>
+<sourcePk>F2842681-CA65-5D47-FC18-03CF132D72F5</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0AE4B7A5-AA8A-C156-A883-BB7E402F4CA0</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>CEB157BF-880D-CDA2-0491-C424465263E2</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

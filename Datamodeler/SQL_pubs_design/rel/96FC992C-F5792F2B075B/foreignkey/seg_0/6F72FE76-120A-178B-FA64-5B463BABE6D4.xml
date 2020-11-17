@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="6F72FE76-120A-178B-FA64-5B463BABE6D4" containerWithKeyObject="3EC3D1E1-437E-E7C1-936B-B69B89BAE7ED" localFKIndex="E4FCAEFF-69F2-65F2-B5B9-DD174E84D4FC" name="FK__titleauth__au_id__44FF419A">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>FK__titleauth__au_id__44FF419A</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<referredTableLongName>pubs_dbo.authors</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>CDF3AA1A-509F-49E0-C094-B2D655576590</referredTableID>
+<keyObject>140FBDAF-FC6F-A691-FDEA-333407E4B531</keyObject>
+<referredKeyID>140FBDAF-FC6F-A691-FDEA-333407E4B531</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>au_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

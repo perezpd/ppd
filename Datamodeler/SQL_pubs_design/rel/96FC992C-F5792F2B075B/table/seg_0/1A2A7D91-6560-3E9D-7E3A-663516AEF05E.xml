@@ -1,0 +1,165 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1A2A7D91-6560-3E9D-7E3A-663516AEF05E" schemaObject="CC236012-C4CD-4B29-132B-45EC5162B4B9" name="sales">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>sales</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="stor_id" id="B65A0E9E-E10E-52E3-2E55-F14E2C775C07">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>sales</sourceObjSchema>
+<sourceObjName>stor_id</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EAE2B778-A54B-F2FA-62EB-85D5602CC200" referredColumn="986603A3-92FE-08B9-E198-6C2B3BAFBA48"/>
+</associations>
+</Column>
+<Column name="ord_num" id="AE649AA1-3079-02B2-2CB9-69088C64DC97">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>sales</sourceObjSchema>
+<sourceObjName>ord_num</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,20,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ord_date" id="AEC1B7B9-D6D2-FA5A-B1CB-E90E99DA3DF1">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>sales</sourceObjSchema>
+<sourceObjName>ord_date</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<dataTypePrecision>23</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,23,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="qty" id="A429705C-4902-B67A-FA8E-8BDEAF992DB4">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>sales</sourceObjSchema>
+<sourceObjName>qty</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="payterms" id="5B9C01D2-B240-4D42-9E1A-F72EE5D75E5A">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>sales</sourceObjSchema>
+<sourceObjName>payterms</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,12,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="title_id" id="8CA68D67-EE11-4DAF-A2BF-659F872B8C71">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>sales</sourceObjSchema>
+<sourceObjName>title_id</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3FF03D43-5E3A-39BA-2C9E-69114287AE65" referredColumn="8768685B-DEA7-5618-688B-D5A851F1544A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="09A0AAD2-C217-9ACB-7CBB-A48F765E8AB4" name="UPKCL_sales">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>UPKCL_sales</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B65A0E9E-E10E-52E3-2E55-F14E2C775C07"/>
+<colUsage columnID="AE649AA1-3079-02B2-2CB9-69088C64DC97"/>
+<colUsage columnID="8CA68D67-EE11-4DAF-A2BF-659F872B8C71"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3110216A-7C79-B003-D3B0-D5670ABE2949" name="titleidindv1">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>titleidind</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8CA68D67-EE11-4DAF-A2BF-659F872B8C71"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AAE1B971-4ED5-A0A4-5E25-37A5C6E37057" name="FK__sales__stor_id__4AB81AF0">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B65A0E9E-E10E-52E3-2E55-F14E2C775C07"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A9AFABFA-B042-9988-2691-35BCA7E4BE35" name="FK__sales__title_id__4BAC3F29">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8CA68D67-EE11-4DAF-A2BF-659F872B8C71"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

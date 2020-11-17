@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A0932641-865D-A4D3-5484-D33DB40A200E" containerWithKeyObject="73E8EDEE-B5CC-EFEB-694F-916193503D38" localFKIndex="3895A2B5-1C93-DD6A-88C9-B8A7C1526AA5" name="FK__discounts__stor___4F7CD00D">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>FK__discounts__stor___4F7CD00D</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<referredTableLongName>pubs_dbo.stores</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BEE6F129-17E1-B40A-F474-67D32B1B5C76</referredTableID>
+<keyObject>F76003F8-C9C2-0843-E58F-EE7A4CB42B48</keyObject>
+<referredKeyID>F76003F8-C9C2-0843-E58F-EE7A4CB42B48</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>stor_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

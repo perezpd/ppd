@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="jobs" directorySegmentName="seg_0" id="22C4F8AE-FE14-A924-F457-EE474157E777">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<schemaObject>CC236012-C4CD-4B29-132B-45EC5162B4B9</schemaObject>
+<database>805A13C1-9AE5-8561-7532-C2D012FCA2B4</database>
+<filegroup>F7273B23-96B8-E143-38B4-371B0ECDCA82</filegroup>
+<schema>1</schema>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="job_id" id="2B2273CD-A5F8-6FBD-5C58-469B031FDF6E">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<asIdentity>true</asIdentity>
+<identityForReplication>YES</identityForReplication>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="max_lvl" id="D652E5BC-6657-9CA7-18FC-5D6758FF7232">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="min_lvl" id="DE7B8C6F-0D84-D831-EC46-E3F6492FF20B">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="job_desc" id="EE537758-8521-64CE-4979-524C1014829D">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<collation>Latin1_General_CI_AS</collation>
+<defaultValue>&apos;New Position - title not formalized yet&apos;</defaultValue>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="PK__jobs__6E32B6A57D97DD2A" id="DB418534-FD64-D2E0-5AE8-67C9AD94D95A">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<clustered>true</clustered>
+<fileGroup>F7273B23-96B8-E143-38B4-371B0ECDCA82</fileGroup>
+<recomputeStatistics>NO</recomputeStatistics>
+</PrimaryKey>
+</primaryKeys>
+</TableProxySqlServerv2k5>

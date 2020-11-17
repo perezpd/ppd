@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8923CAEE-9209-80E2-C180-CCDA592DBC6C" schemaObject="CC236012-C4CD-4B29-132B-45EC5162B4B9" name="roysched">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>roysched</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="title_id" id="29B1E8A5-654B-A9A4-291E-60430134674A">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>roysched</sourceObjSchema>
+<sourceObjName>title_id</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D1210635-A022-87CF-04BC-5DC9292D913C" referredColumn="8768685B-DEA7-5618-688B-D5A851F1544A"/>
+</associations>
+</Column>
+<Column name="lorange" id="9CF44A3F-EC2B-2F1C-610B-77FE4AE0A48A">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>roysched</sourceObjSchema>
+<sourceObjName>lorange</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hirange" id="DF83E34E-56EA-6B3B-30BC-2F8610DAAA41">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>roysched</sourceObjSchema>
+<sourceObjName>hirange</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="royalty" id="918849B7-BD5F-8433-9B89-851FC6CB76B1">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>roysched</sourceObjSchema>
+<sourceObjName>royalty</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="78F6A81E-6104-CBAF-DC38-60ADD12B0DDC" name="titleidind">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>titleidind</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="29B1E8A5-654B-A9A4-291E-60430134674A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FA4CF317-D25B-CB56-D732-5F017D518BE9" name="FK__roysched__title___4D94879B">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="29B1E8A5-654B-A9A4-291E-60430134674A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

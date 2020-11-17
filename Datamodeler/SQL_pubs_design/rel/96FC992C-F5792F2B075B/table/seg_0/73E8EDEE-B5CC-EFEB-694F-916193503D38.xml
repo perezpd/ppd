@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="73E8EDEE-B5CC-EFEB-694F-916193503D38" schemaObject="CC236012-C4CD-4B29-132B-45EC5162B4B9" name="discounts">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>discounts</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="discounttype" id="FF171BCF-5A38-DF29-6B15-20DBF6C20EFD">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>discounts</sourceObjSchema>
+<sourceObjName>discounttype</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>40</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,40,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="stor_id" id="D43DA660-26D8-6DF3-8F65-31B715CA1512">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>discounts</sourceObjSchema>
+<sourceObjName>stor_id</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A0932641-865D-A4D3-5484-D33DB40A200E" referredColumn="986603A3-92FE-08B9-E198-6C2B3BAFBA48"/>
+</associations>
+</Column>
+<Column name="lowqty" id="61531CBE-53DB-845F-ABC2-CF5A874F4B4D">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>discounts</sourceObjSchema>
+<sourceObjName>lowqty</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="highqty" id="4341BBDB-BA27-F554-9803-C1C56C8A7F6B">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>discounts</sourceObjSchema>
+<sourceObjName>highqty</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="discount" id="86DE74F3-D0C4-75BC-3B57-32B220475B9B">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>discounts</sourceObjSchema>
+<sourceObjName>discount</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,4,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3895A2B5-1C93-DD6A-88C9-B8A7C1526AA5" name="FK__discounts__stor___4F7CD00D">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D43DA660-26D8-6DF3-8F65-31B715CA1512"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1F4DC64A-F4B3-044D-7E2A-D6F46DECA1FC" schemaObject="CC236012-C4CD-4B29-132B-45EC5162B4B9" name="pub_info">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>pub_info</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="pub_id" id="F3A0528C-6C7F-AAF1-8D32-536D04BA9193">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>pub_info</sourceObjSchema>
+<sourceObjName>pub_id</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5EA4E9AC-0461-8F3C-467B-B8CD9B4F8F6E" referredColumn="883B2CAA-AC89-CF2A-5E56-EC188C2DCA20"/>
+</associations>
+</Column>
+<Column name="logo" id="6530C93F-822E-36F8-6C49-D992C61C2D59">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>pub_info</sourceObjSchema>
+<sourceObjName>logo</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT010</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,0,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pr_info" id="5526BA88-C43B-0CC2-D173-15E83F99331E">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>pub_info</sourceObjSchema>
+<sourceObjName>pr_info</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,0,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DDA3CB98-AFC1-8803-ADD3-5537895EF611" name="UPKCL_pubinfo">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>UPKCL_pubinfo</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F3A0528C-6C7F-AAF1-8D32-536D04BA9193"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="77783194-ACB9-E9C7-FC6C-9DD6C1700FD8" name="FK__pub_info__pub_id__571DF1D5">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F3A0528C-6C7F-AAF1-8D32-536D04BA9193"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

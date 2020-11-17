@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaSqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.SchemaSqlServerv2k5" name="dbo" directorySegmentName="seg_0" id="1">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>pubs</sourceObjSchema>
+<sourceObjName>dbo</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:32 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<schemaObject>CC236012-C4CD-4B29-132B-45EC5162B4B9</schemaObject>
+<owner>805A13C1-9AE5-8561-7532-C2D012FCA2B4_dbo</owner>
+<database>805A13C1-9AE5-8561-7532-C2D012FCA2B4</database>
+<uid>1</uid>
+</SchemaSqlServerv2k5>

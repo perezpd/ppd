@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="22C4F8AE-FE14-A924-F457-EE474157E777" schemaObject="CC236012-C4CD-4B29-132B-45EC5162B4B9" name="jobs">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>jobs</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="job_id" id="2B2273CD-A5F8-6FBD-5C58-469B031FDF6E">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>jobs</sourceObjSchema>
+<sourceObjName>job_id</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,5,0</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="job_desc" id="EE537758-8521-64CE-4979-524C1014829D">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>jobs</sourceObjSchema>
+<sourceObjName>job_desc</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>50</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>50</dataTypeSize>
+<usesDefaultValue>true</usesDefaultValue>
+<defaultValue>&apos;New Position - title not formalized yet&apos;</defaultValue>
+<ownDataTypeParameters>50,50,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="min_lvl" id="DE7B8C6F-0D84-D831-EC46-E3F6492FF20B">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>jobs</sourceObjSchema>
+<sourceObjName>min_lvl</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<constraintName>CK__jobs__min_lvl__534D60F1</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>1</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="SQL Server 2008" definition="[min_lvl]&gt;=(10)"/>
+</checkConstraint>
+<ownDataTypeParameters>1,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="max_lvl" id="D652E5BC-6657-9CA7-18FC-5D6758FF7232">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>jobs</sourceObjSchema>
+<sourceObjName>max_lvl</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<constraintName>CK__jobs__max_lvl__5441852A</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>1</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="SQL Server 2008" definition="[max_lvl]&lt;=(250)"/>
+</checkConstraint>
+<ownDataTypeParameters>1,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DB418534-FD64-D2E0-5AE8-67C9AD94D95A" name="PK__jobs__6E32B6A57D97DD2A">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>PK__jobs__6E32B6A57D97DD2A</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:33 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2B2273CD-A5F8-6FBD-5C58-469B031FDF6E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

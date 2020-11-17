@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK__pub_info__pub_id__571DF1D5" directorySegmentName="seg_0" id="E8601090-D5BC-5A19-BF25-F150DCCABCD1">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:45 UTC</createdTime>
+<generatorID>5EA4E9AC-0461-8F3C-467B-B8CD9B4F8F6E</generatorID>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<engineerTo>
+<item key="96FC992C-17CF-ABFB-9EB9-F5792F2B075B" value="true"/>
+</engineerTo>
+<sourcePk>978AFCEF-1D5F-E9A3-F4C4-27EFF0473A89</sourcePk>
+<dominantRole>9A6C3F10-8ED0-0232-DC39-AE2F483F7867</dominantRole>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9A6C3F10-8ED0-0232-DC39-AE2F483F7867</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>3BB97108-17FA-34E1-AD30-4E4064E0148E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

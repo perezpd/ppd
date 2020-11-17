@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaObject class="oracle.dbtools.crest.model.design.relational.SchemaObject" name="pubs_dbo" directorySegmentName="seg_0" id="CC236012-C4CD-4B29-132B-45EC5162B4B9">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:32 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+</SchemaObject>

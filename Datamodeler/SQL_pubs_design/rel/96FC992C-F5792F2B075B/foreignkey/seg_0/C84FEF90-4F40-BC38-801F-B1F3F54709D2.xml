@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C84FEF90-4F40-BC38-801F-B1F3F54709D2" containerWithKeyObject="3EC3D1E1-437E-E7C1-936B-B69B89BAE7ED" localFKIndex="BD33B29F-919D-433A-03B3-BA08D0F7EC4A" name="FK__titleauth__title__45F365D3">
+<sourceConnName>localhost_SQL_server</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>FK__titleauth__title__45F365D3</sourceObjName>
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:34 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<referredTableLongName>pubs_dbo.titles</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A5E1972A-EBC3-D6E5-CB35-252C82D6E151</referredTableID>
+<keyObject>70822D69-2F03-89D4-4DC7-237237722705</keyObject>
+<referredKeyID>70822D69-2F03-89D4-4DC7-237237722705</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>title_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

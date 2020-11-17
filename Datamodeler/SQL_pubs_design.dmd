@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="SQL_pubs_design" id="E529A1C5-77A7-347E-BB08-CAFC0CA46818" version="3.5">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-17 20:34:08 UTC</createdTime>
+<ownerDesignName>SQL_pubs_design</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>E529A1C5-77A7-347E-BB08-CAFC0CA46818</designId>
+</OSDM_Design>
