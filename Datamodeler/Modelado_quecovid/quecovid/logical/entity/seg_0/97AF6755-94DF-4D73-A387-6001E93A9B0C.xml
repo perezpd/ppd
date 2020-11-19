@@ -41,6 +41,20 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="nombre_mun" id="FFA702C8-E175-E783-1164-9F234820E50A">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-19 21:14:44 UTC</createdTime>
+<ownerDesignName>quecovid</ownerDesignName>
+<engineerTo>
+<item key="CDB13852-16A5-9DC6-A668-D9F897DCFCF1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="A146BEA4-C919-5D2D-FE97-0A07D0A9E0A4" name="Municipio PK">
@@ -53,6 +67,7 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>E75FFFDE-082E-087B-B831-6DDE6CC6147E</attributeRef>
+<attributeRef>FDEBF34D-DC75-2602-63E1-8D57942AC1BB</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

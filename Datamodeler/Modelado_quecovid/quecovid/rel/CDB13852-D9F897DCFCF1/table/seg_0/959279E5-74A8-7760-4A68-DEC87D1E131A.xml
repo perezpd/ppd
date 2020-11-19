@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="959279E5-74A8-7760-4A68-DEC87D1E131A" name="Restricciones_espacios">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="959279E5-74A8-7760-4A68-DEC87D1E131A" name="Restricciones_actuales">
 <createdBy>ppd</createdBy>
 <createdTime>2020-11-17 21:02:18 UTC</createdTime>
 <generatorID>FAC972E6-CC5F-731C-BE6F-D2DE173BB0B3</generatorID>
@@ -7,4 +7,115 @@
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Restricciones_actuales_ID" id="075F2179-3746-9848-675B-7D1CD8FEDB5B">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-19 21:09:27 UTC</createdTime>
+<ownerDesignName>quecovid</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="PK_restric_espacios" id="1A755313-B898-F016-5D24-BD65B3317E86">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-19 21:09:27 UTC</createdTime>
+<generatorID>99AC9D2C-371B-C04C-BD2B-346028BB6FBD</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="concepto_restriccion" id="5266B938-27C9-29EB-2733-3F9D0223981B">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-19 21:09:27 UTC</createdTime>
+<generatorID>E3E1542D-5800-72CC-FC77-7E048CA45C1A</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_inicio" id="F1E9ECD5-A2D7-756A-C21C-CA4F423C73E5">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-19 21:09:27 UTC</createdTime>
+<generatorID>FF99DFDD-5112-AB2B-4438-0E571293AFBF</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_fin" id="0A87B8DB-BC4B-C85E-8092-8A7BD9151CD5">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-19 21:09:27 UTC</createdTime>
+<generatorID>D75AC891-CCEC-AE06-1928-E7F39271E95E</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fuentes_PK_boletin" id="699BA436-A8F1-C747-BCBE-F2AB5C958BEA">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-19 21:09:27 UTC</createdTime>
+<generatorID>7A74C4DA-8926-59DF-E231-790474497791</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7E114CCD-96EE-39C2-40AB-4F305F647F2B" referredColumn="D18BE8A7-CC5E-65EE-B700-B889AE224302"/>
+</associations>
+</Column>
+<Column name="fecha_actualizacion" id="F04F5B31-675A-D33A-060A-059793185196">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-19 21:09:27 UTC</createdTime>
+<generatorID>F65E39FB-80E0-E507-4C82-755B481D8043</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="53B33E38-D739-24F0-C02D-FD2B6402B40C" name="Restricciones_actuales_PK">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-19 21:09:27 UTC</createdTime>
+<ownerDesignName>quecovid</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="075F2179-3746-9848-675B-7D1CD8FEDB5B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D0ABCB84-3596-6303-6F70-6386FB983AFC" name="Restricciones_actuales_Fuentes_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-19 21:09:27 UTC</createdTime>
+<generatorID>5775E409-095B-0BFE-ADD6-C9EC4B16352F</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="699BA436-A8F1-C747-BCBE-F2AB5C958BEA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
 </Table>

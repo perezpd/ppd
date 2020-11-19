@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FAC972E6-CC5F-731C-BE6F-D2DE173BB0B3" name="Restricciones_espacios">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FAC972E6-CC5F-731C-BE6F-D2DE173BB0B3" name="Restricciones_actuales">
 <createdBy>ppd</createdBy>
 <createdTime>2020-11-17 20:51:36 UTC</createdTime>
 <ownerDesignName>quecovid</ownerDesignName>
@@ -63,6 +63,33 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PK_boletin" id="7A74C4DA-8926-59DF-E231-790474497791">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-19 21:02:35 UTC</createdTime>
+<generatorID>5775E409-095B-0BFE-ADD6-C9EC4B16352F</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<engineerTo>
+<item key="CDB13852-16A5-9DC6-A668-D9F897DCFCF1" value="true"/>
+</engineerTo>
+<referedAttribute>895436B3-CE52-D3CE-8195-9A8541FA6A3D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_actualizacion" id="F65E39FB-80E0-E507-4C82-755B481D8043">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-19 21:03:46 UTC</createdTime>
+<ownerDesignName>quecovid</ownerDesignName>
+<engineerTo>
+<item key="CDB13852-16A5-9DC6-A668-D9F897DCFCF1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

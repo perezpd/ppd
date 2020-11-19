@@ -45,6 +45,19 @@
 <colAssociation fkAssociation="3C303E7E-56A7-35C1-5926-1A88260922AD" referredColumn="CB28AA92-1E50-A12E-467E-22599A489801"/>
 </associations>
 </Column>
+<Column name="nombre_prov" id="1EFEB956-453F-20F5-774B-1701EEF9F80A">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-19 21:20:51 UTC</createdTime>
+<generatorID>98410A46-AAB3-864A-538C-B6B943E0524A</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="A486A217-3EB3-C163-C02F-8EF2B962D566" name="Provincia_PK">

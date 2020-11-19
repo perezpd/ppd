@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="523BFEF9-DA79-4399-DDF5-FA64B396EE08" name="Localidad">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="523BFEF9-DA79-4399-DDF5-FA64B396EE08" name="Localidad_cp">
 <createdBy>ppd</createdBy>
 <createdTime>2020-11-17 21:02:18 UTC</createdTime>
 <generatorID>96405526-7C98-4587-8B26-491A8239316D</generatorID>
@@ -45,6 +45,44 @@
 <colAssociation fkAssociation="AFA4063D-97A6-696B-7036-6C3B0C74B53A" referredColumn="7696F932-2A94-DF23-A632-7B91FDCA9FE4"/>
 </associations>
 </Column>
+<Column name="Codigo_postal" id="77861677-459C-AC2C-BAEF-4C4708DC02CB">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-19 21:09:27 UTC</createdTime>
+<generatorID>02F11521-EE35-8564-1D2B-A17D9927DECD</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Poblacion" id="9F82EB15-A069-CF53-3DEA-F2B62270437F">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-19 21:20:51 UTC</createdTime>
+<generatorID>782812C0-C5DA-2144-2E14-F4134C927987</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Municipio_Provincia_PK_provincia" id="183C0359-B5E6-E646-2F90-782BE2B63E83">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-19 21:20:51 UTC</createdTime>
+<ownerDesignName>quecovid</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AFA4063D-97A6-696B-7036-6C3B0C74B53A" referredColumn="D52CDC07-764B-2245-F7B0-F4C1AA021D83"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="3AFB3BEF-5444-0EC1-E22C-6DBDEA6CEBF5" name="Localidad_PK">
@@ -59,7 +97,7 @@
 <colUsage columnID="4F548D6A-2AC3-AEF6-F245-26F003A7977F"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="B188112D-1847-29AF-218A-CD6C79F1736A" name="Localidad_Municipio_FK">
+<ind_PK_UK id="B188112D-1847-29AF-218A-CD6C79F1736A" name="Localidad_cp_Municipio_FK">
 <createdBy>ppd</createdBy>
 <createdTime>2020-11-17 21:04:59 UTC</createdTime>
 <generatorID>362AFA23-2C00-BA5D-7095-3B4551FE14A0</generatorID>
@@ -68,6 +106,7 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="15FA7B38-1526-08C9-0091-C45C96081C24"/>
+<colUsage columnID="183C0359-B5E6-E646-2F90-782BE2B63E83"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

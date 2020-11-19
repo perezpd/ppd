@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="96405526-7C98-4587-8B26-491A8239316D" name="Localidad">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="96405526-7C98-4587-8B26-491A8239316D" name="Localidad_cp">
 <createdBy>ppd</createdBy>
 <createdTime>2020-11-17 20:49:20 UTC</createdTime>
 <ownerDesignName>quecovid</ownerDesignName>
@@ -41,6 +41,46 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="Codigo_postal" id="02F11521-EE35-8564-1D2B-A17D9927DECD">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-19 21:07:42 UTC</createdTime>
+<ownerDesignName>quecovid</ownerDesignName>
+<engineerTo>
+<item key="CDB13852-16A5-9DC6-A668-D9F897DCFCF1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Poblacion" id="782812C0-C5DA-2144-2E14-F4134C927987">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-19 21:15:58 UTC</createdTime>
+<ownerDesignName>quecovid</ownerDesignName>
+<engineerTo>
+<item key="CDB13852-16A5-9DC6-A668-D9F897DCFCF1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PK_provincia" id="EE64E002-2CB7-7960-7802-94D63D5E342C">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-19 21:18:24 UTC</createdTime>
+<generatorID>362AFA23-2C00-BA5D-7095-3B4551FE14A0</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<engineerTo>
+<item key="CDB13852-16A5-9DC6-A668-D9F897DCFCF1" value="true"/>
+</engineerTo>
+<referedAttribute>FDEBF34D-DC75-2602-63E1-8D57942AC1BB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="BA545B18-C98F-A84E-0F81-D6273F76B529" name="Localidad PK">
@@ -54,6 +94,7 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>638D686C-4740-AB60-AD54-81B1797DDF76</attributeRef>
+<attributeRef>EE64E002-2CB7-7960-7802-94D63D5E342C</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

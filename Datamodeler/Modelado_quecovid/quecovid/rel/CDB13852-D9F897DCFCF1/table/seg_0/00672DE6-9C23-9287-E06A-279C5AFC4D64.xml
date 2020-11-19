@@ -55,6 +55,30 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="pacientes_uci" id="33D89E92-E2A6-A607-6B90-20717EE5EB70">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-19 21:09:27 UTC</createdTime>
+<generatorID>9CB9ABD9-03D2-6532-726A-6B2907D293DD</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hospitalizados_totales" id="B98057DD-4118-3B22-FDC0-B8CC5546BB7C">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-19 21:09:27 UTC</createdTime>
+<generatorID>CDE70205-5AB4-2207-B498-E676BF562AE4</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="E5ED8AC5-3CC2-ED27-1213-54A5CA3DB339" name="Datos_comunidad_PK">

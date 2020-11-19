@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="91A8C5A5-FB27-4A20-2548-2D8922EDDE91" name="BOP">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="91A8C5A5-FB27-4A20-2548-2D8922EDDE91" name="Fuentes">
 <createdBy>ppd</createdBy>
 <createdTime>2020-11-17 21:13:34 UTC</createdTime>
 <ownerDesignName>quecovid</ownerDesignName>
@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="PK_bop" id="895436B3-CE52-D3CE-8195-9A8541FA6A3D">
+<Attribute name="PK_boletin" id="895436B3-CE52-D3CE-8195-9A8541FA6A3D">
 <createdBy>ppd</createdBy>
 <createdTime>2020-11-17 21:13:39 UTC</createdTime>
 <ownerDesignName>quecovid</ownerDesignName>
@@ -27,7 +27,7 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="fecha_bop" id="E301AB54-E0D0-FDE5-FF8D-EA6F55AFC12B">
+<Attribute name="fecha_boletin" id="E301AB54-E0D0-FDE5-FF8D-EA6F55AFC12B">
 <createdBy>ppd</createdBy>
 <createdTime>2020-11-17 21:13:59 UTC</createdTime>
 <ownerDesignName>quecovid</ownerDesignName>
@@ -38,6 +38,19 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo" id="C903850C-4F15-A24F-B05F-A2C4B5DC405F">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-19 20:58:55 UTC</createdTime>
+<ownerDesignName>quecovid</ownerDesignName>
+<engineerTo>
+<item key="CDB13852-16A5-9DC6-A668-D9F897DCFCF1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

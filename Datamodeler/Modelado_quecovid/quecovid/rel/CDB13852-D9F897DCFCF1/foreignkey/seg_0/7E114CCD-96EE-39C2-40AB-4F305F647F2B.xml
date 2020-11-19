@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7E114CCD-96EE-39C2-40AB-4F305F647F2B" containerWithKeyObject="959279E5-74A8-7760-4A68-DEC87D1E131A" localFKIndex="D0ABCB84-3596-6303-6F70-6386FB983AFC" name="Restricciones_actuales_Fuentes_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-19 21:09:27 UTC</createdTime>
+<generatorID>5775E409-095B-0BFE-ADD6-C9EC4B16352F</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<referredTableLongName>Fuentes</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BBD4A6B2-A2C4-5DB2-D1E5-7FC4CF223A83</referredTableID>
+<keyObject>B0475245-1FDD-6505-D8EC-A6DCC36FC8C0</keyObject>
+<referredKeyID>B0475245-1FDD-6505-D8EC-A6DCC36FC8C0</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PK_boletin</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

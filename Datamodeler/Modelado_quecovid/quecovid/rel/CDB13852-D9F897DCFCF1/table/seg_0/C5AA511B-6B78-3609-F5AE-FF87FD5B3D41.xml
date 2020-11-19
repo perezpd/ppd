@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C5AA511B-6B78-3609-F5AE-FF87FD5B3D41" name="espacios_provinciav1">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-19 21:20:51 UTC</createdTime>
+<ownerDesignName>quecovid</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Restricciones_actuales_Restricciones_actuales_ID" id="8AB5F82F-CD01-D017-EFF8-3D868D2D99D8">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-19 21:20:51 UTC</createdTime>
+<ownerDesignName>quecovid</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="816DF6D5-F16B-254C-2A92-A603F1F8744D" referredColumn="075F2179-3746-9848-675B-7D1CD8FEDB5B"/>
+</associations>
+</Column>
+<Column name="Localidad_cp_PK_localidad" id="1F9A26B4-92EE-BCE7-E888-DD205666E1DC">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-19 21:20:51 UTC</createdTime>
+<ownerDesignName>quecovid</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A4306FB6-8E07-AFC7-52FC-4DD7F786F34C" referredColumn="4F548D6A-2AC3-AEF6-F245-26F003A7977F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CDFE7E1A-97BD-7157-D2A9-976B6ED486E4" name="espacios_provinciav1_PK">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-19 21:20:51 UTC</createdTime>
+<ownerDesignName>quecovid</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8AB5F82F-CD01-D017-EFF8-3D868D2D99D8"/>
+<colUsage columnID="1F9A26B4-92EE-BCE7-E888-DD205666E1DC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="39F679A1-BA81-D988-7050-D2BC0A8320FD" name="espacios_provinciav1_Restricciones_actuales_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-19 21:20:51 UTC</createdTime>
+<generatorID>E16E255B-4E76-FC0B-F451-572768442A98</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8AB5F82F-CD01-D017-EFF8-3D868D2D99D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="509880C0-3EC8-9FB7-CA1B-E844915A1029" name="espacios_provinciav1_Localidad_cp_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-19 21:20:51 UTC</createdTime>
+<generatorID>E16E255B-4E76-FC0B-F451-572768442A98</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F9A26B4-92EE-BCE7-E888-DD205666E1DC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

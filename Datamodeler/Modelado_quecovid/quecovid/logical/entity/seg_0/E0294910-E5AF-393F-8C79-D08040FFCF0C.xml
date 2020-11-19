@@ -41,6 +41,20 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="nombre_prov" id="98410A46-AAB3-864A-538C-B6B943E0524A">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-19 21:15:25 UTC</createdTime>
+<ownerDesignName>quecovid</ownerDesignName>
+<engineerTo>
+<item key="CDB13852-16A5-9DC6-A668-D9F897DCFCF1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="568FD098-5C56-3E9E-E6F1-C8117035E37C" name="Provincia PK">

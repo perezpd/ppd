@@ -47,9 +47,22 @@
 <colAssociation fkAssociation="84705DDE-02DD-DA7A-6DEC-456D41E0B140" referredColumn="77994FC9-ABBD-7C35-C795-612CD1F86400"/>
 </associations>
 </Column>
+<Column name="nombre_mun" id="5211929D-12B8-9B49-156B-D21BC09A1765">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-19 21:20:51 UTC</createdTime>
+<generatorID>FFA702C8-E175-E783-1164-9F234820E50A</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="83696FB4-677B-2037-DD2C-638091092CFD" name="Municipio_PK_municipio_UN">
+<ind_PK_UK id="83696FB4-677B-2037-DD2C-638091092CFD" name="Municipio_PKv2">
 <createdBy>ppd</createdBy>
 <createdTime>2020-11-17 21:10:56 UTC</createdTime>
 <generatorID>A146BEA4-C919-5D2D-FE97-0A07D0A9E0A4</generatorID>
@@ -59,6 +72,7 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="7696F932-2A94-DF23-A632-7B91FDCA9FE4"/>
+<colUsage columnID="D52CDC07-764B-2245-F7B0-F4C1AA021D83"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="CE9C3DCE-46E3-D91B-6C06-CC373002E95C" name="Municipio_PK">

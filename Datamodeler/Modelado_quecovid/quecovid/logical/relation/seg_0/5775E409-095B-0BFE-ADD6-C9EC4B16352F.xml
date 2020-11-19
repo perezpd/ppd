@@ -1,19 +1,19 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_2" directorySegmentName="seg_0" id="362AFA23-2C00-BA5D-7095-3B4551FE14A0">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="restriccion_en_boletin" directorySegmentName="seg_0" id="5775E409-095B-0BFE-ADD6-C9EC4B16352F">
 <createdBy>ppd</createdBy>
-<createdTime>2020-11-17 21:04:33 UTC</createdTime>
+<createdTime>2020-11-19 21:02:35 UTC</createdTime>
 <ownerDesignName>quecovid</ownerDesignName>
 <engineerTo>
 <item key="CDB13852-16A5-9DC6-A668-D9F897DCFCF1" value="true"/>
 </engineerTo>
-<sourcePk>A146BEA4-C919-5D2D-FE97-0A07D0A9E0A4</sourcePk>
+<sourcePk>B3F73848-17B8-A7EB-2786-A4337261D783</sourcePk>
 <identifying>false</identifying>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
-<sourceEntity>97AF6755-94DF-4D73-A387-6001E93A9B0C</sourceEntity>
+<sourceEntity>91A8C5A5-FB27-4A20-2548-2D8922EDDE91</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
-<targetEntity>96405526-7C98-4587-8B26-491A8239316D</targetEntity>
+<targetEntity>FAC972E6-CC5F-731C-BE6F-D2DE173BB0B3</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 </Relation>
