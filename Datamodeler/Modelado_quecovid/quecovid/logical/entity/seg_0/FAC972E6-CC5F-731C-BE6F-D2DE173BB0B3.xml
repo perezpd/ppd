@@ -93,4 +93,18 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2E85F84C-35C4-EC8D-E117-BA3FF1FCFC4E" name="Restricciones_actuales PK">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-20 18:03:11 UTC</createdTime>
+<ownerDesignName>quecovid</ownerDesignName>
+<engineerTo>
+<item key="CDB13852-16A5-9DC6-A668-D9F897DCFCF1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>99AC9D2C-371B-C04C-BD2B-346028BB6FBD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

@@ -1,11 +1,13 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="espacios_provincia" directorySegmentName="seg_0" id="E16E255B-4E76-FC0B-F451-572768442A98">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="restricciones_cp" directorySegmentName="seg_0" id="E16E255B-4E76-FC0B-F451-572768442A98">
 <createdBy>ppd</createdBy>
 <createdTime>2020-11-19 21:00:39 UTC</createdTime>
 <ownerDesignName>quecovid</ownerDesignName>
 <engineerTo>
 <item key="CDB13852-16A5-9DC6-A668-D9F897DCFCF1" value="true"/>
 </engineerTo>
+<sourcePk>2E85F84C-35C4-EC8D-E117-BA3FF1FCFC4E</sourcePk>
+<targetPk>BA545B18-C98F-A84E-0F81-D6273F76B529</targetPk>
 <identifying>false</identifying>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>

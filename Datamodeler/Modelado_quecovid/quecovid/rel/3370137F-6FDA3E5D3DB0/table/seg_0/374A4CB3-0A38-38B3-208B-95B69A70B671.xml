@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BBD4A6B2-A2C4-5DB2-D1E5-7FC4CF223A83" name="Fuentes">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="374A4CB3-0A38-38B3-208B-95B69A70B671" name="Fuentes">
 <createdBy>ppd</createdBy>
-<createdTime>2020-11-19 21:09:27 UTC</createdTime>
+<createdTime>2020-11-20 18:09:06 UTC</createdTime>
 <generatorID>91A8C5A5-FB27-4A20-2548-2D8922EDDE91</generatorID>
 <ownerDesignName>quecovid</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="PK_boletin" id="D18BE8A7-CC5E-65EE-B700-B889AE224302">
+<Column name="PK_boletin" id="79806425-ED78-3A48-C6D9-80E61A7B9FC7">
 <createdBy>ppd</createdBy>
-<createdTime>2020-11-19 21:09:27 UTC</createdTime>
+<createdTime>2020-11-20 18:09:06 UTC</createdTime>
 <generatorID>895436B3-CE52-D3CE-8195-9A8541FA6A3D</generatorID>
 <ownerDesignName>quecovid</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -19,9 +19,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="fecha_boletin" id="CD9F32F3-8357-7C19-9043-5F8AD6F00135">
+<Column name="fecha_boletin" id="C365B884-A9B2-9A59-F026-8FE932612071">
 <createdBy>ppd</createdBy>
-<createdTime>2020-11-19 21:09:27 UTC</createdTime>
+<createdTime>2020-11-20 18:09:06 UTC</createdTime>
 <generatorID>E301AB54-E0D0-FDE5-FF8D-EA6F55AFC12B</generatorID>
 <ownerDesignName>quecovid</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -31,9 +31,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="tipo" id="0689BD64-DB05-1A27-A75D-6879AA5D603E">
+<Column name="tipo" id="80BA5138-C186-8257-3756-DFABD8005BA8">
 <createdBy>ppd</createdBy>
-<createdTime>2020-11-19 21:09:27 UTC</createdTime>
+<createdTime>2020-11-20 18:09:06 UTC</createdTime>
 <generatorID>C903850C-4F15-A24F-B05F-A2C4B5DC405F</generatorID>
 <ownerDesignName>quecovid</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -45,16 +45,16 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="B0475245-1FDD-6505-D8EC-A6DCC36FC8C0" name="Fuentes_PK">
+<ind_PK_UK id="6817519A-9197-CFE7-729F-32F5A5209A9D" name="Fuentes_PK">
 <createdBy>ppd</createdBy>
-<createdTime>2020-11-19 21:09:27 UTC</createdTime>
+<createdTime>2020-11-20 18:09:06 UTC</createdTime>
 <generatorID>B3F73848-17B8-A7EB-2786-A4337261D783</generatorID>
 <ownerDesignName>quecovid</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="D18BE8A7-CC5E-65EE-B700-B889AE224302"/>
+<colUsage columnID="79806425-ED78-3A48-C6D9-80E61A7B9FC7"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

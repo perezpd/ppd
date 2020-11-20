@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2C486F60-8B90-C298-8E6F-969162F687AE" name="restricciones_cp">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-20 18:09:06 UTC</createdTime>
+<ownerDesignName>quecovid</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Restricciones_actuales_PK_restric_espacios" id="21B6C636-78FE-B5AE-163C-314336BC7459">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-20 18:09:06 UTC</createdTime>
+<ownerDesignName>quecovid</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A79C7E47-2AAC-60E2-C096-53C22420A1CF" referredColumn="8D867F96-F27D-BE09-DEE4-A33D3346377E"/>
+</associations>
+</Column>
+<Column name="Localidad_cp_PK_localidad" id="A70B8BD2-8CCC-6303-DE7E-C12F8A86EDF4">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-20 18:09:06 UTC</createdTime>
+<ownerDesignName>quecovid</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6F05DAF2-3EC5-BB87-CD74-644BCC67EB05" referredColumn="BCF3A181-3FF8-F154-F7BD-65408E6B9F72"/>
+</associations>
+</Column>
+<Column name="Localidad_cp_Municipio_PK_provincia" id="524F9B68-F480-1543-EFB7-48873ED85F25">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-20 18:09:06 UTC</createdTime>
+<ownerDesignName>quecovid</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6F05DAF2-3EC5-BB87-CD74-644BCC67EB05" referredColumn="697CE2E1-B85D-1259-6459-A3E5DC007936"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E61D9077-7ED1-2306-A286-6C2531EA989B" name="restricciones_cp_PK">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-20 18:09:06 UTC</createdTime>
+<ownerDesignName>quecovid</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="21B6C636-78FE-B5AE-163C-314336BC7459"/>
+<colUsage columnID="A70B8BD2-8CCC-6303-DE7E-C12F8A86EDF4"/>
+<colUsage columnID="524F9B68-F480-1543-EFB7-48873ED85F25"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B53E1944-8293-156B-9A4C-4D2C5373FFF7" name="restricciones_cp_Restricciones_actuales_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-20 18:09:06 UTC</createdTime>
+<generatorID>E16E255B-4E76-FC0B-F451-572768442A98</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="21B6C636-78FE-B5AE-163C-314336BC7459"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="827C170E-8FE1-5BCA-ED03-BC1DC6A38353" name="restricciones_cp_Localidad_cp_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-20 18:09:06 UTC</createdTime>
+<generatorID>E16E255B-4E76-FC0B-F451-572768442A98</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A70B8BD2-8CCC-6303-DE7E-C12F8A86EDF4"/>
+<colUsage columnID="524F9B68-F480-1543-EFB7-48873ED85F25"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

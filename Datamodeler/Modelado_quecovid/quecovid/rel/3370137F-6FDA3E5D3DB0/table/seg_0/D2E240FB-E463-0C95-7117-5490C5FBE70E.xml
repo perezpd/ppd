@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="00672DE6-9C23-9287-E06A-279C5AFC4D64" name="Datos_comunidad">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D2E240FB-E463-0C95-7117-5490C5FBE70E" name="Datos_comunidad">
 <createdBy>ppd</createdBy>
-<createdTime>2020-11-17 21:02:18 UTC</createdTime>
+<createdTime>2020-11-20 18:09:06 UTC</createdTime>
 <generatorID>B0ECB649-2352-D862-3C8E-8D3BB2849349</generatorID>
 <ownerDesignName>quecovid</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="PK_datos" id="3C3B0EEB-A1BF-857E-B53A-67D069F72FD4">
+<Column name="PK_datos" id="0CC3B24F-1F80-D81B-E1DD-57CD64228C23">
 <createdBy>ppd</createdBy>
-<createdTime>2020-11-17 21:10:56 UTC</createdTime>
+<createdTime>2020-11-20 18:09:06 UTC</createdTime>
 <generatorID>FAC54E45-210B-EFFE-C079-66CBBCD24C4A</generatorID>
 <ownerDesignName>quecovid</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -19,9 +19,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="casos_nuevos" id="631A1647-0151-57F5-88D3-C35FCFD3499B">
+<Column name="casos_nuevos" id="4B72F51D-4264-A17C-4462-515449E79FE3">
 <createdBy>ppd</createdBy>
-<createdTime>2020-11-17 21:10:56 UTC</createdTime>
+<createdTime>2020-11-20 18:09:06 UTC</createdTime>
 <generatorID>0F93A94B-12BC-5190-738B-704E1725558D</generatorID>
 <ownerDesignName>quecovid</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -31,9 +31,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="casos_totales" id="A240DCAA-6CDD-B726-BC61-39DAA4B9506C">
+<Column name="casos_totales" id="2FE1AA1D-A214-0167-A960-E2C54FCDF1A8">
 <createdBy>ppd</createdBy>
-<createdTime>2020-11-17 21:10:56 UTC</createdTime>
+<createdTime>2020-11-20 18:09:06 UTC</createdTime>
 <generatorID>6A8DA01E-334A-AD70-4C6C-6102FE0E005E</generatorID>
 <ownerDesignName>quecovid</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -43,9 +43,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="fallecidos_totales" id="338B2FBE-B5E4-532C-0A41-60B52908B155">
+<Column name="fallecidos_totales" id="03BA8365-C488-136A-1B4F-2AC46073541A">
 <createdBy>ppd</createdBy>
-<createdTime>2020-11-17 21:10:56 UTC</createdTime>
+<createdTime>2020-11-20 18:09:06 UTC</createdTime>
 <generatorID>6A4A71AC-0A61-D592-7420-1E55047CEC95</generatorID>
 <ownerDesignName>quecovid</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -55,9 +55,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="pacientes_uci" id="33D89E92-E2A6-A607-6B90-20717EE5EB70">
+<Column name="pacientes_uci" id="FB9CEE29-0750-4F80-058A-0FA6457CC7DF">
 <createdBy>ppd</createdBy>
-<createdTime>2020-11-19 21:09:27 UTC</createdTime>
+<createdTime>2020-11-20 18:09:06 UTC</createdTime>
 <generatorID>9CB9ABD9-03D2-6532-726A-6B2907D293DD</generatorID>
 <ownerDesignName>quecovid</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -67,9 +67,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="hospitalizados_totales" id="B98057DD-4118-3B22-FDC0-B8CC5546BB7C">
+<Column name="hospitalizados_totales" id="714539E3-8656-0688-94D8-EA8E99C6C3F6">
 <createdBy>ppd</createdBy>
-<createdTime>2020-11-19 21:09:27 UTC</createdTime>
+<createdTime>2020-11-20 18:09:06 UTC</createdTime>
 <generatorID>CDE70205-5AB4-2207-B498-E676BF562AE4</generatorID>
 <ownerDesignName>quecovid</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -81,16 +81,16 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="E5ED8AC5-3CC2-ED27-1213-54A5CA3DB339" name="Datos_comunidad_PK">
+<ind_PK_UK id="23D359B3-A334-AAB4-24B8-A0941BA5299F" name="Datos_comunidad_PK">
 <createdBy>ppd</createdBy>
-<createdTime>2020-11-17 21:10:56 UTC</createdTime>
+<createdTime>2020-11-20 18:09:06 UTC</createdTime>
 <generatorID>CC8D8A4F-96EA-1A03-3919-120ACC001C39</generatorID>
 <ownerDesignName>quecovid</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="3C3B0EEB-A1BF-857E-B53A-67D069F72FD4"/>
+<colUsage columnID="0CC3B24F-1F80-D81B-E1DD-57CD64228C23"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

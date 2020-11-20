@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="523BFEF9-DA79-4399-DDF5-FA64B396EE08" name="Localidad_cp">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8E9EBBF5-89DE-FC9B-3E89-FBEBD39F8C53" name="Localidad_cp">
 <createdBy>ppd</createdBy>
-<createdTime>2020-11-17 21:02:18 UTC</createdTime>
+<createdTime>2020-11-20 18:09:06 UTC</createdTime>
 <generatorID>96405526-7C98-4587-8B26-491A8239316D</generatorID>
 <ownerDesignName>quecovid</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="PK_localidad" id="4F548D6A-2AC3-AEF6-F245-26F003A7977F">
+<Column name="PK_localidad" id="BCF3A181-3FF8-F154-F7BD-65408E6B9F72">
 <createdBy>ppd</createdBy>
-<createdTime>2020-11-17 21:04:59 UTC</createdTime>
+<createdTime>2020-11-20 18:09:06 UTC</createdTime>
 <generatorID>638D686C-4740-AB60-AD54-81B1797DDF76</generatorID>
 <ownerDesignName>quecovid</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -19,20 +19,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Municipio_Municipio_ID" id="75818D3C-6AE8-2E50-223D-49239D8D395C">
+<Column name="Municipio_PK_municipio" id="C6819977-0ADD-6CC1-50CF-CE00E9158584">
 <createdBy>ppd</createdBy>
-<createdTime>2020-11-17 21:04:59 UTC</createdTime>
-<ownerDesignName>quecovid</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="PK_municipio" id="15FA7B38-1526-08C9-0091-C45C96081C24">
-<createdBy>ppd</createdBy>
-<createdTime>2020-11-17 21:10:56 UTC</createdTime>
+<createdTime>2020-11-20 18:09:06 UTC</createdTime>
 <generatorID>A61D542B-4112-4EC4-826D-09369F6E1A4D</generatorID>
 <ownerDesignName>quecovid</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -42,12 +31,12 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="AFA4063D-97A6-696B-7036-6C3B0C74B53A" referredColumn="7696F932-2A94-DF23-A632-7B91FDCA9FE4"/>
+<colAssociation fkAssociation="501A2774-9FDD-BCB5-A99A-D233AF205B65" referredColumn="FED195D5-345A-4A20-B695-8D029BB4CC84"/>
 </associations>
 </Column>
-<Column name="Codigo_postal" id="77861677-459C-AC2C-BAEF-4C4708DC02CB">
+<Column name="Codigo_postal" id="18A93B13-F41A-067B-5223-989E23B4FD1E">
 <createdBy>ppd</createdBy>
-<createdTime>2020-11-19 21:09:27 UTC</createdTime>
+<createdTime>2020-11-20 18:09:06 UTC</createdTime>
 <generatorID>02F11521-EE35-8564-1D2B-A17D9927DECD</generatorID>
 <ownerDesignName>quecovid</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -56,9 +45,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Poblacion" id="9F82EB15-A069-CF53-3DEA-F2B62270437F">
+<Column name="Poblacion" id="61B8C0BC-73B7-4A59-1E45-3E751B311562">
 <createdBy>ppd</createdBy>
-<createdTime>2020-11-19 21:20:51 UTC</createdTime>
+<createdTime>2020-11-20 18:09:06 UTC</createdTime>
 <generatorID>782812C0-C5DA-2144-2E14-F4134C927987</generatorID>
 <ownerDesignName>quecovid</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -69,9 +58,10 @@
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Municipio_Provincia_PK_provincia" id="183C0359-B5E6-E646-2F90-782BE2B63E83">
+<Column name="Municipio_PK_provincia" id="697CE2E1-B85D-1259-6459-A3E5DC007936">
 <createdBy>ppd</createdBy>
-<createdTime>2020-11-19 21:20:51 UTC</createdTime>
+<createdTime>2020-11-20 18:09:06 UTC</createdTime>
+<generatorID>EE64E002-2CB7-7960-7802-94D63D5E342C</generatorID>
 <ownerDesignName>quecovid</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -80,33 +70,34 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="AFA4063D-97A6-696B-7036-6C3B0C74B53A" referredColumn="D52CDC07-764B-2245-F7B0-F4C1AA021D83"/>
+<colAssociation fkAssociation="501A2774-9FDD-BCB5-A99A-D233AF205B65" referredColumn="D94B888B-A748-6D26-E484-4CF10A4409CC"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="3AFB3BEF-5444-0EC1-E22C-6DBDEA6CEBF5" name="Localidad_PK">
+<ind_PK_UK id="52A1EE9F-B738-670E-F5FE-B1F2F3209182" name="Localidad_cp_PK">
 <createdBy>ppd</createdBy>
-<createdTime>2020-11-17 21:10:56 UTC</createdTime>
+<createdTime>2020-11-20 18:09:06 UTC</createdTime>
 <generatorID>BA545B18-C98F-A84E-0F81-D6273F76B529</generatorID>
 <ownerDesignName>quecovid</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="4F548D6A-2AC3-AEF6-F245-26F003A7977F"/>
+<colUsage columnID="BCF3A181-3FF8-F154-F7BD-65408E6B9F72"/>
+<colUsage columnID="697CE2E1-B85D-1259-6459-A3E5DC007936"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="B188112D-1847-29AF-218A-CD6C79F1736A" name="Localidad_cp_Municipio_FK">
+<ind_PK_UK id="47806A08-3391-387C-D764-5F3F19E8C96D" name="Localidad_cp_Municipio_FK">
 <createdBy>ppd</createdBy>
-<createdTime>2020-11-17 21:04:59 UTC</createdTime>
+<createdTime>2020-11-20 18:09:06 UTC</createdTime>
 <generatorID>362AFA23-2C00-BA5D-7095-3B4551FE14A0</generatorID>
 <ownerDesignName>quecovid</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="15FA7B38-1526-08C9-0091-C45C96081C24"/>
-<colUsage columnID="183C0359-B5E6-E646-2F90-782BE2B63E83"/>
+<colUsage columnID="C6819977-0ADD-6CC1-50CF-CE00E9158584"/>
+<colUsage columnID="697CE2E1-B85D-1259-6459-A3E5DC007936"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

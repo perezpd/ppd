@@ -1,27 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F85E3DE5-7C5E-1064-BFD4-807BE1E34D02" name="Provincia">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E8318449-2D84-4361-947A-C00D8D4C7602" name="Provincia">
 <createdBy>ppd</createdBy>
-<createdTime>2020-11-17 21:02:18 UTC</createdTime>
+<createdTime>2020-11-20 18:09:06 UTC</createdTime>
 <generatorID>E0294910-E5AF-393F-8C79-D08040FFCF0C</generatorID>
 <ownerDesignName>quecovid</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="comunidad_autonoma_comunidad_autonoma_ID" id="CDDBE40A-1D5A-EBEA-243C-FF7B050DCDEE">
+<Column name="PK_provincia" id="02D59DDE-FBD0-F145-765E-1C2961C1F709">
 <createdBy>ppd</createdBy>
-<createdTime>2020-11-17 21:02:18 UTC</createdTime>
-<ownerDesignName>quecovid</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="PK_provincia" id="77994FC9-ABBD-7C35-C795-612CD1F86400">
-<createdBy>ppd</createdBy>
-<createdTime>2020-11-17 21:04:59 UTC</createdTime>
+<createdTime>2020-11-20 18:09:06 UTC</createdTime>
 <generatorID>B55E78A5-3F8F-3FE2-9AD7-0831F7047C2B</generatorID>
 <ownerDesignName>quecovid</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -30,9 +19,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="PK_ca" id="50089D79-05BF-D02C-126E-5F3E51C9AE3D">
+<Column name="comunidad_autonoma_PK_ca" id="B55B2836-F5BC-01F6-04F7-78930E43687B">
 <createdBy>ppd</createdBy>
-<createdTime>2020-11-17 21:10:56 UTC</createdTime>
+<createdTime>2020-11-20 18:09:06 UTC</createdTime>
 <generatorID>5035813B-C414-BA4B-2850-0D21AF1E9821</generatorID>
 <ownerDesignName>quecovid</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -42,12 +31,12 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="3C303E7E-56A7-35C1-5926-1A88260922AD" referredColumn="CB28AA92-1E50-A12E-467E-22599A489801"/>
+<colAssociation fkAssociation="1816BA00-5097-6149-3EBC-2B9F9EABBA42" referredColumn="EB308E35-2D1E-805C-6578-A574BC8C901C"/>
 </associations>
 </Column>
-<Column name="nombre_prov" id="1EFEB956-453F-20F5-774B-1701EEF9F80A">
+<Column name="nombre_prov" id="F8A0833D-F037-003B-BCF7-D7C542C891C1">
 <createdBy>ppd</createdBy>
-<createdTime>2020-11-19 21:20:51 UTC</createdTime>
+<createdTime>2020-11-20 18:09:06 UTC</createdTime>
 <generatorID>98410A46-AAB3-864A-538C-B6B943E0524A</generatorID>
 <ownerDesignName>quecovid</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -60,27 +49,27 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="A486A217-3EB3-C163-C02F-8EF2B962D566" name="Provincia_PK">
+<ind_PK_UK id="C11E66E3-9906-8834-2BFC-4D2EF2C56F5A" name="Provincia_PK">
 <createdBy>ppd</createdBy>
-<createdTime>2020-11-17 21:10:56 UTC</createdTime>
+<createdTime>2020-11-20 18:09:06 UTC</createdTime>
 <generatorID>568FD098-5C56-3E9E-E6F1-C8117035E37C</generatorID>
 <ownerDesignName>quecovid</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="77994FC9-ABBD-7C35-C795-612CD1F86400"/>
+<colUsage columnID="02D59DDE-FBD0-F145-765E-1C2961C1F709"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="0E1BB607-E415-BAB5-241A-25BFA24AE010" name="Provincia_comunidad_autonoma_FK">
+<ind_PK_UK id="C9ED5FB0-B40F-4FEE-CC22-1982226E4547" name="Provincia_comunidad_autonoma_FK">
 <createdBy>ppd</createdBy>
-<createdTime>2020-11-17 21:02:18 UTC</createdTime>
+<createdTime>2020-11-20 18:09:06 UTC</createdTime>
 <generatorID>984DE7D8-4DCE-4485-25A2-AD97330279A1</generatorID>
 <ownerDesignName>quecovid</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="50089D79-05BF-D02C-126E-5F3E51C9AE3D"/>
+<colUsage columnID="B55B2836-F5BC-01F6-04F7-78930E43687B"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
