@@ -1,0 +1,5 @@
+COD_RESTRICCION,TIPO_RESTRICCION
+1,Restricción de movilidad
+2,Limitación en Reuniones Sociales
+3,Limitaciones en el comercio,centros comerciales
+

@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4AE48E3D-9C52-D7F1-CC8E-14EAEAFF7198" name="CODIGOPOSTAL">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-13 09:26:44 UTC</createdTime>
+<generatorID>B74CC9CC-A83B-7508-68DE-A4F8A34DA20C</generatorID>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<engineerTo>
+<item key="7C5A1E17-1050-2E0A-C3BA-E0074A408666" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CP" id="3B3B046C-1D89-3D97-3B7F-668994A5E03E">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-13 09:26:44 UTC</createdTime>
+<generatorID>AE04D68E-3215-B7CC-E13B-ECF2B66AB8E1</generatorID>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<engineerTo>
+<item key="7C5A1E17-1050-2E0A-C3BA-E0074A408666" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>5</dataTypeSize>
+<domain>55641768-4DBA-3666-057B-F6F1720A5EAB</domain>
+<ownDataTypeParameters>5,5,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="POBLACION" id="CD67EB04-DAD0-DC0C-A0CE-9284CE64EA21">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-13 09:26:44 UTC</createdTime>
+<generatorID>F1A2A417-B723-62F2-2FD6-1271A2C2F103</generatorID>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<engineerTo>
+<item key="7C5A1E17-1050-2E0A-C3BA-E0074A408666" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>50</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>50</dataTypeSize>
+<domain>9F260685-7241-99A0-AB17-0D09CB1A4266</domain>
+<ownDataTypeParameters>50,50,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PROVINCIA COD PROVINCIA" id="A5486462-CAC2-ED23-3401-C42A2850E08D">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-13 09:26:44 UTC</createdTime>
+<generatorID>EB988261-D379-1576-05DD-10604D560FAB</generatorID>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<engineerTo>
+<item key="7C5A1E17-1050-2E0A-C3BA-E0074A408666" value="true"/>
+</engineerTo>
+<referedAttribute>45BD4CE4-F511-5399-6B4F-C02B427A9E57</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,2,0</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F0BE90C3-A42B-8C7F-62F7-5A2ECF08EAD3" name="CODIGOPOSTAL PK">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-13 09:26:44 UTC</createdTime>
+<generatorID>E131638C-2EA5-8EA3-CE44-6957A0974E4F</generatorID>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<engineerTo>
+<item key="7C5A1E17-1050-2E0A-C3BA-E0074A408666" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3B3B046C-1D89-3D97-3B7F-668994A5E03E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

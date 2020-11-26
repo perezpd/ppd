@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PROVINCIA_CCAA_FK" directorySegmentName="seg_0" id="5739FE90-8555-DA89-9A43-A7A0D75E77C7">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-13 09:26:44 UTC</createdTime>
+<generatorID>FB24AEDF-2E06-ED8C-E9C4-B3F43269AA31</generatorID>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<engineerTo>
+<item key="7C5A1E17-1050-2E0A-C3BA-E0074A408666" value="true"/>
+</engineerTo>
+<sourceTransferable>false</sourceTransferable>
+<sourcePk>090BDF73-C1F0-6401-2C37-4AA48A4D0A14</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>81538108-00F0-0DC8-5066-ED3CAB2FC0DF</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3FF8671A-7336-D4A5-0A5C-328842E73920</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="665A990C-9695-A6E2-A998-09886509D234" containerWithKeyObject="D0D1C5B2-386D-72EE-488C-DA381C642FB7" localFKIndex="82C58E68-E03D-8A41-0F3A-23E1C18D87F8" name="datos_counidades_Datos_comunidad_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-24 20:05:50 UTC</createdTime>
+<generatorID>B3B76B22-090B-0821-AAD8-CE4E96F30562</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<referredTableLongName>Datos_comunidad</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2B6C1D9A-54A5-51C7-260D-8E52F8A88C86</referredTableID>
+<keyObject>AEC0DC84-3755-CC2E-5F53-5C7EA9911728</keyObject>
+<referredKeyID>AEC0DC84-3755-CC2E-5F53-5C7EA9911728</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PK_datos</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2B6C1D9A-54A5-51C7-260D-8E52F8A88C86" name="Datos_comunidad">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-24 20:05:50 UTC</createdTime>
+<generatorID>B0ECB649-2352-D862-3C8E-8D3BB2849349</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PK_datos" id="FEF71501-A494-94E0-427A-85570FE02728">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-24 20:05:50 UTC</createdTime>
+<generatorID>FAC54E45-210B-EFFE-C079-66CBBCD24C4A</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="casos_nuevos" id="B3F4DE1B-DE97-938F-D7A2-319A363BE8A7">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-24 20:05:50 UTC</createdTime>
+<generatorID>0F93A94B-12BC-5190-738B-704E1725558D</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="casos_totales" id="C295B788-C31F-EAB4-5436-650F3D87B8A0">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-24 20:05:50 UTC</createdTime>
+<generatorID>6A8DA01E-334A-AD70-4C6C-6102FE0E005E</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fallecidos_totales" id="D22E23A5-E8A8-542C-59E7-A0732BD5B781">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-24 20:05:50 UTC</createdTime>
+<generatorID>6A4A71AC-0A61-D592-7420-1E55047CEC95</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pacientes_uci" id="7621F04B-C7CA-C7E7-D502-75BE56E5A345">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-24 20:05:50 UTC</createdTime>
+<generatorID>9CB9ABD9-03D2-6532-726A-6B2907D293DD</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hospitalizados_totales" id="131E20F4-BCE8-DA29-BBB3-A844C3588148">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-24 20:05:50 UTC</createdTime>
+<generatorID>CDE70205-5AB4-2207-B498-E676BF562AE4</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AEC0DC84-3755-CC2E-5F53-5C7EA9911728" name="Datos_comunidad_PK">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-24 20:05:50 UTC</createdTime>
+<generatorID>CC8D8A4F-96EA-1A03-3919-120ACC001C39</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FEF71501-A494-94E0-427A-85570FE02728"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

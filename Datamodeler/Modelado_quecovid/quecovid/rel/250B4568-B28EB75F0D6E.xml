@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_quecovid" id="250B4568-34DB-9E67-1D31-B28EB75F0D6E" mainViewID="CCA45595-00E4-3C6B-49E3-746E0D2E6832">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-24 20:05:44 UTC</createdTime>
+<ownerDesignName>quecovid</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>22943E51-0387-1F2A-CED9-5FB738BA5A0C</selectedRDBMSSite>
+</relationalModel>

@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8BB9FF8B-65DC-7427-B62E-2BA850769B7F" name="RESTRICCION">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-14 19:30:12 UTC</createdTime>
+<generatorID>6914370D-01DB-47F4-1729-23EB7D2D072B</generatorID>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_RESTRICCION" id="7671F8C7-C46A-58C7-D144-EF2162C41076">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-14 19:30:12 UTC</createdTime>
+<generatorID>C5DA50CB-1BC9-55E9-2E4A-6212F846C336</generatorID>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_RESTRICCION" id="A818413D-DE24-1D3F-A8BE-A8A06EB4C885">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-14 19:30:12 UTC</createdTime>
+<generatorID>70B68F4A-6AF6-8ADF-CA5A-9BC4E98B7913</generatorID>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>-1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>max</dataTypeSize>
+<domain>9F260685-7241-99A0-AB17-0D09CB1A4266</domain>
+<ownDataTypeParameters>max,-1,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9CAF7FD2-EBC4-365E-8A6E-71AD338D0D4D" name="RESTRICCION_PK">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-14 19:30:12 UTC</createdTime>
+<generatorID>F2EE8173-CA4C-B2C1-E680-238EFC05C200</generatorID>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7671F8C7-C46A-58C7-D144-EF2162C41076"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

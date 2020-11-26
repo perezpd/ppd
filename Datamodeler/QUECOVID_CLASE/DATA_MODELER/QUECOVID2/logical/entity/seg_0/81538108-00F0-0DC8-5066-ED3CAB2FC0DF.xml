@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="81538108-00F0-0DC8-5066-ED3CAB2FC0DF" name="CCAA">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-13 09:26:44 UTC</createdTime>
+<generatorID>E823A208-534F-D1BF-0198-6053A6E90509</generatorID>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<engineerTo>
+<item key="7C5A1E17-1050-2E0A-C3BA-E0074A408666" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="COD CCAA" id="228730CE-4B53-58BA-51A6-57FA24254106">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-13 09:26:44 UTC</createdTime>
+<generatorID>4AFF227C-8147-E626-BACC-E32ABD054F7C</generatorID>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<engineerTo>
+<item key="7C5A1E17-1050-2E0A-C3BA-E0074A408666" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NOMBRE CCAA" id="20363FD0-41C2-36A9-92DF-9E2F867DDBC4">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-13 09:26:44 UTC</createdTime>
+<generatorID>72A0A08B-071B-B971-A4DE-371070A2ABB3</generatorID>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<engineerTo>
+<item key="7C5A1E17-1050-2E0A-C3BA-E0074A408666" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>50</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>50</dataTypeSize>
+<domain>9F260685-7241-99A0-AB17-0D09CB1A4266</domain>
+<ownDataTypeParameters>50,50,0</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="090BDF73-C1F0-6401-2C37-4AA48A4D0A14" name="CCAA PK">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-13 09:26:44 UTC</createdTime>
+<generatorID>C324BA09-3711-9B12-05EB-584EC5B1239A</generatorID>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<engineerTo>
+<item key="7C5A1E17-1050-2E0A-C3BA-E0074A408666" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>228730CE-4B53-58BA-51A6-57FA24254106</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

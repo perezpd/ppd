@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="30018DE9-5C99-07D7-1660-9F50B62951D8" name="restricciones_cp">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-24 20:05:50 UTC</createdTime>
+<ownerDesignName>quecovid</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Restricciones_actuales_PK_restric_espacios" id="4857B391-65AB-7C93-5BCA-AF8D055932A8">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-24 20:05:50 UTC</createdTime>
+<ownerDesignName>quecovid</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0ADC5148-F13B-9953-2F2B-1A1F65583F27" referredColumn="1BF390C9-32C3-3C2D-841F-5ACB13A3941E"/>
+</associations>
+</Column>
+<Column name="Localidad_cp_PK_localidad" id="4628F68A-DE36-DB9D-D653-42BB10B7F4A8">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-24 20:05:50 UTC</createdTime>
+<ownerDesignName>quecovid</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1C429D57-79E6-88FA-70BC-3C6E8130253B" referredColumn="7EBDBAB0-9B72-A34F-01E6-E2B4EC9253F1"/>
+</associations>
+</Column>
+<Column name="Localidad_cp_Municipio_PK_provincia" id="04BBB9A7-D15A-8E8C-3CC3-5EF164C7C8B4">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-24 20:05:50 UTC</createdTime>
+<ownerDesignName>quecovid</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1C429D57-79E6-88FA-70BC-3C6E8130253B" referredColumn="8887C937-BFDC-8A18-2BF8-141B5F17C5E0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AFC97892-F11F-C14D-FCB0-493A27D0A269" name="restricciones_cp_PK">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-24 20:05:50 UTC</createdTime>
+<ownerDesignName>quecovid</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4857B391-65AB-7C93-5BCA-AF8D055932A8"/>
+<colUsage columnID="4628F68A-DE36-DB9D-D653-42BB10B7F4A8"/>
+<colUsage columnID="04BBB9A7-D15A-8E8C-3CC3-5EF164C7C8B4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ACB9FEF7-AB10-C1D5-9359-19A1DA6559CD" name="restricciones_cp_Restricciones_actuales_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-24 20:05:50 UTC</createdTime>
+<generatorID>E16E255B-4E76-FC0B-F451-572768442A98</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4857B391-65AB-7C93-5BCA-AF8D055932A8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EF7E7920-A520-298A-40AF-A34D4FC57A90" name="restricciones_cp_Localidad_cp_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-24 20:05:50 UTC</createdTime>
+<generatorID>E16E255B-4E76-FC0B-F451-572768442A98</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4628F68A-DE36-DB9D-D653-42BB10B7F4A8"/>
+<colUsage columnID="04BBB9A7-D15A-8E8C-3CC3-5EF164C7C8B4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

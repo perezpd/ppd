@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5EE9BF89-70A9-D309-6D0D-9201E9D31E0C" name="OBSERVACION">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-14 19:30:12 UTC</createdTime>
+<generatorID>A29A25C6-CDC5-08EC-6C54-44E4B1B952A5</generatorID>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_OBSERVACION" id="EFD238DA-0546-49FC-C799-101EF83DA2BF">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-14 19:30:12 UTC</createdTime>
+<generatorID>C83A491F-FD12-F2B7-08F4-40204F961578</generatorID>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESTRICCION_COD_RESTRICCION" id="14BE1850-17DA-8358-FB86-F0A892AD8678">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-14 19:30:12 UTC</createdTime>
+<generatorID>E2E547AC-3B69-AC53-F946-88CF23474A69</generatorID>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="33CEDD23-6347-B493-C9C0-FDF86A2B9350" referredColumn="7671F8C7-C46A-58C7-D144-EF2162C41076"/>
+</associations>
+</Column>
+<Column name="OBSERVACION" id="DB2FB224-492B-F255-CAFA-A1E5DBBC831F">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-14 19:30:12 UTC</createdTime>
+<generatorID>D29F8450-D2A3-2B9F-0446-467B7A4A0EAD</generatorID>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>900</dataTypeSize>
+<ownDataTypeParameters>900,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="524369C7-0C5F-11BC-05C4-4884BCDC6056" name="OBSERVACION_PK">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-14 19:30:12 UTC</createdTime>
+<generatorID>85C183C3-A090-343C-E6F6-FB9DC5C65AE2</generatorID>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EFD238DA-0546-49FC-C799-101EF83DA2BF"/>
+<colUsage columnID="14BE1850-17DA-8358-FB86-F0A892AD8678"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DF2CF364-3DDC-601C-1A26-0C4330E1986C" name="OBSERVACION_RESTRICCION_FK">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-14 19:30:12 UTC</createdTime>
+<generatorID>BC26EF0D-78C6-2AC8-2391-45DFA6A66CE6</generatorID>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="14BE1850-17DA-8358-FB86-F0A892AD8678"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

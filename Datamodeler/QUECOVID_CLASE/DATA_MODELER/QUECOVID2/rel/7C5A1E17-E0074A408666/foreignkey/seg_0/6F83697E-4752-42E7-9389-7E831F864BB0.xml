@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="6F83697E-4752-42E7-9389-7E831F864BB0" containerWithKeyObject="C3B43F6D-918F-9B7B-3922-ACFBB1A09957" localFKIndex="A4B6C377-1713-79E6-2E8F-9019621B3900" name="ESTADO_CODIGOPOSTAL_FK">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-14 19:30:12 UTC</createdTime>
+<generatorID>9D88E72F-9202-9348-65D9-35947DF658C2</generatorID>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<referredTableLongName>CODIGOPOSTAL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EAB8F38B-2290-C08E-A80B-6A6EE4F8C5CF</referredTableID>
+<keyObject>92BD9B4F-03AA-7807-43D4-277BAB52D14A</keyObject>
+<referredKeyID>92BD9B4F-03AA-7807-43D4-277BAB52D14A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CP</refColNames>
+<transferable>false</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

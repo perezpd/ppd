@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EAB8F38B-2290-C08E-A80B-6A6EE4F8C5CF" name="CODIGOPOSTAL">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-14 19:30:12 UTC</createdTime>
+<generatorID>4AE48E3D-9C52-D7F1-CC8E-14EAEAFF7198</generatorID>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CP" id="0E54C2F5-367C-EB99-58ED-E61EBB422F0F">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-14 19:30:12 UTC</createdTime>
+<generatorID>3B3B046C-1D89-3D97-3B7F-668994A5E03E</generatorID>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>5</dataTypeSize>
+<domain>55641768-4DBA-3666-057B-F6F1720A5EAB</domain>
+<ownDataTypeParameters>5,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POBLACION" id="89AFE9AF-7287-EEA0-3693-E9AFF40F5091">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-14 19:30:12 UTC</createdTime>
+<generatorID>CD67EB04-DAD0-DC0C-A0CE-9284CE64EA21</generatorID>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>50</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>50</dataTypeSize>
+<domain>9F260685-7241-99A0-AB17-0D09CB1A4266</domain>
+<ownDataTypeParameters>50,50,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROVINCIA_COD_PROVINCIA" id="E6C8E276-7809-6425-85DD-1A3B62B79696">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-14 19:30:12 UTC</createdTime>
+<generatorID>A5486462-CAC2-ED23-3401-C42A2850E08D</generatorID>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E4B90F9B-BD55-0453-A6E0-37E3E3535A75" referredColumn="8565D6A8-BA11-187A-F767-A5DB4DED6F84"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="92BD9B4F-03AA-7807-43D4-277BAB52D14A" name="CODIGOPOSTAL_PK">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-14 19:30:12 UTC</createdTime>
+<generatorID>F0BE90C3-A42B-8C7F-62F7-5A2ECF08EAD3</generatorID>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E54C2F5-367C-EB99-58ED-E61EBB422F0F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AB783256-F282-C572-CA20-0AE511D0264E" name="CODIGOPOSTAL_PROVINCIA_FK">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-14 19:30:12 UTC</createdTime>
+<generatorID>EB988261-D379-1576-05DD-10604D560FAB</generatorID>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E6C8E276-7809-6425-85DD-1A3B62B79696"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1C545CBC-5C29-5870-F7B7-CC6D9E84AD9B" name="ESTADO">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-13 10:41:13 UTC</createdTime>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<engineerTo>
+<item key="7C5A1E17-1050-2E0A-C3BA-E0074A408666" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="COD RESTRICCION" id="C68C5F7B-39FD-96BD-E555-B727BD7F6D98">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-13 10:50:58 UTC</createdTime>
+<generatorID>E6398A3B-D830-1F08-DE91-70CC3D954335</generatorID>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<engineerTo>
+<item key="7C5A1E17-1050-2E0A-C3BA-E0074A408666" value="true"/>
+</engineerTo>
+<referedAttribute>C5DA50CB-1BC9-55E9-2E4A-6212F846C336</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COD_OBSERVACION" id="A292F84D-3535-185D-4F09-C8829E505CB8">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-14 13:32:01 UTC</createdTime>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<engineerTo>
+<item key="7C5A1E17-1050-2E0A-C3BA-E0074A408666" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CP" id="0FAB4962-2C38-1741-AA9D-B0679A7621B4">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-14 19:27:56 UTC</createdTime>
+<generatorID>9D88E72F-9202-9348-65D9-35947DF658C2</generatorID>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<engineerTo>
+<item key="7C5A1E17-1050-2E0A-C3BA-E0074A408666" value="true"/>
+</engineerTo>
+<referedAttribute>3B3B046C-1D89-3D97-3B7F-668994A5E03E</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>5</dataTypeSize>
+<domain>55641768-4DBA-3666-057B-F6F1720A5EAB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B490E096-3BEA-6A3C-9B50-5B278F77A9B6" name="ESTADO PK">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-14 16:17:13 UTC</createdTime>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<engineerTo>
+<item key="7C5A1E17-1050-2E0A-C3BA-E0074A408666" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>C68C5F7B-39FD-96BD-E555-B727BD7F6D98,A292F84D-3535-185D-4F09-C8829E505CB8,9D88E72F-9202-9348-65D9-35947DF658C2</newElementsIDs>
+<usedAttributes>
+<attributeRef>C68C5F7B-39FD-96BD-E555-B727BD7F6D98</attributeRef>
+<attributeRef>A292F84D-3535-185D-4F09-C8829E505CB8</attributeRef>
+<attributeRef>0FAB4962-2C38-1741-AA9D-B0679A7621B4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

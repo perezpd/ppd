@@ -1,0 +1,7 @@
+COD_OBSERVACION,RESTRICCION_COD_RESTRICCION,OBSERVACION
+1,1,Prohibida la entrada y salida de personas del ámbito territorial delimitado conjuntamente por los municipios de A Coruña, Culleredo, Arteixo, Oleiros y Cambre, salvo causa debidamente justificada.
+1,2,Prohibidas las agrupaciones de personas al desarrollo de cualquier actividad o evento de carácter familiar o social en la vía pública, espacios de uso público o espacios privados. Se excluye a los constituidos exclusivamente por personas que conviven.
+2,1,Restricción de entradas y salidas de la comunidad autónoma, salvo desplazamientos por motivos laborales, de estudios, cuidado de familiares, retorno al lugar de residencia y otras razones de fuerza mayor.
+2,2,Máximo agrupaciones de 2 personas al desarrollo de cualquier actividad o evento de carácter familiar o social en la vía pública, espacios de uso público o espacios privados.
+
+

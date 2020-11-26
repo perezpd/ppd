@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CODIGOPOSTAL_ESTADO" directorySegmentName="seg_0" id="9D88E72F-9202-9348-65D9-35947DF658C2">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-14 19:27:56 UTC</createdTime>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<engineerTo>
+<item key="7C5A1E17-1050-2E0A-C3BA-E0074A408666" value="true"/>
+</engineerTo>
+<sourceTransferable>false</sourceTransferable>
+<targetTransferable>false</targetTransferable>
+<sourcePk>F0BE90C3-A42B-8C7F-62F7-5A2ECF08EAD3</sourcePk>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4AE48E3D-9C52-D7F1-CC8E-14EAEAFF7198</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1C545CBC-5C29-5870-F7B7-CC6D9E84AD9B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

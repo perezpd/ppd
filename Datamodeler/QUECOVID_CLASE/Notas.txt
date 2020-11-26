@@ -1,0 +1,1 @@
+BD final correcta es QUECOVID2, pero esta vacia hay que cargarla con csv, QUECOVID1 esta cargada. En la Tabla ESTADO cambie el nombre de las columnas para que apareciera primero RESTRICCION y luego OBSERVACION esto puede provocar confusión al cargar los datos.

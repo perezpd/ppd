@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C3B43F6D-918F-9B7B-3922-ACFBB1A09957" name="ESTADO">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-14 19:30:12 UTC</createdTime>
+<generatorID>1C545CBC-5C29-5870-F7B7-CC6D9E84AD9B</generatorID>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RESTRICCION_COD_RESTRICCION" id="7755134F-7D9C-75DF-158A-A58038864395">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-14 19:30:12 UTC</createdTime>
+<generatorID>C68C5F7B-39FD-96BD-E555-B727BD7F6D98</generatorID>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6383B7FD-E8BA-794D-7FC5-85290146D07C" referredColumn="7671F8C7-C46A-58C7-D144-EF2162C41076"/>
+</associations>
+</Column>
+<Column name="COD_OBSERVACION" id="6499DF5E-602C-B223-D6B6-16387BE1C585">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-14 19:30:12 UTC</createdTime>
+<generatorID>A292F84D-3535-185D-4F09-C8829E505CB8</generatorID>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGOPOSTAL_CP" id="1C0C7EE2-1EFF-63C0-EE65-FD62FA85D101">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-14 19:30:12 UTC</createdTime>
+<generatorID>0FAB4962-2C38-1741-AA9D-B0679A7621B4</generatorID>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>5</dataTypeSize>
+<domain>55641768-4DBA-3666-057B-F6F1720A5EAB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6F83697E-4752-42E7-9389-7E831F864BB0" referredColumn="0E54C2F5-367C-EB99-58ED-E61EBB422F0F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D5BD7835-8FA0-A4AF-0EEB-0D2BB1AE7D5B" name="ESTADO_PK">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-14 19:30:12 UTC</createdTime>
+<generatorID>B490E096-3BEA-6A3C-9B50-5B278F77A9B6</generatorID>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7755134F-7D9C-75DF-158A-A58038864395"/>
+<colUsage columnID="6499DF5E-602C-B223-D6B6-16387BE1C585"/>
+<colUsage columnID="1C0C7EE2-1EFF-63C0-EE65-FD62FA85D101"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A4B6C377-1713-79E6-2E8F-9019621B3900" name="ESTADO_CODIGOPOSTAL_FK">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-14 19:30:12 UTC</createdTime>
+<generatorID>9D88E72F-9202-9348-65D9-35947DF658C2</generatorID>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C0C7EE2-1EFF-63C0-EE65-FD62FA85D101"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B269E63F-3F70-3B2A-24CE-944D17FAB6AF" name="ESTADO_RESTRICCION_FK">
+<createdBy>manuel</createdBy>
+<createdTime>2020-11-14 19:30:12 UTC</createdTime>
+<generatorID>E6398A3B-D830-1F08-DE91-70CC3D954335</generatorID>
+<ownerDesignName>QUECOVID2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7755134F-7D9C-75DF-158A-A58038864395"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

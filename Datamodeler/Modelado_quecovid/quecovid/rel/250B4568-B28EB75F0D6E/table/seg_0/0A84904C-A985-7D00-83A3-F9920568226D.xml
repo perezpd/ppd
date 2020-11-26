@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0A84904C-A985-7D00-83A3-F9920568226D" name="Localidad_cp">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-24 20:05:50 UTC</createdTime>
+<generatorID>96405526-7C98-4587-8B26-491A8239316D</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PK_localidad" id="7EBDBAB0-9B72-A34F-01E6-E2B4EC9253F1">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-24 20:05:50 UTC</createdTime>
+<generatorID>638D686C-4740-AB60-AD54-81B1797DDF76</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Municipio_PK_municipio" id="4828AC3E-0592-0DF9-F4A5-39375BD61301">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-24 20:05:50 UTC</createdTime>
+<generatorID>A61D542B-4112-4EC4-826D-09369F6E1A4D</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A34A70EC-0770-78A1-D4CA-67A552A73724" referredColumn="8C662285-4ACB-1151-768D-23302CF017D2"/>
+</associations>
+</Column>
+<Column name="Codigo_postal" id="4EA2174E-C81C-AC12-584C-D2C2E5CEA663">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-24 20:05:50 UTC</createdTime>
+<generatorID>02F11521-EE35-8564-1D2B-A17D9927DECD</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Poblacion" id="35188C5A-450F-363A-3264-2CF41E3BEC29">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-24 20:05:50 UTC</createdTime>
+<generatorID>782812C0-C5DA-2144-2E14-F4134C927987</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Municipio_Provincia_PK_provincia" id="8887C937-BFDC-8A18-2BF8-141B5F17C5E0">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-24 20:05:50 UTC</createdTime>
+<generatorID>EE64E002-2CB7-7960-7802-94D63D5E342C</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A34A70EC-0770-78A1-D4CA-67A552A73724" referredColumn="CD2BACA3-6056-FE6E-6D26-701B659B7B5C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9CD2725F-8F8A-AE5A-C1F5-C3A205F18D4E" name="Localidad_cp_PK">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-24 20:05:50 UTC</createdTime>
+<generatorID>BA545B18-C98F-A84E-0F81-D6273F76B529</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7EBDBAB0-9B72-A34F-01E6-E2B4EC9253F1"/>
+<colUsage columnID="8887C937-BFDC-8A18-2BF8-141B5F17C5E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DD8C6DE6-B7A8-1A39-ECE9-0953C04C2630" name="Localidad_cp_Municipio_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-24 20:05:50 UTC</createdTime>
+<generatorID>362AFA23-2C00-BA5D-7095-3B4551FE14A0</generatorID>
+<ownerDesignName>quecovid</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4828AC3E-0592-0DF9-F4A5-39375BD61301"/>
+<colUsage columnID="8887C937-BFDC-8A18-2BF8-141B5F17C5E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

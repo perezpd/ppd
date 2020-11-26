@@ -4,7 +4,7 @@
 <createdTime>2020-11-17 20:53:46 UTC</createdTime>
 <ownerDesignName>quecovid</ownerDesignName>
 <engineerTo>
-<item key="CDB13852-16A5-9DC6-A668-D9F897DCFCF1" value="true"/>
+<item key="250B4568-34DB-9E67-1D31-B28EB75F0D6E" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,12 +20,26 @@
 <createdTime>2020-11-17 21:02:44 UTC</createdTime>
 <ownerDesignName>quecovid</ownerDesignName>
 <engineerTo>
-<item key="CDB13852-16A5-9DC6-A668-D9F897DCFCF1" value="true"/>
+<item key="250B4568-34DB-9E67-1D31-B28EB75F0D6E" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_comunidad" id="0BA4B064-07CA-38EE-8D15-7B640403728B">
+<createdBy>ppd</createdBy>
+<createdTime>2020-11-24 20:06:00 UTC</createdTime>
+<ownerDesignName>quecovid</ownerDesignName>
+<engineerTo>
+<item key="250B4568-34DB-9E67-1D31-B28EB75F0D6E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -34,7 +48,7 @@
 <createdTime>2020-11-17 21:10:36 UTC</createdTime>
 <ownerDesignName>quecovid</ownerDesignName>
 <engineerTo>
-<item key="CDB13852-16A5-9DC6-A668-D9F897DCFCF1" value="true"/>
+<item key="250B4568-34DB-9E67-1D31-B28EB75F0D6E" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
