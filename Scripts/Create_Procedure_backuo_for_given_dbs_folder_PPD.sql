@@ -1,9 +1,10 @@
 USE MASTER;
 GO
 
-CREATE OR ALTER PROC BACKUP_DB_CUSTOM
+CREATE OR ALTER PROC BACKUP_DB_GIVEN
 -- INPUT PARAMETERS
-  @path VARCHAR(256)
+  @path VARCHAR(256),
+  @database VARCHAR(256)
 AS
 DECLARE
   @name VARCHAR(50), --database name
@@ -31,7 +32,7 @@ BEGIN -- start of the code inside the procedure
 	SELECT name
 	FROM master.dbo.sysdatabases
 	-- case insensitive names for the DB names
-	WHERE name IN ('Northwind','Pubs','AdventureWorks2017')
+	WHERE name = @database
 	-- WHERE name NOT IN ('master','model','msdb','tempdb') -- we could use the negative to avoid system databases
 -- I select the bd and take the last identifier that would be the highest starting with 1
 -- and its equal to the count of DATABASES
