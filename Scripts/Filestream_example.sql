@@ -46,7 +46,8 @@
 --1 = Habilitado solo para acceso T-SQL.
 --2 = Habilitado solo para T-SQL y acceso local al sistema de ficheros.
 --3 = Habilitado para T-SQL, acceso local y remoto al sistema de ficheros.
-
+USE master;
+GO
 
 EXEC sp_configure filestream_access_level, 2
 RECONFIGURE
@@ -70,36 +71,36 @@ GO
 ALTER DATABASE PruebaFilestream
        ADD FILE (
              NAME = 'MyDB_filestream',
-             FILENAME = 'C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\DATA\filestream'
+             FILENAME = 'C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\DATA\containerfilestream'
        )
        TO FILEGROUP [PRIMARY_FILESTREAM]
 GO
 USE PruebaFilestream
 GO
-DROP TABLE IF EXISTS IMAGES
+DROP TABLE IF EXISTS Container_img_ppd
 GO
-CREATE TABLE images(
-       id UNIQUEIDENTIFIER ROWGUIDCOL NOT NULL UNIQUE,
+CREATE TABLE Container_img_ppd(
+       id_img UNIQUEIDENTIFIER ROWGUIDCOL NOT NULL UNIQUE,
        imageFile VARBINARY(MAX) FILESTREAM
 );
 GO
--- FOLDER C:\Fotos_Actores\
+-- FOLDER C:\Containers_img\
 
-INSERT INTO images(id, imageFile)
+INSERT INTO container_img_ppd(id_img, imageFile)
 		SELECT NEWID(), BulkColumn
-		FROM OPENROWSET(BULK 'C:\Fotos_Actores\brad.jfif', SINGLE_BLOB) as f;
+		FROM OPENROWSET(BULK 'C:\Containers_img\20-dry-van.jpg', SINGLE_BLOB) as f;
 GO
-INSERT INTO images(id, imageFile)
+INSERT INTO container_img_ppd(id_img, imageFile)
 	SELECT NEWID(), BulkColumn
-	FROM OPENROWSET(BULK 'C:\Fotos_Actores\tom.jfif', SINGLE_BLOB) as f;
+	FROM OPENROWSET(BULK 'C:\Containers_img\20-flat-rack-hc.jpg', SINGLE_BLOB) as f;
 GO
-INSERT INTO images(id, imageFile)
+INSERT INTO container_img_ppd(id_img, imageFile)
 	SELECT NEWID(), BulkColumn
-	FROM OPENROWSET(BULK 'C:\Fotos_Actores\will.jfif', SINGLE_BLOB) as f;
+	FROM OPENROWSET(BULK 'C:\Containers_img\20-flat-rack.jpg', SINGLE_BLOB) as f;
 GO
 
 SELECT *
-FROM images;
+FROM container_img_ppd;
 GO
 
 -- C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\DATA\filestream
