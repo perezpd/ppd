@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Rel_containers_ppd" id="D53440DD-DC98-BAAE-A998-D01C1BB82046" mainViewID="7D3CC6B5-876C-8C9B-DFEC-A1BB6A04BD74">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 19:32:33 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>980FCE9E-D688-BDF0-C89A-C9FB2DCAED45</selectedRDBMSSite>
+</relationalModel>
