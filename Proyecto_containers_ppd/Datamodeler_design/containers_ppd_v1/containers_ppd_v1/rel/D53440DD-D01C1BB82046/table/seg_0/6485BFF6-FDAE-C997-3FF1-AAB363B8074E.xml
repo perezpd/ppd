@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6485BFF6-FDAE-C997-3FF1-AAB363B8074E" schemaObject="5253E89A-7290-1C94-1AE2-9F5952E1629A" name="contenedor_ppd">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:14:59 UTC</createdTime>
+<generatorID>7C307777-3749-9044-C821-40853202A797</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_contenedor" id="604EAB35-D544-11ED-1FB1-D9E86AEFA879">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:14:59 UTC</createdTime>
+<generatorID>B8C15895-1B8A-82B5-113F-0DC7F53F3A28</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nserie" id="DBC84538-51F1-83B8-0959-7F79F5265FFD">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:14:59 UTC</createdTime>
+<generatorID>C409C336-21F7-86BD-3ADC-71B60406846F</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="digitoctrl" id="6A4C3C09-73C9-6223-DBA9-D579F5529515">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:14:59 UTC</createdTime>
+<generatorID>201A32E3-EE5B-9B07-F99D-8DFAC3501D47</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FED4FF10-1C57-60E8-2308-D0D2F836A64D" name="contenedor_ppd_PK">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:14:59 UTC</createdTime>
+<generatorID>6A8C3AF4-97E9-C47F-2B29-3856145CEF48</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="604EAB35-D544-11ED-1FB1-D9E86AEFA879"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

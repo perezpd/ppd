@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="18072524-3D72-1CFA-3222-3C1513D984E5" schemaObject="5253E89A-7290-1C94-1AE2-9F5952E1629A" name="presupuesto_ppd">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:14:59 UTC</createdTime>
+<generatorID>D2A2E612-E094-5F6B-ECC1-82AD1FCCF02C</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_presupuesto" id="C8CB4021-E146-7DE8-A768-2D90C67C5910">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:14:59 UTC</createdTime>
+<generatorID>0D579BB1-EF2A-9526-709A-081F4E43017A</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha" id="20D5E355-59FB-3736-8DC6-504EEE33A6C0">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:14:59 UTC</createdTime>
+<generatorID>182BE938-69AB-6C29-08DA-04FA1E32CED0</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="notas" id="34BBD962-BB30-6DDA-8D9F-D75BEBF05264">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:14:59 UTC</createdTime>
+<generatorID>D21F4DAE-6D43-C250-0156-0D52813CF067</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="98CD6940-37F1-07CF-3A2E-D11F5F1D725A" name="presupuesto_ppd_PK">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:14:59 UTC</createdTime>
+<generatorID>B9F3357B-7489-4CA0-0503-D86E1EC1F866</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8CB4021-E146-7DE8-A768-2D90C67C5910"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FBC3D268-0ED4-0DE4-D2EF-3377FA5BD89F" schemaObject="B4ADF3F7-C8EC-84FB-A666-58803B742D42" name="puerto_ppd">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:14:59 UTC</createdTime>
+<generatorID>8FEA54FE-A451-00B2-FC3D-4818CD4B3E00</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_puerto" id="48717702-53AA-F27D-F1ED-723C0975C4E5">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:14:59 UTC</createdTime>
+<generatorID>59DF52AC-FCB3-8972-6D7A-10A96DB8A395</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="codigo" id="4F575ED8-5195-E0B6-5BFB-0D8D11860E73">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:14:59 UTC</createdTime>
+<generatorID>8A5FA07D-7A49-0C98-8AEF-106D96DB1241</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="latitud" id="9A0D92CE-B7D7-D091-21F8-00C954659BF3">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:14:59 UTC</createdTime>
+<generatorID>9F979401-6BBA-13CA-FC99-A40B39A818FD</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="longitud" id="0983F4D9-CCF4-5C36-B0CD-32DD3405352C">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:14:59 UTC</createdTime>
+<generatorID>3466DFD0-9132-F7F8-6E35-B82DE85C2ABB</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hora_utc" id="771A9177-EBA5-A456-11CD-930FE0B915D8">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:14:59 UTC</createdTime>
+<generatorID>33B44639-BF31-BFD8-487D-EA05DEDC102D</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2BE9DC30-DE04-6586-C0BF-37784FDCD25F" name="puerto_ppd_PK">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:14:59 UTC</createdTime>
+<generatorID>49A1C640-3324-4F9E-C5D7-9D59CCA2604D</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="48717702-53AA-F27D-F1ED-723C0975C4E5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

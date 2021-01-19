@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C716A12C-AA8A-E603-2A09-9AA79A513856" name="transportista_ppd">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 19:55:17 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_trans" id="06927845-31CD-6C05-5D26-BE095C0FB326">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 19:55:24 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="C74EB69A-7E7D-E568-F313-E96AC3405550">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 19:56:04 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 CHAR</dataTypeSize>
+<ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CIF" id="897AF424-F94A-312D-8178-C8E98F87FADE">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 19:56:14 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="modelo" id="DFBC4822-A228-13DB-C9AA-FBAC3415DF8C">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 19:56:26 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 CHAR</dataTypeSize>
+<ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4B907576-D19C-B1B2-FC57-293FFEE0B7B6" name="transportista_ppd PK">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 19:55:30 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>06927845-31CD-6C05-5D26-BE095C0FB326</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

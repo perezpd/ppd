@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7334ADAA-232B-8BF7-924E-607176D2CAE2" name="modelo_cont_ppd">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 19:39:42 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_modelo" id="06E7FC2B-C10E-3A12-3976-CDAE49266F47">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 19:39:47 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="modelo" id="C309CA93-2CB5-E1A5-1429-9862FCDC2CF4">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 19:40:28 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 CHAR</dataTypeSize>
+<ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="carga_max" id="B321EA7F-70BB-64D7-CCD3-70ADE2071C12">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 19:41:03 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mgw" id="C245713F-0FCD-5515-4DB2-82E31C028715">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 19:41:39 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tara" id="AA94EED1-FBB8-FC02-5216-DAF03E877FE1">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 19:41:49 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="imagen" id="EA89EA2F-EC71-AEC2-570C-2DBC7C960C43">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 19:41:59 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT041</logicalDatatype>
+<dataTypeSize>MAX</dataTypeSize>
+<ownDataTypeParameters>MAX,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="70F18175-BA3A-65D8-C9A9-90AF6D0F4E58" name="modelo_cont_ppd PK">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 19:40:02 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>06E7FC2B-C10E-3A12-3976-CDAE49266F47</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

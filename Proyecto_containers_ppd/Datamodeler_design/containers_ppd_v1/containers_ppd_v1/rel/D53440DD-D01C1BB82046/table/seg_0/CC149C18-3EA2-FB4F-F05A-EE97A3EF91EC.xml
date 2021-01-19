@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CC149C18-3EA2-FB4F-F05A-EE97A3EF91EC" schemaObject="B4ADF3F7-C8EC-84FB-A666-58803B742D42" name="naviera_ppd">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:14:59 UTC</createdTime>
+<generatorID>3A4638E3-4D9E-BE2B-BE41-152A38AC31A2</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_naviera" id="7914C200-949C-A140-F037-5324D5152A69">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:14:59 UTC</createdTime>
+<generatorID>383DD1F6-670D-4213-4BE8-DDF9D0FD7BFD</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_naviera" id="F32060DD-DDE9-6A1D-CB34-29FE876D8B6F">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:14:59 UTC</createdTime>
+<generatorID>44DDE426-A739-B4FF-079A-1CAE93C99ACD</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 CHAR</dataTypeSize>
+<ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B141B157-0693-7EDB-0EDB-FFB79D3AE93F" name="naviera_ppd_PK">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:14:59 UTC</createdTime>
+<generatorID>82F9C655-023B-5840-5D09-DEE933E4934D</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7914C200-949C-A140-F037-5324D5152A69"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

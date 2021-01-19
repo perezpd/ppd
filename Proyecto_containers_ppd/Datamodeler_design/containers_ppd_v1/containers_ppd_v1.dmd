@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="containers_ppd_v1" id="8B44107D-E727-2A72-DBCE-2D410E9A9224" version="3.5">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 19:32:33 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>8B44107D-E727-2A72-DBCE-2D410E9A9224</designId>
+</OSDM_Design>

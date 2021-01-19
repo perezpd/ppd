@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DB9F1C80-FCA3-14C2-5B91-4A53CE93B310" name="contacto_ppd">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 19:54:25 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_contacto" id="A31AF281-B22A-3AB2-EBBB-3FAEFD54FF0C">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 19:54:29 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo" id="3D3B081B-E46F-C134-CAB6-3B1ADA63D364">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 19:54:39 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dato" id="594DDF55-F830-A37A-81B3-E73DE22122E9">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 19:55:01 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6AC3940F-4A6B-2736-0D75-08249AF2FB0E" name="contacto_ppd PK">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 19:54:36 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A31AF281-B22A-3AB2-EBBB-3FAEFD54FF0C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

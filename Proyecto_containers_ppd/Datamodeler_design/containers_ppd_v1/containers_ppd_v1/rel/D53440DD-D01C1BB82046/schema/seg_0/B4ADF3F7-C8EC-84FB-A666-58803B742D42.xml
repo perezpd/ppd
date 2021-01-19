@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaObject class="oracle.dbtools.crest.model.design.relational.SchemaObject" name="Import" directorySegmentName="seg_0" id="B4ADF3F7-C8EC-84FB-A666-58803B742D42">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 19:37:12 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<ordsAlias>schema_2</ordsAlias>
+</SchemaObject>

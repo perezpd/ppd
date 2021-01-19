@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="89BDFF3D-2F46-5EA5-190D-4945C3678FE3" name="medio_transporte_ppd">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 19:56:45 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_mediot" id="DCCBB22D-1AB7-D0F0-57FE-A443A81E845B">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 19:56:49 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="matricula" id="AF8D43BF-D1F3-50DE-DEC6-60D5F1865864">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 19:57:24 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 CHAR</dataTypeSize>
+<ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo" id="210D7B04-5358-7822-45D1-094B967D0B3E">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 19:57:29 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 CHAR</dataTypeSize>
+<ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CAB70CAE-5E90-8250-E177-FD1555C883DC" name="medio_transporte_ppd PK">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 19:56:59 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DCCBB22D-1AB7-D0F0-57FE-A443A81E845B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

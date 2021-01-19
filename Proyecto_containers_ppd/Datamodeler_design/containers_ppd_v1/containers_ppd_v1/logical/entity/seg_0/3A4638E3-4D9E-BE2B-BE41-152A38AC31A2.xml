@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3A4638E3-4D9E-BE2B-BE41-152A38AC31A2" name="naviera_ppd">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 19:47:19 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_naviera" id="383DD1F6-670D-4213-4BE8-DDF9D0FD7BFD">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 19:47:25 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_naviera" id="44DDE426-A739-B4FF-079A-1CAE93C99ACD">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 19:58:35 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 CHAR</dataTypeSize>
+<ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="82F9C655-023B-5840-5D09-DEE933E4934D" name="naviera_ppd PK">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 19:47:37 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>383DD1F6-670D-4213-4BE8-DDF9D0FD7BFD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
