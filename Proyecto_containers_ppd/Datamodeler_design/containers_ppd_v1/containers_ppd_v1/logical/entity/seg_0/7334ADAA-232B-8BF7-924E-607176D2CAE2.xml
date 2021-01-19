@@ -96,14 +96,61 @@
 <dataTypeSize>MAX</dataTypeSize>
 <ownDataTypeParameters>MAX,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="dimension_interna" id="F45E3517-18C8-9E7D-5B14-FC78AE8F905B">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:36:10 UTC</createdTime>
+<comment><![CDATA[interna]]></comment>
+<generatorID>C400D5C7-33CF-2EA9-E9AD-DD317FBEF235</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<referedAttribute>3670926E-7019-EF4E-ECE1-BAE8B2FDBBBD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dimension_externa" id="A6A6B0C0-A21C-CEEC-F308-72DBE904428F">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:37:42 UTC</createdTime>
+<comment><![CDATA[externa]]></comment>
+<generatorID>A742C545-1F8C-D165-9904-DF5FF6AFCFAE</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<referedAttribute>3670926E-7019-EF4E-ECE1-BAE8B2FDBBBD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dimension_puertas" id="A27653B3-6349-81DD-D05F-ED3FFFBD732B">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:38:43 UTC</createdTime>
+<comment><![CDATA[puertas
+]]></comment>
+<generatorID>5A51123B-C264-84A3-9C20-A611062F94A3</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<referedAttribute>3670926E-7019-EF4E-ECE1-BAE8B2FDBBBD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="70F18175-BA3A-65D8-C9A9-90AF6D0F4E58" name="modelo_cont_ppd PK">
 <createdBy>ppd</createdBy>
 <createdTime>2021-01-19 19:40:02 UTC</createdTime>
 <ownerDesignName>containers_ppd_v1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

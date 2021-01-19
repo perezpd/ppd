@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="stock_de_modelo" directorySegmentName="seg_0" id="5A9176DB-A47C-D231-C460-AEAF53AF3AD4">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 21:10:15 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<sourcePk>70F18175-BA3A-65D8-C9A9-90AF6D0F4E58</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7334ADAA-232B-8BF7-924E-607176D2CAE2</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>089EB1E8-6D89-768A-8E7B-FADBBB8CEAFA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

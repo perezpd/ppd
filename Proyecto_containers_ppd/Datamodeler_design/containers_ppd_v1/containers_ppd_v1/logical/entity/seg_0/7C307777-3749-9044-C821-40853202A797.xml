@@ -53,14 +53,43 @@
 <dataTypeSize>20 CHAR</dataTypeSize>
 <ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_modelo" id="790F736F-BAA7-901A-483A-936B215EC5A8">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:28:00 UTC</createdTime>
+<generatorID>157E1F28-197E-F2FB-F40D-787909BD089E</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<referedAttribute>06E7FC2B-C10E-3A12-3976-CDAE49266F47</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_estado" id="BE7520D5-940C-D61A-7B5C-7E4AA43E4BF0">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:28:46 UTC</createdTime>
+<generatorID>341A23DB-9D5A-4CFA-B5EF-5A87245E26EF</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<referedAttribute>97BAB46E-97C6-8EA2-55D9-502EE7A9E3BE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="6A8C3AF4-97E9-C47F-2B29-3856145CEF48" name="contenedor_ppd PK">
 <createdBy>ppd</createdBy>
 <createdTime>2021-01-19 19:38:26 UTC</createdTime>
 <ownerDesignName>containers_ppd_v1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

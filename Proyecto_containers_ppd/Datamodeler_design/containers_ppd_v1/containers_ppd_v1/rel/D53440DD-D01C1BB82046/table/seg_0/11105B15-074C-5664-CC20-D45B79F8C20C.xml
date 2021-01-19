@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="11105B15-074C-5664-CC20-D45B79F8C20C" name="contactos_navieras">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 21:08:53 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_contacto" id="BF837B6A-EDDA-B3A5-336E-64374BFAD7D5">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 21:08:53 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DBB5C7DB-9F8E-EB33-7433-7C3C6AB4D40A" referredColumn="6DBCE5E5-4FC0-3F86-6E63-BC3EB9581E15"/>
+</associations>
+</Column>
+<Column name="id_naviera" id="F8CA167B-A53D-8DD4-31D5-C5A03112CDD9">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 21:08:53 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F23213A7-C237-19CF-5526-0F7AF86B1AA9" referredColumn="7914C200-949C-A140-F037-5324D5152A69"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DED970F0-4BA4-B9A5-8B28-48EADDB7EFBB" name="contactos_navieras_PK">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 21:08:53 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF837B6A-EDDA-B3A5-336E-64374BFAD7D5"/>
+<colUsage columnID="F8CA167B-A53D-8DD4-31D5-C5A03112CDD9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="41C78AB4-FCBB-432D-120F-0908AF2A337B" name="contactos_navieras_contacto_ppd_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 21:08:53 UTC</createdTime>
+<generatorID>18EC7AF1-B09E-9BBE-C720-9621D25B0B63</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF837B6A-EDDA-B3A5-336E-64374BFAD7D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6C3509FB-C3A4-CF28-C643-89CE1CE37086" name="contactos_navieras_naviera_ppd_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 21:08:53 UTC</createdTime>
+<generatorID>18EC7AF1-B09E-9BBE-C720-9621D25B0B63</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F8CA167B-A53D-8DD4-31D5-C5A03112CDD9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

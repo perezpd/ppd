@@ -31,6 +31,36 @@
 <ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="direccion_ppd_id_direccion" id="ACD535FA-3953-C60A-B944-890016689BC1">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:43:47 UTC</createdTime>
+<generatorID>15EB7BF2-261A-9D27-8131-7B4D4F6699F5</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F88FFEBE-1CB4-76FE-FFBE-1A38AB5AF261" referredColumn="34E4977E-FB89-4985-FEBF-BC9D4555EFDE"/>
+</associations>
+</Column>
+<Column name="puerto_ppd_id_puerto" id="FAF0EE1B-0599-2B85-F0C3-12F7D77301AD">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:43:47 UTC</createdTime>
+<generatorID>9BF3970C-E80D-EB77-646E-DBE5ABED80B6</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2090796B-5B40-ED3A-05F6-33CE622A209A" referredColumn="48717702-53AA-F27D-F1ED-723C0975C4E5"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="B141B157-0693-7EDB-0EDB-FFB79D3AE93F" name="naviera_ppd_PK">
@@ -43,6 +73,50 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="7914C200-949C-A140-F037-5324D5152A69"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7C7D6442-A60C-C3AD-35BA-66EC3FD1996F" name="naviera_ppd__IDX">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:43:47 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>EDFB1736-C621-D340-9254-B48DE2A815A1</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="FAF0EE1B-0599-2B85-F0C3-12F7D77301AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ACAA3C88-3F9B-43E5-DDE3-8403F289880E" name="naviera_ppd__IDXv1">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:43:47 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>77A2BF1B-141C-AB35-E6A9-151DF40447FA</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="ACD535FA-3953-C60A-B944-890016689BC1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7473DC14-2EEF-0450-D122-6F04CDE00DE3" name="naviera_ppd_puerto_ppd_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:43:47 UTC</createdTime>
+<generatorID>EDFB1736-C621-D340-9254-B48DE2A815A1</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FAF0EE1B-0599-2B85-F0C3-12F7D77301AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="42168FD5-CC89-0CE9-1271-58AF7A48AA81" name="naviera_ppd_direccion_ppd_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:43:47 UTC</createdTime>
+<generatorID>77A2BF1B-141C-AB35-E6A9-151DF40447FA</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ACD535FA-3953-C60A-B944-890016689BC1"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

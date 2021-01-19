@@ -30,6 +30,21 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="modelo_contenedor" id="615A6B0F-3D06-B2E9-F1EE-FE5ED0D3C634">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 21:10:46 UTC</createdTime>
+<generatorID>3B02C72C-FC07-9EAB-99A7-64DCAD4C738A</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="04AC8D80-17B7-3E6A-7D57-A4125A845A37" referredColumn="B1EF77A2-4762-726B-40CD-50493BDB2FA3"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="06A08223-9B97-82EE-E54D-164E21328640" name="stock_ppd_PK">
@@ -42,6 +57,28 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="CB40BE02-D019-7B0B-6ED9-0742AD4A5C25"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="073F7E02-80C0-FD52-DB20-879B1FE1EF21" name="stock_ppd__IDX">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 21:10:46 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>5A9176DB-A47C-D231-C460-AEAF53AF3AD4</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="615A6B0F-3D06-B2E9-F1EE-FE5ED0D3C634"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="44C0735F-419B-5730-F147-78C6D48BA8D5" name="stock_ppd_modelo_cont_ppd_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 21:10:46 UTC</createdTime>
+<generatorID>5A9176DB-A47C-D231-C460-AEAF53AF3AD4</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="615A6B0F-3D06-B2E9-F1EE-FE5ED0D3C634"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

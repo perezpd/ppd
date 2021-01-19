@@ -43,6 +43,47 @@
 <ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="modelo_cont_ppd_id_modelo" id="2E8623B2-5AC8-E910-70D2-A9047BD47393">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:36:32 UTC</createdTime>
+<generatorID>790F736F-BAA7-901A-483A-936B215EC5A8</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2F1DBA50-5F81-5CC5-E988-7E7C5A8D8EB7" referredColumn="B1EF77A2-4762-726B-40CD-50493BDB2FA3"/>
+</associations>
+</Column>
+<Column name="estado_cont_ppd_id_estado" id="1FF9ECFC-DB43-8A41-7521-E331FC93E261">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:36:32 UTC</createdTime>
+<generatorID>BE7520D5-940C-D61A-7B5C-7E4AA43E4BF0</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4B683923-14E6-4F7A-1F19-9F53007C3EC7" referredColumn="00179BEA-2E95-6397-FD3C-6E7753BE3CBE"/>
+</associations>
+</Column>
+<Column name="modelo_cont_ppd_modelo_cont_ppd_ID" id="A0C32D00-0475-6723-62A5-FCBC2CB413A4">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:47:59 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="FED4FF10-1C57-60E8-2308-D0D2F836A64D" name="contenedor_ppd_PK">
@@ -55,6 +96,61 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="604EAB35-D544-11ED-1FB1-D9E86AEFA879"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="33B12FE7-7642-CA35-3E05-80BAD58624A4" name="contenedor_ppd__IDX">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:36:32 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>341A23DB-9D5A-4CFA-B5EF-5A87245E26EF</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="1FF9ECFC-DB43-8A41-7521-E331FC93E261"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A3B0D39B-DB5F-1FDA-A3B4-985BEA09B91C" name="contenedor_ppd__IDXv1">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:36:32 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>157E1F28-197E-F2FB-F40D-787909BD089E</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="2E8623B2-5AC8-E910-70D2-A9047BD47393"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FBF8C961-12BD-2E39-5824-5A1568E76D4E" name="contenedor_ppd__IDXv2">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:47:59 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>157E1F28-197E-F2FB-F40D-787909BD089E</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="A0C32D00-0475-6723-62A5-FCBC2CB413A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E18A45A4-B929-A027-A94E-419390794E22" name="contenedor_ppd_estado_cont_ppd_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:36:32 UTC</createdTime>
+<generatorID>341A23DB-9D5A-4CFA-B5EF-5A87245E26EF</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1FF9ECFC-DB43-8A41-7521-E331FC93E261"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6674F0BE-AC60-7692-E6E6-1F233E8E6E8E" name="contenedor_ppd_modelo_cont_ppd_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 21:01:44 UTC</createdTime>
+<generatorID>157E1F28-197E-F2FB-F40D-787909BD089E</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E8623B2-5AC8-E910-70D2-A9047BD47393"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

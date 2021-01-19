@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="contactos_navieras" directorySegmentName="seg_0" id="18EC7AF1-B09E-9BBE-C720-9621D25B0B63">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 21:05:16 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>DB9F1C80-FCA3-14C2-5B91-4A53CE93B310</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3A4638E3-4D9E-BE2B-BE41-152A38AC31A2</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

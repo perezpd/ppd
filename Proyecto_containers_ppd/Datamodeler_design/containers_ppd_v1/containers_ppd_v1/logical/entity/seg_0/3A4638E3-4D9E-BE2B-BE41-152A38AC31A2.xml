@@ -40,14 +40,43 @@
 <dataTypeSize>80 CHAR</dataTypeSize>
 <ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_direccion" id="15EB7BF2-261A-9D27-8131-7B4D4F6699F5">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:39:35 UTC</createdTime>
+<generatorID>77A2BF1B-141C-AB35-E6A9-151DF40447FA</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<referedAttribute>19302465-133B-B843-9DE1-D31044B5A53D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_puerto" id="9BF3970C-E80D-EB77-646E-DBE5ABED80B6">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-19 20:40:38 UTC</createdTime>
+<generatorID>EDFB1736-C621-D340-9254-B48DE2A815A1</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<referedAttribute>59DF52AC-FCB3-8972-6D7A-10A96DB8A395</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="82F9C655-023B-5840-5D09-DEE933E4934D" name="naviera_ppd PK">
 <createdBy>ppd</createdBy>
 <createdTime>2021-01-19 19:47:37 UTC</createdTime>
 <ownerDesignName>containers_ppd_v1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
