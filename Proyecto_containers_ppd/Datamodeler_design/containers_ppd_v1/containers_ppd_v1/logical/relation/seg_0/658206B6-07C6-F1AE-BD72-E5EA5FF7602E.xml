@@ -1,0 +1,32 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="contactos_cliente" directorySegmentName="seg_0" id="658206B6-07C6-F1AE-BD72-E5EA5FF7602E">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:14:59 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>1952D6D7-F1C0-7214-B3F8-EF6CA2A61BD8</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>DB9F1C80-FCA3-14C2-5B91-4A53CE93B310</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="id_contacto_cliente" id="8C56463E-5E11-45F9-4039-8612D99E7881">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:15:24 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

@@ -53,6 +53,48 @@
 <dataTypeSize>80 CHAR</dataTypeSize>
 <ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="modelo_contenedor" id="0C4351F9-5938-803E-93AA-F58B06FF34C1">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:19:58 UTC</createdTime>
+<generatorID>ED8748C6-81CF-5D69-7950-D2B4E7486C41</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<referedAttribute>06E7FC2B-C10E-3A12-3976-CDAE49266F47</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="propietario" id="577FFB41-230A-7EDA-64F4-7F1FD3B91B6B">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:22:53 UTC</createdTime>
+<generatorID>3D0760CB-5BB8-6AB3-D396-F5AA7313FAD4</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<referedAttribute>06927845-31CD-6C05-5D26-BE095C0FB326</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="su_tarifa" id="F9F3FCB3-FBA7-E823-235B-FB80977ED14B">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:27:06 UTC</createdTime>
+<generatorID>9616122A-C2E6-0E51-85FC-2A167EE43BE9</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<referedAttribute>A661027F-82DA-FB13-3A32-BBED608B57B5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="CAB70CAE-5E90-8250-E177-FD1555C883DC" name="medio_transporte_ppd PK">

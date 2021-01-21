@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="concepto_presupuesto" directorySegmentName="seg_0" id="40EDE167-1F0D-6EB4-58CE-6A40FA7883FE">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:17:16 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<sourcePk>B9F3357B-7489-4CA0-0503-D86E1EC1F866</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D2A2E612-E094-5F6B-ECC1-82AD1FCCF02C</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>66C9D6AF-A221-9C1E-72EC-2D505C90678F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

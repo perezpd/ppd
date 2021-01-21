@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="tarificacion" directorySegmentName="seg_0" id="9616122A-C2E6-0E51-85FC-2A167EE43BE9">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:27:06 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<sourcePk>2E64F7EC-0F70-9542-399C-001E7870AF19</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0991B89C-0149-324C-10B9-A2FA379ECC90</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>89BDFF3D-2F46-5EA5-190D-4945C3678FE3</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

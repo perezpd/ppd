@@ -79,6 +79,20 @@
 <logicalDatatype>LOGDT014</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_contenedor" id="6DBE225A-5142-7821-85BA-BA0131FE1E7A">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:29:45 UTC</createdTime>
+<generatorID>ED6395AD-53C3-0BE8-8B0A-4C076814E792</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<referedAttribute>B8C15895-1B8A-82B5-113F-0DC7F53F3A28</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="2A867359-C4F5-A6D1-D822-D1BF20699899" name="calendario_eventos_ppd PK">

@@ -55,6 +55,21 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="medio_transporte_ppd_id_mediot" id="E512C96F-B653-9046-FE0F-749205BF709A">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<generatorID>EAA43992-065A-A5A8-A367-A587E3A6F3CD</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CA476EC2-71F5-63F1-A340-5B8D9A6EBF33" referredColumn="C85BE5F1-E6C2-06F7-889D-1A285D1AC96F"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="64753C5B-091D-BF35-ABC8-C33EF31EE7E0" name="orden_trabajo_ppd_PK">
@@ -67,6 +82,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="080D8EBC-ACD2-20E1-367D-9DCEF3EE2E8D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8DD48DBE-0DB1-697C-D629-99C166AECEA4" name="orden_trabajo_ppd_medio_transporte_ppd_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<generatorID>2592206B-BDB6-830B-E3B4-292A135B799B</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E512C96F-B653-9046-FE0F-749205BF709A"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FF550E6F-E7BE-DDAB-3D13-BE19CE9B7B35" name="contactos_cliente">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cliente_ppd_id_cliente" id="DCCBD38D-DB93-F950-FDD0-959BA5C3176E">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CB48AE3F-72B4-2931-A655-FEBE1FCC67F2" referredColumn="EC5530B9-D2E1-E2C8-A688-EB82792AEA99"/>
+</associations>
+</Column>
+<Column name="contacto_ppd_id_contacto" id="97BEDF5C-2D9B-1CAB-64E7-8844E8605261">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C59062B7-D39B-C669-B2E1-51D1963E4033" referredColumn="6DBCE5E5-4FC0-3F86-6E63-BC3EB9581E15"/>
+</associations>
+</Column>
+<Column name="id_contacto_cliente" id="ACEA7112-F94E-493A-CFD9-13F82AE43123">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<generatorID>8C56463E-5E11-45F9-4039-8612D99E7881</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3E9A06A7-C717-19D1-CCDE-042383DB2FFF" name="contactos_cliente_PK">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCCBD38D-DB93-F950-FDD0-959BA5C3176E"/>
+<colUsage columnID="97BEDF5C-2D9B-1CAB-64E7-8844E8605261"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="851D206B-86DC-4BFC-0FA4-A7073C81690C" name="contactos_cliente_cliente_ppd_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<generatorID>658206B6-07C6-F1AE-BD72-E5EA5FF7602E</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCCBD38D-DB93-F950-FDD0-959BA5C3176E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="45F6C213-92B9-C861-5AAD-339E9FA8E7CD" name="contactos_cliente_contacto_ppd_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<generatorID>658206B6-07C6-F1AE-BD72-E5EA5FF7602E</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="97BEDF5C-2D9B-1CAB-64E7-8844E8605261"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

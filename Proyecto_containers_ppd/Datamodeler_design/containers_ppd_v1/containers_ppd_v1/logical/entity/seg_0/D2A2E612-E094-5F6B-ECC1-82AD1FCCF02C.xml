@@ -53,6 +53,20 @@
 <logicalDatatype>LOGDT040</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="requiere_cliente" id="94B3ADC3-D0CA-A7FD-E03E-D04A078DF6C6">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:18:15 UTC</createdTime>
+<generatorID>8DD97D36-5F3C-116B-0E3A-5BEBED67B4E8</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<referedAttribute>52317287-9575-CBCE-1F36-E5BEA9B4E763</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="B9F3357B-7489-4CA0-0503-D86E1EC1F866" name="presupuesto_ppd PK">
@@ -65,6 +79,7 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>0D579BB1-EF2A-9526-709A-081F4E43017A</attributeRef>
+<attributeRef>94B3ADC3-D0CA-A7FD-E03E-D04A078DF6C6</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

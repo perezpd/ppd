@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="domicilio_fiscal" directorySegmentName="seg_0" id="43231925-0BD3-2520-EC41-2E5EB11FCB93">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:22:11 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<sourcePk>C1DDA487-0D22-D7D2-3C2A-BB51CCB61E7C</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>02ED10D7-EBF2-4A04-879E-A9C606C50EF0</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>C716A12C-AA8A-E603-2A09-9AA79A513856</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

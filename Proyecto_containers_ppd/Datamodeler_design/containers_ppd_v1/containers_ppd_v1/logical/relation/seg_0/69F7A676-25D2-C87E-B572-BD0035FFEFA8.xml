@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="direccion_oficina" directorySegmentName="seg_0" id="69F7A676-25D2-C87E-B572-BD0035FFEFA8">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:05:00 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<sourcePk>C1DDA487-0D22-D7D2-3C2A-BB51CCB61E7C</sourcePk>
+<identifying>false</identifying>
+<nameOnTarget>direccion</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>02ED10D7-EBF2-4A04-879E-A9C606C50EF0</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>27A678DB-403F-E549-C473-442DC2E349D0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

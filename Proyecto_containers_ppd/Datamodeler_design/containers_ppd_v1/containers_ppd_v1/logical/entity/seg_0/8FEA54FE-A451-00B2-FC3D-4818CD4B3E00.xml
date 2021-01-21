@@ -80,6 +80,20 @@
 <dataTypeSize>10 CHAR</dataTypeSize>
 <ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="direccion_puerto" id="38FFF94E-97A8-C527-E0A7-B786FF7EF73E">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:03:09 UTC</createdTime>
+<generatorID>DDB5A0D2-2223-7A04-3166-8C2E20A6A278</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<referedAttribute>19302465-133B-B843-9DE1-D31044B5A53D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="49A1C640-3324-4F9E-C5D7-9D59CCA2604D" name="puerto_ppd PK">

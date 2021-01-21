@@ -8,7 +8,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="Attribute_1" id="137F13A3-90F0-CD9C-B997-51274548E76A">
+<Column name="id_tarifa" id="137F13A3-90F0-CD9C-B997-51274548E76A">
 <createdBy>ppd</createdBy>
 <createdTime>2021-01-19 20:14:59 UTC</createdTime>
 <generatorID>A661027F-82DA-FB13-3A32-BBED608B57B5</generatorID>
@@ -41,6 +41,18 @@
 <use>1</use>
 <logicalDatatype>LOGDT021</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_tarifa" id="9A569DDF-2BD5-FF34-04DE-A5EC5D3FCB90">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<generatorID>5CBB62A4-F1CE-9CB7-0404-8A06C2331E12</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 CHAR</dataTypeSize>
+<ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>

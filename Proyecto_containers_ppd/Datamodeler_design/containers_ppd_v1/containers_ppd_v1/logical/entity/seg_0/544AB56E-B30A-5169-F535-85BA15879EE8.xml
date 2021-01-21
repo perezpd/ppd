@@ -66,6 +66,20 @@
 <logicalDatatype>LOGDT008</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="medio_transporte" id="EAA43992-065A-A5A8-A367-A587E3A6F3CD">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:24:01 UTC</createdTime>
+<generatorID>2592206B-BDB6-830B-E3B4-292A135B799B</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<referedAttribute>DCCBB22D-1AB7-D0F0-57FE-A443A81E845B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="A805DF05-2B88-4628-F064-895DF4A0AF70" name="orden_trabajo_ppd PK">

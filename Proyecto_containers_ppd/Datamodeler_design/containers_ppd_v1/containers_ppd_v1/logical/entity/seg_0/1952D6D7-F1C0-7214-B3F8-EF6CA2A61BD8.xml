@@ -41,6 +41,20 @@
 <dataTypeSize>80 CHAR</dataTypeSize>
 <ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="direccion_cliente" id="D0BE5173-E49B-A083-023B-A7851D02EDBB">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:13:02 UTC</createdTime>
+<generatorID>8728F040-4D5C-D6DF-1194-2119B38C7592</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<referedAttribute>19302465-133B-B843-9DE1-D31044B5A53D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="4752EB4A-346C-9077-6021-EFE84EB3CB83" name="cliente_ppd PK">

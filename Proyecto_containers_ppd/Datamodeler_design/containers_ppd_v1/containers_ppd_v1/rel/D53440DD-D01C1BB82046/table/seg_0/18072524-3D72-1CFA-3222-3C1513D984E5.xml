@@ -43,6 +43,21 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="cliente_ppd_id_cliente" id="785054F0-2638-780A-3069-C6C58F68849C">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<generatorID>94B3ADC3-D0CA-A7FD-E03E-D04A078DF6C6</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ACB3320B-6E15-A870-419F-06237E573B30" referredColumn="EC5530B9-D2E1-E2C8-A688-EB82792AEA99"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="98CD6940-37F1-07CF-3A2E-D11F5F1D725A" name="presupuesto_ppd_PK">
@@ -55,6 +70,29 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="C8CB4021-E146-7DE8-A768-2D90C67C5910"/>
+<colUsage columnID="785054F0-2638-780A-3069-C6C58F68849C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DE305D7D-7D40-624D-F29E-A815653D1235" name="presupuesto_ppd__IDX">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>8DD97D36-5F3C-116B-0E3A-5BEBED67B4E8</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="785054F0-2638-780A-3069-C6C58F68849C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C7BA3D95-3B11-2A21-91EB-1EF542EF0268" name="presupuesto_ppd_cliente_ppd_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<generatorID>8DD97D36-5F3C-116B-0E3A-5BEBED67B4E8</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="785054F0-2638-780A-3069-C6C58F68849C"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

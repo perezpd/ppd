@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0DA177CD-A116-0E5E-5BEE-B3DE89E38BD7" containerWithKeyObject="B47C2361-CF2D-5D54-1C7E-8983446BA13E" localFKIndex="42ECC1E2-6210-4DDF-81EB-44E63ED814F8" name="medio_transporte_ppd_tarifa_ppd_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<generatorID>9616122A-C2E6-0E51-85FC-2A167EE43BE9</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<referredTableLongName>Sales.tarifa_ppd</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4E09B8AF-2A2A-F88B-DC7E-65AA6BF6371B</referredTableID>
+<keyObject>49F5195C-1951-E256-A11B-6E0D36EBBBE4</keyObject>
+<referredKeyID>49F5195C-1951-E256-A11B-6E0D36EBBBE4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_tarifa</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

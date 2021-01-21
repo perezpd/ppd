@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8EB6E208-520A-546F-D6C6-C0305E12920B" containerWithKeyObject="B47C2361-CF2D-5D54-1C7E-8983446BA13E" localFKIndex="BD77424A-F628-0505-70FF-1F7EDD3C2069" name="medio_transporte_ppd_modelo_cont_ppd_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<generatorID>ED8748C6-81CF-5D69-7950-D2B4E7486C41</generatorID>
+<notes><![CDATA[Considero que cada trasnporte solo puede llevar un modelo de contenedor]]></notes>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<referredTableLongName>modelo_cont_ppd</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6595526E-9168-37A0-1A0A-D2B889C6AFDF</referredTableID>
+<keyObject>8CF38231-7A51-5533-BFB3-A92382DD6094</keyObject>
+<referredKeyID>8CF38231-7A51-5533-BFB3-A92382DD6094</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_modelo</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

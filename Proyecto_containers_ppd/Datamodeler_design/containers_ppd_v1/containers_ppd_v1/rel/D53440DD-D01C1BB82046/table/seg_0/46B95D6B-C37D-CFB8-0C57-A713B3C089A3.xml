@@ -67,6 +67,21 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="contenedor_ppd_id_contenedor" id="A5A30B66-4B6B-1CBE-B662-B24130AB1AB7">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<generatorID>6DBE225A-5142-7821-85BA-BA0131FE1E7A</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4CF2A96A-406B-A3B1-ABC0-21612B950BAE" referredColumn="604EAB35-D544-11ED-1FB1-D9E86AEFA879"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="2C00C638-9408-7C0D-26B2-ED102A589014" name="calendario_eventos_ppd_PK">
@@ -79,6 +94,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="021FEF0B-4CCE-3966-F4CF-D94607D01320"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B59F539D-84A7-7AB3-0111-E74F283443D5" name="calendario_eventos_ppd_contenedor_ppd_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<generatorID>ED6395AD-53C3-0BE8-8B0A-4C076814E792</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5A30B66-4B6B-1CBE-B662-B24130AB1AB7"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

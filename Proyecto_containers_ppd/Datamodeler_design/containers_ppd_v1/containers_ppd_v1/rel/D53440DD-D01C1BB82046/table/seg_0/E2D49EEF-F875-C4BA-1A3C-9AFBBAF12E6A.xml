@@ -55,6 +55,21 @@
 <ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="direccion_ppd_id_direccion" id="60A0A6F9-94D4-7840-4AE7-74BB0C9CEE65">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<generatorID>097ADEFF-1505-2563-ECDB-0974FF14C7F4</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4A10BF62-C1FD-1836-A5DA-F80172849E5A" referredColumn="34E4977E-FB89-4985-FEBF-BC9D4555EFDE"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="7FD4AA84-E505-661D-9D09-4772A4FD338C" name="transportista_ppd_PK">
@@ -67,6 +82,28 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="B20D8189-DFEB-4F1C-B2C4-E19664B6AA54"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CF30CF80-E144-E058-7A6E-766DF9F623B4" name="transportista_ppd__IDX">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>43231925-0BD3-2520-EC41-2E5EB11FCB93</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="60A0A6F9-94D4-7840-4AE7-74BB0C9CEE65"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A6F71A28-922C-9F06-7E01-56C9E4BA4443" name="transportista_ppd_direccion_ppd_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<generatorID>43231925-0BD3-2520-EC41-2E5EB11FCB93</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="60A0A6F9-94D4-7840-4AE7-74BB0C9CEE65"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

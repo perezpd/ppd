@@ -32,6 +32,21 @@
 <ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="direccion_ppd_id_direccion" id="7F896749-64FD-F326-3F07-8E926FC74077">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<generatorID>D0BE5173-E49B-A083-023B-A7851D02EDBB</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CCF23F01-F61E-C017-D0DE-08ED6371BAAE" referredColumn="34E4977E-FB89-4985-FEBF-BC9D4555EFDE"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="12473BBA-B304-78EC-9FDC-FA19403D021C" name="cliente_ppd_PK">
@@ -44,6 +59,28 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="EC5530B9-D2E1-E2C8-A688-EB82792AEA99"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F0EF4A15-1928-4B10-9B0E-550B38610443" name="cliente_ppd__IDX">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>8728F040-4D5C-D6DF-1194-2119B38C7592</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="7F896749-64FD-F326-3F07-8E926FC74077"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="80972BA4-4D63-DCD2-4AE1-62DFAAF6B882" name="cliente_ppd_direccion_ppd_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<generatorID>8728F040-4D5C-D6DF-1194-2119B38C7592</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F896749-64FD-F326-3F07-8E926FC74077"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="712CD99C-2B09-F509-7141-772BF0804D0A" containerWithKeyObject="7E5287F1-8B7C-F13C-0396-A54C9ADCD720" localFKIndex="E23EF9E9-9DE1-7972-03D5-1330997FC329" name="empleado_ppd_oficina_ppd_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<generatorID>02BFB219-C94E-96FE-CF31-B683784EB9A7</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<referredTableLongName>Import.oficina_ppd</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>64348A5C-6A67-337D-33E9-E9888AC7A2E0</referredTableID>
+<keyObject>1A8D5CB6-8410-FE38-74F0-886A70D7F786</keyObject>
+<referredKeyID>1A8D5CB6-8410-FE38-74F0-886A70D7F786</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_oficina</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

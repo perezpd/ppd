@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="encargado" directorySegmentName="seg_0" id="24FBE2A3-CA68-96B6-8107-51DED6645E12">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:08:18 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<sourcePk>E6A13F60-B7BA-D6E3-0A2E-34D1D389DC44</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A2421137-8678-6A4D-7A89-7717413EAF53</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>27A678DB-403F-E549-C473-442DC2E349D0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

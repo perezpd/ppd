@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4CF2A96A-406B-A3B1-ABC0-21612B950BAE" containerWithKeyObject="46B95D6B-C37D-CFB8-0C57-A713B3C089A3" localFKIndex="B59F539D-84A7-7AB3-0111-E74F283443D5" name="calendario_eventos_ppd_contenedor_ppd_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<generatorID>ED6395AD-53C3-0BE8-8B0A-4C076814E792</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<referredTableLongName>Mgmt.contenedor_ppd</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6485BFF6-FDAE-C997-3FF1-AAB363B8074E</referredTableID>
+<keyObject>FED4FF10-1C57-60E8-2308-D0D2F836A64D</keyObject>
+<referredKeyID>FED4FF10-1C57-60E8-2308-D0D2F836A64D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_contenedor</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

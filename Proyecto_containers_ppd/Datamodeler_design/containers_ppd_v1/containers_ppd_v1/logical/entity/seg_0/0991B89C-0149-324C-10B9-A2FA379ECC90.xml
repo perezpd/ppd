@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="Attribute_1" id="A661027F-82DA-FB13-3A32-BBED608B57B5">
+<Attribute name="id_tarifa" id="A661027F-82DA-FB13-3A32-BBED608B57B5">
 <createdBy>ppd</createdBy>
 <createdTime>2021-01-19 19:59:20 UTC</createdTime>
 <ownerDesignName>containers_ppd_v1</ownerDesignName>
@@ -26,6 +26,19 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_tarifa" id="5CBB62A4-F1CE-9CB7-0404-8A06C2331E12">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:28:08 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 CHAR</dataTypeSize>
+<ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="desc_tarifa" id="1FC8C050-73A5-5F23-23BF-F17C7A93CAF5">
 <createdBy>ppd</createdBy>

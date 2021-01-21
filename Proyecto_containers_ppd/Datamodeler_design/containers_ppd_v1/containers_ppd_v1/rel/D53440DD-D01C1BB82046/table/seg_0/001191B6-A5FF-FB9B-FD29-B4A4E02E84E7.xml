@@ -71,6 +71,36 @@
 <ownDataTypeParameters>,2,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="presupuesto_ppd_id_presupuesto" id="CCCE63F5-F0D6-9618-3103-892A6BE973CA">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<generatorID>3142B4A7-C583-623C-D7E6-CCB1615E6DF4</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AD3D662F-9511-B332-4A56-E81C45482A1F" referredColumn="C8CB4021-E146-7DE8-A768-2D90C67C5910"/>
+</associations>
+</Column>
+<Column name="presupuesto_ppd_requiere_cliente" id="ECFF9C44-4014-8E0C-E249-13D1FB5A8E56">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<generatorID>1EE36F67-02DE-6CDA-7784-21F1FA21C012</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AD3D662F-9511-B332-4A56-E81C45482A1F" referredColumn="785054F0-2638-780A-3069-C6C58F68849C"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="FA67A477-D8B1-71BB-16C7-B779D055A755" name="concepto_presupuesto_ppd_PK">
@@ -83,6 +113,30 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="2BDAAAED-ACCB-E45F-3863-888AFD8D4858"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="51FBECC2-BA7E-3DE0-7A84-93D1710D5852" name="concepto_presupuesto_ppd__IDX">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>40EDE167-1F0D-6EB4-58CE-6A40FA7883FE</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="CCCE63F5-F0D6-9618-3103-892A6BE973CA"/>
+<colUsage columnID="ECFF9C44-4014-8E0C-E249-13D1FB5A8E56"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C388B9A7-87D0-E021-515E-D5C01CE1D50A" name="concepto_presupuesto_ppd_presupuesto_ppd_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<generatorID>40EDE167-1F0D-6EB4-58CE-6A40FA7883FE</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CCCE63F5-F0D6-9618-3103-892A6BE973CA"/>
+<colUsage columnID="ECFF9C44-4014-8E0C-E249-13D1FB5A8E56"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -30,7 +30,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="modelo_contenedor" id="615A6B0F-3D06-B2E9-F1EE-FE5ED0D3C634">
+<Column name="modelo_cont_ppd_id_modelo" id="615A6B0F-3D06-B2E9-F1EE-FE5ED0D3C634">
 <createdBy>ppd</createdBy>
 <createdTime>2021-01-19 21:10:46 UTC</createdTime>
 <generatorID>3B02C72C-FC07-9EAB-99A7-64DCAD4C738A</generatorID>

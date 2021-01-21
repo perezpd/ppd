@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="orden_transporte" directorySegmentName="seg_0" id="2592206B-BDB6-830B-E3B4-292A135B799B">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:24:01 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<sourcePk>CAB70CAE-5E90-8250-E177-FD1555C883DC</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>89BDFF3D-2F46-5EA5-190D-4945C3678FE3</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>544AB56E-B30A-5169-F535-85BA15879EE8</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

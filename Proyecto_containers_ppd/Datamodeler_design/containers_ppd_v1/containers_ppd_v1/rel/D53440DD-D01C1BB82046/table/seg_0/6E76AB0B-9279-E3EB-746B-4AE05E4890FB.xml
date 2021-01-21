@@ -69,6 +69,36 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="presupuesto_ppd_id_presupuesto" id="7B7CF0FD-C39E-DCC2-C3C4-03FBDF65938D">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<generatorID>D3B4719C-2AA9-D664-DC49-A6EEDF3FB9AC</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B9128734-2964-6452-4302-0DBDFDA4C639" referredColumn="C8CB4021-E146-7DE8-A768-2D90C67C5910"/>
+</associations>
+</Column>
+<Column name="presupuesto_ppd_cliente_ppd_id_cliente" id="1672FBED-FB0C-20FE-3648-87A3C0EBB99C">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<generatorID>1054CA27-3E64-8A8E-0003-1B5AFFFB02B1</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B9128734-2964-6452-4302-0DBDFDA4C639" referredColumn="785054F0-2638-780A-3069-C6C58F68849C"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="12BF101C-B5BC-59B1-0607-F5AB71E56DCF" name="factura_ppd_PK">
@@ -81,6 +111,30 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="729AD623-F524-7CAC-2A20-3DA9B81DCC6E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="999D5A03-1CA5-90E1-27E8-C20967DFD93B" name="factura_ppd__IDX">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>8415CF27-AB5C-51E0-8FD1-A4A68E962598</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="7B7CF0FD-C39E-DCC2-C3C4-03FBDF65938D"/>
+<colUsage columnID="1672FBED-FB0C-20FE-3648-87A3C0EBB99C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0FF95948-79D0-924B-B7CC-64C4705618A2" name="factura_ppd_presupuesto_ppd_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<generatorID>8415CF27-AB5C-51E0-8FD1-A4A68E962598</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B7CF0FD-C39E-DCC2-C3C4-03FBDF65938D"/>
+<colUsage columnID="1672FBED-FB0C-20FE-3648-87A3C0EBB99C"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

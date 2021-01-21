@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="modelo_transporte" directorySegmentName="seg_0" id="ED8748C6-81CF-5D69-7950-D2B4E7486C41">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:19:58 UTC</createdTime>
+<notes><![CDATA[Considero que cada trasnporte solo puede llevar un modelo de contenedor]]></notes>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<sourcePk>70F18175-BA3A-65D8-C9A9-90AF6D0F4E58</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7334ADAA-232B-8BF7-924E-607176D2CAE2</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>89BDFF3D-2F46-5EA5-190D-4945C3678FE3</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

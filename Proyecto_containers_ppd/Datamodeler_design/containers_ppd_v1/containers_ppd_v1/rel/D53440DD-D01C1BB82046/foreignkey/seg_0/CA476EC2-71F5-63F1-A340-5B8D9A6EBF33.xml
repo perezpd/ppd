@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CA476EC2-71F5-63F1-A340-5B8D9A6EBF33" containerWithKeyObject="AC091493-92FA-720D-BF3B-D36E5BCF6FB9" localFKIndex="8DD48DBE-0DB1-697C-D629-99C166AECEA4" name="orden_trabajo_ppd_medio_transporte_ppd_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<generatorID>2592206B-BDB6-830B-E3B4-292A135B799B</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<referredTableLongName>Sales.medio_transporte_ppd</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B47C2361-CF2D-5D54-1C7E-8983446BA13E</referredTableID>
+<keyObject>6B22F02E-3158-7862-D28A-2F409AD0D607</keyObject>
+<referredKeyID>6B22F02E-3158-7862-D28A-2F409AD0D607</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_mediot</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

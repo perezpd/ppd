@@ -43,6 +43,51 @@
 <ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="modelo_cont_ppd_id_modelo" id="7484D520-DA8C-207B-AA26-5671E0F2DE7B">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<generatorID>0C4351F9-5938-803E-93AA-F58B06FF34C1</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8EB6E208-520A-546F-D6C6-C0305E12920B" referredColumn="B1EF77A2-4762-726B-40CD-50493BDB2FA3"/>
+</associations>
+</Column>
+<Column name="transportista_ppd_id_trans" id="A4DCFB17-2A20-512F-A2AF-959B15EB9280">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<generatorID>577FFB41-230A-7EDA-64F4-7F1FD3B91B6B</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="35201237-E804-084A-9C25-029340323402" referredColumn="B20D8189-DFEB-4F1C-B2C4-E19664B6AA54"/>
+</associations>
+</Column>
+<Column name="tarifa_ppd_id_tarifa" id="F45AB78B-10FA-7807-03E7-791A339C27ED">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<generatorID>F9F3FCB3-FBA7-E823-235B-FB80977ED14B</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0DA177CD-A116-0E5E-5BEE-B3DE89E38BD7" referredColumn="137F13A3-90F0-CD9C-B997-51274548E76A"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="6B22F02E-3158-7862-D28A-2F409AD0D607" name="medio_transporte_ppd_PK">
@@ -55,6 +100,61 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="C85BE5F1-E6C2-06F7-889D-1A285D1AC96F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="414C3DCE-3F8D-3112-D319-4C1B1AAE3E19" name="medio_transporte_ppd__IDX">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>ED8748C6-81CF-5D69-7950-D2B4E7486C41</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="7484D520-DA8C-207B-AA26-5671E0F2DE7B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5C437302-4E9F-E708-3F4A-1B4B194AF9FF" name="medio_transporte_ppd__IDXv1">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>3D0760CB-5BB8-6AB3-D396-F5AA7313FAD4</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="A4DCFB17-2A20-512F-A2AF-959B15EB9280"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BD77424A-F628-0505-70FF-1F7EDD3C2069" name="medio_transporte_ppd_modelo_cont_ppd_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<generatorID>ED8748C6-81CF-5D69-7950-D2B4E7486C41</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7484D520-DA8C-207B-AA26-5671E0F2DE7B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7A667FF6-7FB9-028B-18BF-C4093076A9A9" name="medio_transporte_ppd_transportista_ppd_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<generatorID>3D0760CB-5BB8-6AB3-D396-F5AA7313FAD4</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A4DCFB17-2A20-512F-A2AF-959B15EB9280"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="42ECC1E2-6210-4DDF-81EB-44E63ED814F8" name="medio_transporte_ppd_tarifa_ppd_FK">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:42:27 UTC</createdTime>
+<generatorID>9616122A-C2E6-0E51-85FC-2A167EE43BE9</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F45AB78B-10FA-7807-03E7-791A339C27ED"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

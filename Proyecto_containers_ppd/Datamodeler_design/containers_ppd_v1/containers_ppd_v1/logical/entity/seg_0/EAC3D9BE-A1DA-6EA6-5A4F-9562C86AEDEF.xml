@@ -81,6 +81,34 @@
 <logicalDatatype>LOGDT040</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="origen_presupuesto" id="D3B4719C-2AA9-D664-DC49-A6EEDF3FB9AC">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:16:37 UTC</createdTime>
+<generatorID>8415CF27-AB5C-51E0-8FD1-A4A68E962598</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<referedAttribute>0D579BB1-EF2A-9526-709A-081F4E43017A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="requiere_cliente" id="1054CA27-3E64-8A8E-0003-1B5AFFFB02B1">
+<createdBy>ppd</createdBy>
+<createdTime>2021-01-21 20:18:42 UTC</createdTime>
+<generatorID>8415CF27-AB5C-51E0-8FD1-A4A68E962598</generatorID>
+<ownerDesignName>containers_ppd_v1</ownerDesignName>
+<engineerTo>
+<item key="D53440DD-DC98-BAAE-A998-D01C1BB82046" value="true"/>
+</engineerTo>
+<referedAttribute>94B3ADC3-D0CA-A7FD-E03E-D04A078DF6C6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="F9BD848C-8830-AB82-B20D-5E7A7A8FD28C" name="factura_ppd PK">
