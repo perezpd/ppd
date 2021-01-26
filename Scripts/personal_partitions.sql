@@ -71,7 +71,7 @@ ALTER DATABASE [caledario_eventos_ppd] ADD FILE ( NAME = 'Eventos_Archivo', FILE
 GO
 ALTER DATABASE [caledario_eventos_ppd] ADD FILE ( NAME = 'eventos_2018', FILENAME = 'C:\Oficina\eventos_2018.ndf', SIZE = 5MB, MAXSIZE = 100MB, FILEGROWTH = 2MB ) TO FILEGROUP [filegrp_2018]
 GO
-ALTER DATABASE [caledario_eventos_ppd] ADD FILE ( NAME = 'eventos_2018', FILENAME = 'C:\Oficina\eventos_2019.ndf', SIZE = 5MB, MAXSIZE = 100MB, FILEGROWTH = 2MB ) TO FILEGROUP [filegrp_2019]
+ALTER DATABASE [caledario_eventos_ppd] ADD FILE ( NAME = 'eventos_2019', FILENAME = 'C:\Oficina\eventos_2019.ndf', SIZE = 5MB, MAXSIZE = 100MB, FILEGROWTH = 2MB ) TO FILEGROUP [filegrp_2019]
 GO
 ALTER DATABASE [caledario_eventos_ppd] ADD FILE ( NAME = 'eventos_2020', FILENAME = 'C:\Oficina\eventos_2020.ndf', SIZE = 5MB, MAXSIZE = 100MB, FILEGROWTH = 2MB ) TO FILEGROUP [filegrp_2020]
 GO
@@ -137,9 +137,14 @@ Go
 
 ----------------
 
-SELECT *,$Partition.fn_events_date(fecha_alta) AS Partition
+SELECT *,$Partition.fn_events_date(fecha_evento) AS Partition
 FROM event_data
 GO
+
+--id_evento	nombre	info_extra	fecha_evento	Partition
+--1	Salida puerto	Se realiza por la mañana	2018-01-01 00:00:00.000	2
+--2	Cambio de buque	Se realiza directo sin almacenaje en puerto	2018-01-05 00:00:00.000	2
+--3	Llegada a puerto	Se descargará por la tarde	2018-01-11 00:00:00.000	2
 
 -- partition function
 select name, create_date, value from sys.partition_functions f
@@ -149,8 +154,8 @@ where f.name = 'fn_events_date'
 gO
 
 --name	create_date	value
---fn_events_date	2020-02-03 10:32:30.537	2016-01-01 00:00:00.000
---fn_events_date	2020-02-03 10:32:30.537	2017-01-01 00:00:00.000
+--fn_events_date	2021-01-26 21:30:16.570	2018-01-01 00:00:00.000
+--fn_events_date	2021-01-26 21:30:16.570	2019-01-01 00:00:00.000
 
 select p.partition_number, p.rows from sys.partitions p
 inner join sys.tables t
@@ -158,8 +163,8 @@ on p.object_id=t.object_id and t.name = 'event_data'
 GO
 
 --partition_number	rows
---1	3
---2	0
+--1	0
+--2	3
 --3	0
 
 DECLARE @TableName NVARCHAR(200) = N'event_data'
@@ -167,18 +172,30 @@ SELECT SCHEMA_NAME(o.schema_id) + '.' + OBJECT_NAME(i.object_id) AS [object] , p
 ON p.object_id = o.object_id INNER JOIN sys.system_internals_allocation_units au ON p.partition_id = au.container_id INNER JOIN sys.partition_schemes ps ON ps.data_space_id = i.data_space_id INNER JOIN sys.partition_functions f ON f.function_id = ps.function_id INNER JOIN sys.destination_data_spaces dds ON dds.partition_scheme_id = ps.data_space_id AND dds.destination_id = p.partition_number INNER JOIN sys.filegroups fg ON dds.data_space_id = fg.data_space_id LEFT OUTER JOIN sys.partition_range_values rv ON f.function_id = rv.function_id AND p.partition_number = rv.boundary_id WHERE i.index_id < 2 AND o.object_id = OBJECT_ID(@TableName);
 GO
 
---object			p#	filegroup	rows	pages	comparison	value	first_page
---dbo.event_data	1	FG_Archivo	3		9			less than	2016-01-01 00:00:00.000	3:8
---dbo.event_data	2	FG_2016		0		0			less than	2017-01-01 00:00:00.000	0:0
---dbo.event_data	3	FG_2017		0		0			less than	NULL	0:0
+--object			p#	filegroup		rows	pages	comparison	value	first_page
+--dbo.event_data	1	filegrp_archivo	0		0		less than	2018-01-01 00:00:00.000	0:0
+--dbo.event_data	2	filegrp_2018	3		9		less than	2019-01-01 00:00:00.000	4:8
+--dbo.event_data	3	filegrp_2019	0		0		less than	NULL	0:0
 -------------------
-INSERT INTO event_data
-	VALUES ('Laura','Muñoz','2016-06-23'), ('Rosa Maria','Leandro','2016-02-03'), ('Federico','Ramos','2016-04-06')
-GO
 
-SELECT *,$Partition.fn_events_date(fecha_alta)
+
+
+INSERT INTO event_data
+	Values ('Salida puerto','Se realiza por la tarde','2015-03-01'), ('Cambio de buque','Se realiza directo sin almacenaje en puerto','2019-01-05'), ('Llegada a puerto','Se descargará por la tarde','2020-01-11')
+Go
+
+SELECT *,$Partition.fn_events_date(fecha_evento)
 FROM event_data
 GO
+
+--id_evento	nombre	info_extra	fecha_evento	(No column name)
+--4	Salida puerto	Se realiza por la tarde	2015-03-01 00:00:00.000	1
+--1	Salida puerto	Se realiza por la mañana	2018-01-01 00:00:00.000	2
+--2	Cambio de buque	Se realiza directo sin almacenaje en puerto	2018-01-05 00:00:00.000	2
+--3	Llegada a puerto	Se descargará por la tarde	2018-01-11 00:00:00.000	2
+--5	Cambio de buque	Se realiza directo sin almacenaje en puerto	2019-01-05 00:00:00.000	3
+--6	Llegada a puerto	Se descargará por la tarde	2020-01-11 00:00:00.000	3
+
 
 select name, create_date, value from sys.partition_functions f
 inner join sys.partition_range_values rv
@@ -192,22 +209,27 @@ inner join sys.tables t
 on p.object_id=t.object_id and t.name = 'event_data'
 GO
 
+--partition_number	rows
+--1	1
+--2	3
+--3	2
+
 DECLARE @TableName NVARCHAR(200) = N'event_data'
 SELECT SCHEMA_NAME(o.schema_id) + '.' + OBJECT_NAME(i.object_id) AS [object] , p.partition_number AS [p#] , fg.name AS [filegroup] , p.rows , au.total_pages AS pages , CASE boundary_value_on_right WHEN 1 THEN 'less than' ELSE 'less than or equal to' END as comparison , rv.value , CONVERT (VARCHAR(6), CONVERT (INT, SUBSTRING (au.first_page, 6, 1) + SUBSTRING (au.first_page, 5, 1))) + ':' + CONVERT (VARCHAR(20), CONVERT (INT, SUBSTRING (au.first_page, 4, 1) + SUBSTRING (au.first_page, 3, 1) + SUBSTRING (au.first_page, 2, 1) + SUBSTRING (au.first_page, 1, 1))) AS first_page FROM sys.partitions p INNER JOIN sys.indexes i ON p.object_id = i.object_id AND p.index_id = i.index_id INNER JOIN sys.objects o
 ON p.object_id = o.object_id INNER JOIN sys.system_internals_allocation_units au ON p.partition_id = au.container_id INNER JOIN sys.partition_schemes ps ON ps.data_space_id = i.data_space_id INNER JOIN sys.partition_functions f ON f.function_id = ps.function_id INNER JOIN sys.destination_data_spaces dds ON dds.partition_scheme_id = ps.data_space_id AND dds.destination_id = p.partition_number INNER JOIN sys.filegroups fg ON dds.data_space_id = fg.data_space_id LEFT OUTER JOIN sys.partition_range_values rv ON f.function_id = rv.function_id AND p.partition_number = rv.boundary_id WHERE i.index_id < 2 AND o.object_id = OBJECT_ID(@TableName);
 GO
 
 --object	p#	filegroup	rows	pages	comparison	value	first_page
---dbo.event_data	1	FG_Archivo	3	9	less than	2016-01-01 00:00:00.000	3:8
---dbo.event_data	2	FG_2016	3	9	less than	2017-01-01 00:00:00.000	4:8
---dbo.event_data	3	FG_2017	0	0	less than	NULL	0:0
+--dbo.event_data	1	filegrp_archivo	1	9	less than	2018-01-01 00:00:00.000	3:8
+--dbo.event_data	2	filegrp_2018	3	9	less than	2019-01-01 00:00:00.000	4:8
+--dbo.event_data	3	filegrp_2019	2	9	less than	NULL	6:8
 
 --------------------
 INSERT INTO event_data
-	VALUES ('Ismael','Cabana','2017-05-21'), ('Alejandra','Martinez','2017-07-09'), ('Alfonso','Verdes','2017-09-12')
+	Values ('Desembarco puerto','Se realiza por turnos','2020-03-01'), ('Cambio de buque','Se realiza directo sin estancia en puerto','2020-03-05'), ('Desatraque de puerto','Se desamarra por la tarde','2020-03-11')
 GO
 
-SELECT *,$Partition.fn_events_date(fecha_alta)
+SELECT *,$Partition.fn_events_date(fecha_evento)
 FROM event_data
 GO
 
@@ -237,12 +259,14 @@ GO
 
 
 INSERT INTO event_data
-	VALUES ('Amanda','Smith','2018-02-12'), ('Adolfo','Muñiz','2018-01-23'), ('Rosario','Fuertes','2018-02-23')
+	Values ('Llegada puerto','Se realiza por la tarde','2018-03-01'), ('Cambio de buque','Dos dias cuarentena y almacenaje en puerto','2018-05-05'), ('Salida de puerto','Se zarpa por la tarde','2018-06-11')
 GO
 
+SELECT *,$Partition.fn_events_date(fecha_evento)
+FROM event_data
+GO
 
-
-SELECT *,$Partition.fn_events_date(fecha_alta) as PARTITION
+SELECT *,$Partition.fn_events_date(fecha_evento) as PARTITION
 FROM event_data
 GO
 
@@ -270,13 +294,13 @@ GO
 --dbo.event_data	3	FG_2017		6	9	less than	NULL	5:8
 
 
--- SPLIT
+-- SPLIT FROM YEAR 2020 january 1st
 
 ALTER PARTITION FUNCTION fn_events_date()
-	SPLIT RANGE ('2018-01-01');
+	SPLIT RANGE ('2020-01-01');
 GO
 
-SELECT *,$Partition.fn_events_date(fecha_alta) as PARTITION
+SELECT *,$Partition.fn_events_date(fecha_evento) as PARTITION
 FROM event_data
 GO
 
@@ -285,19 +309,27 @@ SELECT SCHEMA_NAME(o.schema_id) + '.' + OBJECT_NAME(i.object_id) AS [object] , p
 ON p.object_id = o.object_id INNER JOIN sys.system_internals_allocation_units au ON p.partition_id = au.container_id INNER JOIN sys.partition_schemes ps ON ps.data_space_id = i.data_space_id INNER JOIN sys.partition_functions f ON f.function_id = ps.function_id INNER JOIN sys.destination_data_spaces dds ON dds.partition_scheme_id = ps.data_space_id AND dds.destination_id = p.partition_number INNER JOIN sys.filegroups fg ON dds.data_space_id = fg.data_space_id LEFT OUTER JOIN sys.partition_range_values rv ON f.function_id = rv.function_id AND p.partition_number = rv.boundary_id WHERE i.index_id < 2 AND o.object_id = OBJECT_ID(@TableName);
 GO
 
---object			p#	filegroup	rows	pages	comparison	value	first_page
---dbo.event_data	1	FG_Archivo	3	9	less than	2016-01-01 00:00:00.000	3:8
---dbo.event_data	2	FG_2016		3	9	less than	2017-01-01 00:00:00.000	4:8
---dbo.event_data	3	FG_2017		3	9	less than	2018-01-01 00:00:00.000	5:8
---dbo.event_data	4	FG_2018		3	9	less than	NULL	6:8
+--id_evento	nombre	info_extra	fecha_evento	PARTITION
+--4	Salida puerto	Se realiza por la tarde	2015-03-01 00:00:00.000	1
+--1	Salida puerto	Se realiza por la mañana	2018-01-01 00:00:00.000	2
+--2	Cambio de buque	Se realiza directo sin almacenaje en puerto	2018-01-05 00:00:00.000	2
+--3	Llegada a puerto	Se descargará por la tarde	2018-01-11 00:00:00.000	2
+--10	Llegada puerto	Se realiza por la tarde	2018-03-01 00:00:00.000	2
+--11	Cambio de buque	Dos dias cuarentena y almacenaje en puerto	2018-05-05 00:00:00.000	2
+--12	Salida de puerto	Se zarpa por la tarde	2018-06-11 00:00:00.000	2
+--5	Cambio de buque	Se realiza directo sin almacenaje en puerto	2019-01-05 00:00:00.000	3
+--6	Llegada a puerto	Se descargará por la tarde	2020-01-11 00:00:00.000	4
+--7	Desembarco puerto	Se realiza por turnos	2020-03-01 00:00:00.000	4
+--8	Cambio de buque	Se realiza directo sin estancia en puerto	2020-03-05 00:00:00.000	4
+--9	Desatraque de puerto	Se desamarra por la tarde	2020-03-11 00:00:00.000	4
 
--- MERGE
+-- MERGE two partitions with ranges on left and right of 2018-01-01
 
 ALTER PARTITION FUNCTION fn_events_date ()
- MERGE RANGE ('2016-01-01');
+ MERGE RANGE ('2018-01-01');
  GO
 
-SELECT *,$Partition.fn_events_date(fecha_alta)
+SELECT *,$Partition.fn_events_date(fecha_evento)
 FROM event_data
 GO
 DECLARE @TableName NVARCHAR(200) = N'event_data'
@@ -314,21 +346,36 @@ GO
 
 USE master
 GO
-ALTER DATABASE [caledario_eventos_ppd] REMOVE FILE Altas_2016
+ALTER DATABASE [caledario_eventos_ppd] REMOVE FILE eventos_2018
 go
 
-ALTER DATABASE [caledario_eventos_ppd] REMOVE FILEGROUP FG_2016
+ALTER DATABASE [caledario_eventos_ppd] REMOVE FILEGROUP filegrp_2018
 GO
 
 
---The file 'Altas_2016' has been removed.
---The filegroup 'FG_2016' has been removed.
+--The file 'eventos_2018' has been removed.
+--The filegroup 'filegrp_2018' has been removed.
+
+USE caledario_eventos_ppd
+GO
 
 select * from sys.filegroups
 GO
+--name	data_space_id	type	type_desc	is_default	is_system	filegroup_guid	log_filegroup_id	is_read_only	is_autogrow_all_files
+--PRIMARY	1	FG	ROWS_FILEGROUP	1	0	NULL	NULL	0	0
+--filegrp_archivo	2	FG	ROWS_FILEGROUP	0	0	15AAA97F-E432-45CD-89FD-B94DB7479501	NULL	0	0
+--filegrp_2019	4	FG	ROWS_FILEGROUP	0	0	E94E05F8-0A3C-42B6-9AC9-74281030B8DC	NULL	0	0
+--filegrp_2020	5	FG	ROWS_FILEGROUP	0	0	7B5FB287-85DE-42E9-BC7C-34C16B1E27A0	NULL	0	0
 
 select * from sys.database_files
 GO
+
+--file_id	file_guid	type	type_desc	data_space_id	name	physical_name	state	state_desc	size	max_size	growth	is_media_read_only	is_read_only	is_sparse	is_percent_growth	is_name_reserved	is_persistent_log_buffer	create_lsn	drop_lsn	read_only_lsn	read_write_lsn	differential_base_lsn	differential_base_guid	differential_base_time	redo_start_lsn	redo_start_fork_guid	redo_target_lsn	redo_target_fork_guid	backup_lsn
+--1	A8F52378-EEA2-4EC2-91DB-AB18A065410D	0	ROWS	1	caledario_eventos_ppd	C:\Oficina\caledario_eventos_ppd_main.mdf	0	ONLINE	1920	-1	0	0	0	0	0	0	0	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+--2	5B241335-6019-4036-8318-F94FBB15F020	1	LOG	0	caledario_eventos_ppd_log	C:\Oficina\caledario_eventos_ppd_log.ldf	0	ONLINE	1272	268435456	10	0	0	0	1	0	0	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+--3	21BEB6BD-AF7D-42D8-8685-941F081335F6	0	ROWS	2	Eventos_Archivo	C:\Oficina\Eventos_Archivo.ndf	0	ONLINE	640	12800	256	0	0	0	0	0	0	36000000022100001	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+--5	28C67A77-BE7E-464F-A869-7F5ADEBC06B0	0	ROWS	5	eventos_2020	C:\Oficina\eventos_2020.ndf	0	ONLINE	640	12800	256	0	0	0	0	0	0	36000000027500001	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+--6	DF67C5C9-0951-4D86-AA5C-8DC2EAC2DA4A	0	ROWS	4	eventos_2019	C:\Oficina\eventos_2019.ndf	0	ONLINE	640	12800	256	0	0	0	0	0	0	36000000030200001	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
 
 
 -- SWITCH
@@ -336,7 +383,7 @@ GO
 USE caledario_eventos_ppd
 go
 
-SELECT *,$Partition.fn_events_date(fecha_alta)
+SELECT *,$Partition.fn_events_date(fecha_evento)
 FROM event_data
 GO
 DECLARE @TableName NVARCHAR(200) = N'event_data'
@@ -351,17 +398,17 @@ GO
 
 
 
-CREATE TABLE Archivo_Altas
-( id_alta int identity (1,1),
-nombre varchar(20),
-apellido varchar (20),
-fecha_alta datetime )
-ON FG_Archivo
+CREATE TABLE Archivo_Eventos
+	( id_evento int identity (1,1),
+	nombre varchar(20),
+	info_extra varchar (200),
+	fecha_evento datetime )
+	ON filegrp_archivo
 go
 
 
 ALTER TABLE event_data
-	SWITCH Partition 1 to Archivo_Altas
+	SWITCH Partition 1 to Archivo_Eventos
 go
 
 
@@ -369,36 +416,36 @@ select * from event_data
 go
 
 
---id_alta	nombre	apellido	fecha_alta
---7	Ismael	Cabana	2017-05-21 00:00:00.000
---8	Alejandra	Martinez	2017-07-09 00:00:00.000
---9	Alfonso	Verdes	2017-09-12 00:00:00.000
---10	Amanda	Smith	2018-02-12 00:00:00.000
---11	Adolfo	Muñiz	2018-01-23 00:00:00.000
---12	Rosario	Fuertes	2018-02-23 00:00:00.000
+--id_evento	nombre	info_extra	fecha_evento
+--5	Cambio de buque	Se realiza directo sin almacenaje en puerto	2019-01-05 00:00:00.000
+--6	Llegada a puerto	Se descargará por la tarde	2020-01-11 00:00:00.000
+--7	Desembarco puerto	Se realiza por turnos	2020-03-01 00:00:00.000
+--8	Cambio de buque	Se realiza directo sin estancia en puerto	2020-03-05 00:00:00.000
+--9	Desatraque de puerto	Se desamarra por la tarde	2020-03-11 00:00:00.000
 
 
-select * from Archivo_Altas
+select * from Archivo_Eventos
 go
 
---id_alta	nombre	apellido	fecha_alta
---1	Antonio	Ruiz	2015-01-01 00:00:00.000
---2	Lucas	García	2015-05-05 00:00:00.000
---3	Manuel	Sanchez	2015-08-11 00:00:00.000
---4	Laura	Muñoz	2016-06-23 00:00:00.000
---5	Rosa Maria	Leandro	2016-02-03 00:00:00.000
---6	Federico	Ramos	2016-04-06 00:00:00.000
+--id_evento	nombre	info_extra	fecha_evento
+--4	Salida puerto	Se realiza por la tarde	2015-03-01 00:00:00.000
+--1	Salida puerto	Se realiza por la mañana	2018-01-01 00:00:00.000
+--2	Cambio de buque	Se realiza directo sin almacenaje en puerto	2018-01-05 00:00:00.000
+--3	Llegada a puerto	Se descargará por la tarde	2018-01-11 00:00:00.000
+--10	Llegada puerto	Se realiza por la tarde	2018-03-01 00:00:00.000
+--11	Cambio de buque	Dos dias cuarentena y almacenaje en puerto	2018-05-05 00:00:00.000
+--12	Salida de puerto	Se zarpa por la tarde	2018-06-11 00:00:00.000
 
 
 
 DECLARE @TableName NVARCHAR(200) = N'event_data' SELECT SCHEMA_NAME(o.schema_id) + '.' + OBJECT_NAME(i.object_id) AS [object] , p.partition_number AS [p#] , fg.name AS [filegroup] , p.rows
 , au.total_pages AS pages , CASE boundary_value_on_right WHEN 1 THEN 'less than' ELSE 'less than or equal to' END as comparison , rv.value , CONVERT (VARCHAR(6), CONVERT (INT, SUBSTRING (au.first_page, 6, 1) + SUBSTRING (au.first_page, 5, 1))) + ':' + CONVERT (VARCHAR(20), CONVERT (INT, SUBSTRING (au.first_page, 4, 1) + SUBSTRING (au.first_page, 3, 1) + SUBSTRING (au.first_page, 2, 1) + SUBSTRING (au.first_page, 1, 1))) AS first_page FROM sys.partitions p INNER JOIN sys.indexes i ON p.object_id = i.object_id AND p.index_id = i.index_id INNER JOIN sys.objects o ON p.object_id = o.object_id INNER JOIN sys.system_internals_allocation_units au ON p.partition_id = au.container_id INNER JOIN sys.partition_schemes ps ON ps.data_space_id = i.data_space_id INNER JOIN sys.partition_functions f ON f.function_id = ps.function_id INNER JOIN sys.destination_data_spaces dds ON dds.partition_scheme_id = ps.data_space_id AND dds.destination_id = p.partition_number INNER JOIN sys.filegroups fg ON dds.data_space_id = fg.data_space_id LEFT OUTER JOIN sys.partition_range_values rv ON f.function_id = rv.function_id AND p.partition_number = rv.boundary_id WHERE i.index_id < 2 AND o.object_id = OBJECT_ID(@TableName);
 GO
-
---object			p#	filegroup	rows	pages	comparison	value	first_page
---dbo.event_data	1	FG_Archivo	0	0	less than	2017-01-01 00:00:00.000	0:0
---dbo.event_data	2	FG_2017		3	9	less than	2018-01-01 00:00:00.000	5:8
---dbo.event_data	3	FG_2018		3	9	less than	NULL	6:8
+-- 2018 and before there not here
+--object	p#	filegroup	rows	pages	comparison	value	first_page
+--dbo.event_data	1	filegrp_archivo	0	0	less than	2019-01-01 00:00:00.000	0:0
+--dbo.event_data	2	filegrp_2019	1	9	less than	2020-01-01 00:00:00.000	6:8
+--dbo.event_data	3	filegrp_2020	4	9	less than	NULL	5:8
 
 -- TRUNCATE
 
@@ -409,10 +456,8 @@ go
 select * from event_data
 GO
 
---id_alta	nombre	apellido	fecha_alta
---7	Ismael	Cabana	2017-05-21 00:00:00.000
---8	Alejandra	Martinez	2017-07-09 00:00:00.000
---9	Alfonso	Verdes	2017-09-12 00:00:00.000
+--id_evento	nombre	info_extra	fecha_evento
+--5	Cambio de buque	Se realiza directo sin almacenaje en puerto	2019-01-05 00:00:00.000
 
 
 DECLARE @TableName NVARCHAR(200) = N'event_data'
@@ -420,7 +465,7 @@ SELECT SCHEMA_NAME(o.schema_id) + '.' + OBJECT_NAME(i.object_id) AS [object] , p
 ON p.object_id = o.object_id INNER JOIN sys.system_internals_allocation_units au ON p.partition_id = au.container_id INNER JOIN sys.partition_schemes ps ON ps.data_space_id = i.data_space_id INNER JOIN sys.partition_functions f ON f.function_id = ps.function_id INNER JOIN sys.destination_data_spaces dds ON dds.partition_scheme_id = ps.data_space_id AND dds.destination_id = p.partition_number INNER JOIN sys.filegroups fg ON dds.data_space_id = fg.data_space_id LEFT OUTER JOIN sys.partition_range_values rv ON f.function_id = rv.function_id AND p.partition_number = rv.boundary_id WHERE i.index_id < 2 AND o.object_id = OBJECT_ID(@TableName);
 GO
 
---object			p#	filegroup	rows	pages	comparison	value	first_page
---dbo.event_data	1	FG_Archivo	0	0	less than	2017-01-01 00:00:00.000	0:0
---dbo.event_data	2	FG_2017		3	9	less than	2018-01-01 00:00:00.000	5:8
---dbo.event_data	3	FG_2018		0	0	less than	NULL	0:0
+--object	p#	filegroup	rows	pages	comparison	value	first_page
+--dbo.event_data	1	filegrp_archivo	0	0	less than	2019-01-01 00:00:00.000	0:0
+--dbo.event_data	2	filegrp_2019	1	9	less than	2020-01-01 00:00:00.000	6:8
+--dbo.event_data	3	filegrp_2020	0	0	less than	NULL	0:0
