@@ -243,16 +243,16 @@ on f.function_id=rv.function_id
 where f.name = 'fn_events_date'
 GO
 
-id_evento	nombre				info_extra									fecha_evento				(No column name)
-4			Salida puerto		Se realiza por la tarde						2015-03-01 00:00:00.000		1
-1			Salida puerto		Se realiza por la mañana					2018-01-01 00:00:00.000		2
-2			Cambio de buque		Se realiza directo sin almacenaje en puerto	2018-01-05 00:00:00.000		2
-3			Llegada a puerto	Se descargará por la tarde					2018-01-11 00:00:00.000		2
-5			Cambio de buque		Se realiza directo sin almacenaje en puerto	2019-01-05 00:00:00.000		3
-6			Llegada a puerto	Se descargará por la tarde					2020-01-11 00:00:00.000		3
-7			Desembarco puerto	Se realiza por turnos						2020-03-01 00:00:00.000		3
-8			Cambio de buque		Se realiza directo sin estancia en puerto	2020-03-05 00:00:00.000		3
-9			Desatraque de puerto	Se desamarra por la tarde				2020-03-11 00:00:00.000		3
+-- id_evento	nombre				info_extra									fecha_evento				(No column name)
+-- 4			Salida puerto		Se realiza por la tarde						2015-03-01 00:00:00.000		1
+-- 1			Salida puerto		Se realiza por la mañana					2018-01-01 00:00:00.000		2
+-- 2			Cambio de buque		Se realiza directo sin almacenaje en puerto	2018-01-05 00:00:00.000		2
+-- 3			Llegada a puerto	Se descargará por la tarde					2018-01-11 00:00:00.000		2
+-- 5			Cambio de buque		Se realiza directo sin almacenaje en puerto	2019-01-05 00:00:00.000		3
+-- 6			Llegada a puerto	Se descargará por la tarde					2020-01-11 00:00:00.000		3
+-- 7			Desembarco puerto	Se realiza por turnos						2020-03-01 00:00:00.000		3
+-- 8			Cambio de buque		Se realiza directo sin estancia en puerto	2020-03-05 00:00:00.000		3
+-- 9			Desatraque de puerto	Se desamarra por la tarde				2020-03-11 00:00:00.000		3
 
 
 select p.partition_number, p.rows from sys.partitions p
@@ -317,7 +317,6 @@ GO
 --dbo.event_data	3	filegrp_2019	5	9	less than	NULL	5:8
 
 -- SPLIT FROM YEAR 2020 january 1st
-
 ALTER PARTITION FUNCTION fn_events_date()
 	SPLIT RANGE ('2020-01-01');
 GO
@@ -346,7 +345,6 @@ GO
 --9					Desatraque de puerto	Se desamarra por la tarde		2020-03-11 00:00:00.000				4
 
 -- MERGE two partitions with ranges on left and right of 2018-01-01
-
 ALTER PARTITION FUNCTION fn_events_date ()
  MERGE RANGE ('2018-01-01');
  GO
@@ -365,12 +363,10 @@ GO
 --dbo.event_data	3	filegrp_2020	4		9		less than	NULL					6:8
 
 -- Example SWITCH
-
 USE master
 GO
 ALTER DATABASE [caledario_eventos_ppd] REMOVE FILE eventos_2018
 GO
-
 ALTER DATABASE [caledario_eventos_ppd] REMOVE FILEGROUP filegrp_2018
 GO
 
@@ -468,7 +464,6 @@ GO
 --dbo.event_data	3	filegrp_2020	4	9	less than	NULL	5:8
 
 -- TRUNCATE
-
 TRUNCATE TABLE event_data
 	WITH (PARTITIONS (3));
 go

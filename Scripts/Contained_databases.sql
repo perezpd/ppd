@@ -10,8 +10,6 @@ GO
 -- is the same effect than restart the server instance
 RECONFIGURE
 GO
-
-
 -- activate the option
 EXEC SP_CONFIGURE 'contained database authentication', 1
 GO
@@ -21,17 +19,15 @@ GO
 -- update the value for the option
 RECONFIGURE
 GO
-
 -- the enviroment is ready to go
-
-DROP DATABASE  IF EXISTS PPD_Contained2;
+DROP DATABASE  IF EXISTS PPD_Contained;
 GO
-CREATE DATABASE PPD_Contained2
+CREATE DATABASE PPD_Contained
   CONTAINMENT=PARTIAL;
 GO
 
 -- after creation we activate it
-USE PPD_Contained2;
+USE PPD_Contained;
 GO
 
 DROP USER  IF EXISTS diego;
