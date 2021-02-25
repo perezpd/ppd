@@ -233,3 +233,108 @@ GO
 --No se puede borrar más de un registro, estás borrando 8 !!!
 --Msg 3609, Level 16, State 1, Line 228
 --The transaction ended in the trigger. The batch has been aborted.
+
+IF OBJECT_ID ('trg_single_delete_empleados', 'TR') IS NOT NULL
+  DROP TRIGGER trg_single_delete_empleados
+GO
+CREATE OR ALTER TRIGGER trg_single_delete_empleados
+ON Empleados -- TABLE LEVEL
+FOR DELETE -- sentence to control
+AS
+
+    IF ( SELECT COUNT(*) FROM deleted) > 1
+		BEGIN
+			PRINT 'estas intentando borrar mas de un Registro'
+			RAISERROR ('No se puede borrar más de un registro !!!', 16,1) 
+			ROLLBACK
+			RETURN
+		END
+	ELSE
+		PRINT 'Un registro si se puede borrar'
+GO
+
+SELECT * FROM Empleados;
+GO
+
+
+DELETE FROM [dbo].[Empleados]
+      WHERE EmployeeID = '6' OR EmployeeID = '7'
+GO
+/* si borro 2*/
+
+--estas intentando borrar mas de un Registro
+--Msg 50000, Level 16, State 1, Procedure trg_single_delete_empleados, Line 9 [Batch Start Line 259]
+--No se puede borrar más de un registro !!!
+--Msg 3609, Level 16, State 1, Line 260
+--The transaction ended in the trigger. The batch has been aborted.
+
+
+DELETE FROM [dbo].[Empleados]
+      WHERE EmployeeID = '8'
+GO
+
+--Un registro si se puede borrar
+
+--(1 row affected)
+
+/* TRIGGER INSTEAD OF DELETE */
+
+-- USO DE @@ROWCOUNT AND @@TRANCOUNT
+
+-- Instead of delete some row in the DB it do the conde in the rpocedure instead
+
+-- @@TRANCOUNT count the number of active transactions ongoing or pending to do
+
+USE [AdventureWorks2017]
+GO
+
+  DROP TABLE IF EXISTS Empleados
+GO
+
+SELECT * INTO Empleados
+FROM [HumanResources].[Employee]
+GO
+
+
+IF OBJECT_ID ('trg_avoid_delete_empleados_instead', 'TR') IS NOT NULL
+  DROP TRIGGER trg_avoid_delete_empleados_instead
+GO
+CREATE OR ALTER TRIGGER trg_avoid_delete_empleados_instead
+ON Empleados -- TABLE LEVEL
+INSTEAD OF DELETE -- sentence to control
+AS
+	DECLARE @rowsAffected INT;
+	SET @rowsAffected = @@ROWCOUNT;
+    IF @rowsAffected = 0
+		RETURN
+
+	BEGIN
+		PRINT 'estas intentando actuar sobre empleados y no puedes, solo se puede desactiva'
+		RAISERROR ('No se puede actuar sobre más de un registro !!!', 16,1) 
+		IF @@TRANCOUNT > 0
+		BEGIN
+			ROLLBACK TRANSACTION
+		END;
+	END
+GO
+
+--toda la tabla
+DELETE Empleados
+GO
+
+--estas intentando actuar sobre empleados y no puedes, solo se puede desactiva
+--Msg 50000, Level 16, State 1, Procedure trg_avoid_delete_empleados_instead, Line 12 [Batch Start Line 320]
+--No se puede actuar sobre más de un registro !!!
+--Msg 3609, Level 16, State 1, Line 322
+--The transaction ended in the trigger. The batch has been aborted.
+
+SELECT * FROM Empleados;
+GO
+
+-- no action apply
+DELETE FROM [dbo].[Empleados]
+      WHERE BusinessEntityID = '388'
+GO
+
+
+--(0 rows affected)
