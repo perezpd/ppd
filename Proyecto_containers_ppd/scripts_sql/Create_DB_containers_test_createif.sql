@@ -1,30 +1,34 @@
 USE [master]
 GO
+IF DB_ID([containers_ppd_test]) IS NOT NULL
+	BEGIN 
+		DECLARE @dbname char(128);
+		SET @dbname = 'containers_ppd_test';
+		PRINT 'DB EXISTS then SET OFFLINE '+@dbname;
+		ALTER DATABASE [@dbname] SET OFFLINE WITH ROLLBACK IMMEDIATE;
 
---ALTER DATABASE containers_ppd_test SET OFFLINE WITH ROLLBACK IMMEDIATE
-DROP DATABASE IF EXISTS containers_ppd_test;
+		DROP DATABASE IF EXISTS [@dbname];
+
+		--/****** Object:  Database [containers_ppd_v1]    Script Date: 26/01/2021 20:34:54 ******/
+		--CREATE DATABASE [@dbname]
+		-- CONTAINMENT = NONE
+		-- ON  PRIMARY
+		--( NAME =  @dbname+'_dat',
+		--  FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\DATA\' + @dbname+'.mdf' ,
+		--  SIZE = 8192KB ,
+		--  MAXSIZE = UNLIMITED,
+		--  FILEGROWTH = 65536KB )
+		-- LOG ON
+		--( NAME = @dbname+'_log',
+		--  FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\DATA\'+@dbname+'_log.ldf' ,
+		--  SIZE = 8192KB,
+		--  MAXSIZE = 2048GB,
+		--  FILEGROWTH = 65536KB );
+
+
+		USE [@dbname];
+	END
 GO
-
-/****** Object:  Database [containers_ppd_v1]    Script Date: 26/01/2021 20:34:54 ******/
-CREATE DATABASE [containers_ppd_test]
- CONTAINMENT = NONE
- ON  PRIMARY
-( NAME = N'containers_ppd_test',
-  FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\DATA\containers_ppd_test.mdf' ,
-  SIZE = 8192KB ,
-  MAXSIZE = UNLIMITED,
-  FILEGROWTH = 65536KB )
- LOG ON
-( NAME = N'containers_ppd_test_log',
-  FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\DATA\containers_ppd_test_log.ldf' ,
-  SIZE = 8192KB,
-  MAXSIZE = 2048GB,
-  FILEGROWTH = 65536KB );
-GO
-
-USE [containers_ppd_test];
-GO
-
 -- create SCHEMAS after check existence
 DROP SCHEMA IF EXISTS Mgmt
 GO
