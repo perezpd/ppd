@@ -388,9 +388,3 @@ GO
 --6. INSTEAD OF triggers are not permitted on either the tables.
 
 --7. Usage of Replication technologies is limited.
-
-
-
-
-
- 
