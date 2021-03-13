@@ -109,3 +109,78 @@ INSERT INTO [Mgmt].[contenedor_ppd]
            ,('23900875',1,1002,9)
            ,('213489',1,1006,10)
 GO
+
+/* insert some data to transport management */
+USE [containers_ppd_test]
+GO
+
+INSERT INTO [Mgmt].[direccion_ppd]
+           ([via]
+           ,[calle]
+           ,[calle2]
+           ,[CP]
+           ,[ciudad]
+           ,[provincia]
+           ,[pais])
+     VALUES
+           ('Avenida de ','La Concordia, 200',null,'15022','A coruña','A coruña','España'),--1000
+           (null,'Polígono de Pocomaco Nave 43',null,'15012','A coruña','A coruña','España'),
+           ('Terminal de ','Gran Canaria, 22',null,'25874','Tenerife','Gran Canaria','España') --1003
+GO
+
+
+INSERT INTO [Sales].[transportista_ppd]
+           ([nombre]
+           ,[CIF]
+           ,[modelo]
+           ,[direccion_ppd_id_direccion])
+     VALUES
+           ('Envíos Ruiz','22248900P','Tamaño de 20 y de 40 FEET',1000), --1002
+           ('Transportes Rayo','12000678Y','Tamaño de 40 FEET',1001) --1003
+GO
+
+
+
+INSERT INTO [Sales].[tarifa_ppd]
+           ([desc_tarifa]
+           ,[precio_dia]
+           ,[nombre_tarifa])
+     VALUES
+           ('Transporte interprovincial contenedor 20 FEET',1400,'IntProv 20 F'), --1000
+           ('Transporte nacional contenedor 20 FEET',3900,'Nac 20 F'),			  --1001
+           ('Transporte interprovincial contenedor 40 FEET',2400,'IntProv 40 F'), --1002
+           ('Transporte nacional contenedor 40 FEET',5900,'Nac 40 F')             --1003
+GO
+
+
+USE [containers_ppd_test]
+GO
+/* MODELS
+1002		20 FEET PALLET WIDE				2490
+1004		40 FEET DRY VAN					3850
+1006		40 FEET PALLET WIDE				4150
+*/
+
+INSERT INTO [Sales].[medio_transporte_ppd]
+           ([matricula]
+           ,[tipo]
+           ,[modelo_cont_ppd_id_modelo]
+           ,[transportista_ppd_id_trans]
+           ,[tarifa_ppd_id_tarifa])
+     VALUES
+           ('2323 DBR','Camion 4 ejes doble rueda',1002,1002,1001), --20 PALLET WIDE
+           ('1290 JKR','Camion trailer 2 ejes traseros doble rueda',1004,1003,1002), --40 FEET DRY VAN
+           ('3423 FYZ','Camion trailer 3 ejes traseros doble rueda',1006,1003,1003) --40 FEET PALLET WIDE
+GO
+
+
+INSERT INTO [Mgmt].[stock_ppd]
+	VALUES
+           (12,1002), --20 FEET PALLET WIDE
+           (3,1004), --40 FEET DRY VAN
+           (24,1006) --40 FEET PALLET WIDE	  
+GO
+
+
+
+
