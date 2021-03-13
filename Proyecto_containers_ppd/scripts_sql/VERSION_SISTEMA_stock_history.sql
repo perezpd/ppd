@@ -218,3 +218,39 @@ GO
 
 SELECT S.* from Containers_stock_tmp as S INNER JOIN [modelo_cont_ppd] as M ON M.id_modelo = S.modelo_cont_ppd_id_modelo 
 GO
+
+/* 3 horas despues */
+USE [containers_ppd_test_TR]
+GO
+-- insertamos un contenedor del modelo que ya hay 4 en stock
+INSERT INTO [Mgmt].[contenedor_ppd]
+           ([nserie]
+           ,[digitoctrl]
+           ,[modelo_cont_ppd_id_modelo]
+		   ,[estado_cont_ppd_id_estado])
+     VALUES
+           ('004665'
+           ,1
+           ,1004, 5)
+GO
+/*
+Modificamos stock del modelo insertado!
+Para el modelo 1004 el nuevo Stock es 5
+*/
+
+-- TABLAS AHORA
+SELECT S.* from Current_stock_ppd as S INNER JOIN [modelo_cont_ppd] as M ON M.id_modelo = S.modelo_cont_ppd_id_modelo where M.id_modelo = 1004;
+GO
+
+--id_stock	cantidad	modelo_cont_ppd_id_modelo	SysStartTime				SysEndTime
+--2			5			1004						2021-03-13 16:12:20.5875356	9999-12-31 23:59:59.9999999
+
+
+/*     CHECK HISTORY TABLE (nueva fila)   */
+SELECT * FROM dbo.historial_stock_ppd;
+GO
+--id_stock	cantidad	modelo_cont_ppd_id_modelo	SysStartTime	SysEndTime
+--2			3			1004	2021-03-13 14:48:30.2702005	2021-03-13 14:51:29.8673014
+--2			4			1004	2021-03-13 14:51:29.8673014	2021-03-13 16:12:20.5875356
+
+
