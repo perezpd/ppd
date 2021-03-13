@@ -1,3 +1,16 @@
+/* CREATE SOME TRIGGERS IN TABLE LEVEL */
+
+-- Objectives:
+--  Avoid some actions in the tables of database containers_ppd_test: 
+--			-> avoid updating some tables
+--			-> avoid delete and modify tables
+--          -> avoid insert in some tables
+
+
+/* 
+	WE WILL CHECK WHEN INSERT A NEW CONTAINER and ASSING DIMENSIONS 
+	ACCORDING THE MODEL OF THE CONTAINER INSERTED
+*/
 USE [containers_ppd_test]
 GO
 
@@ -6,7 +19,7 @@ to test some triggers acting in containers status table */
 
 DROP TABLE IF EXISTS StatusTMP;
 GO
-
+/* create a temporal table to try this out*/
 SELECT * INTO StatusTMP
 FROM [Mgmt].[estado_cont_ppd]
 GO
@@ -14,13 +27,20 @@ GO
 SELECT * FROM StatusTMP
 GO
 
-/* trigger to update status description */
+/* trigger to avoid update status description */
+/* 
+	THIS TRIGGER WAS CREATED TO AVOID THE PERSONAL TO MODIFY 
+	THE STATUS DESCRIPTION OF A CONTAINER DURING THE TRIP
+	THEY MUST INSERT A NEW STATUS INSTEAD SO,
+	THAT WAY WE WILL HAVE TRACKING OF STATUS CHANGES
+
+*/
 IF OBJECT_ID ('trg_cont_update_status', 'TR') IS NOT NULL
   DROP TRIGGER trg_cont_update_status
 GO
 CREATE OR ALTER TRIGGER trg_cont_update_status
 ON StatusTMP -- TABLE LEVEL
-FOR UPDATE -- sentence to control is update
+FOR UPDATE -- the sentence to control is update
 AS
     IF UPDATE (desc_estado)
 		BEGIN
@@ -28,7 +48,7 @@ AS
 			ROLLBACK TRAN
 		END
 	ELSE
-		PRINT 'Operacion correcta cambio de grupo'
+		PRINT 'Operacion correcta de actualizaciÃ³n de estado'
 GO
 
 SELECT * FROM StatusTMP;
@@ -36,7 +56,7 @@ GO
 /*
 id_estado	peso_neto	desc_estado
 1			3456	Seminuevo con rayaduras exteriores
-2			6500	Un poco de corrosión en los laterales
+2			6500	Un poco de corrosiÃ³n en los laterales
 3			10000	Imperfecciones en la superficie de asiento
 4			6800	Seminuevo con rayaduras exteriores y falta lona cobertura
 5			4850	Seminuevo con rayaduras exteriores, puertas sellado perfecto
@@ -57,8 +77,16 @@ GO
 --Msg 3609, Level 16, State 1, Line 48
 --The transaction ended in the trigger. The batch has been aborted.
 
-/* AVOID DELETE ANY ROW in */
 
+/*  ---- AVOID DELETE ANY CONTAINER STATUS ---- */
+/*
+	THIS TRIGGER WAS CREATED TOAVOID DELETE ANY ROW IN
+	THE STATUS DESCRIPTION OF A CONTAINER 
+	With this trigger we are secure
+	THAT WAY WE WILL HAVE TRACKING OF CONTAINER 
+	STATUS CHANGES
+
+*/
 IF OBJECT_ID ('trg_multiple_delete_status_container', 'TR') IS NOT NULL
   DROP TRIGGER trg_multiple_delete_status_container
 GO
@@ -74,7 +102,7 @@ AS
     IF (@rowsAffected >1)
 		BEGIN
 			PRINT 'estas intentando borrar '+ CAST(@rowsAffected AS NVARCHAR(100)) + ' Registros de Estado de contenedores!'
-			RAISERROR ('No se puede borrar multiples registros, estás borrando %d !!!', 16,1,@rowsAffected) 
+			RAISERROR ('No se puede borrar multiples registros, estï¿½s borrando %d !!!', 16,1,@rowsAffected) 
 			ROLLBACK TRAN
 		END
 	ELSE
@@ -93,7 +121,7 @@ GO
 /*
 estas intentando borrar 10 Registros de Estado de contenedores!
 Msg 50000, Level 16, State 1, Procedure trg_multiple_delete_status_container, Line 13 [Batch Start Line 87]
-No se puede borrar multiples registros, estás borrando 10 !!!
+No se puede borrar multiples registros, estï¿½s borrando 10 !!!
 Msg 3609, Level 16, State 1, Line 89
 The transaction ended in the trigger. The batch has been aborted.
 */
@@ -106,8 +134,11 @@ GO
 --(1 row affected)
 
 /* AVOID ANY DELETION IN CONTAINERS DIMENSIONS with INSTEAD OF*/
-/* Container dimensions has to be secured and avoid modification so we 
-cancel the possibility of deleting items  */
+/* 
+	Container dimensions has to be secured and avoid modification
+	THEY ARE STANDARDS, so we 
+	cancel the possibility of deleting items  
+*/
 
 /* Create a temporal table from [Mgmt].[dimension_ppd]
 to test the triggers acting in containers dimension table */
@@ -162,7 +193,7 @@ AS
 		RETURN
 
 	BEGIN
-		PRINT 'Se está intentando actuar sobre la tabla dimensiones y no se puede borrar registros, solo se actualizan'
+		PRINT 'Se estï¿½ intentando actuar sobre la tabla dimensiones y no se puede borrar registros, solo se actualizan'
 		RAISERROR ('No se pueden borrar registros !!!', 16,1) 
 		IF @@TRANCOUNT > 0
 		BEGIN
@@ -177,7 +208,7 @@ DELETE DimensionsTMP
 GO
 
 /* DELETION IS NOT POSSIBLE IN TABLE DIMENSIONS */ 
---Se está intentando actuar sobre la tabla dimensiones y no se puede borrar registros, solo se actualizan
+--Se estï¿½ intentando actuar sobre la tabla dimensiones y no se puede borrar registros, solo se actualizan
 --Msg 50000, Level 16, State 1, Procedure trg_avoid_delete_dimensions_instead, Line 12 [Batch Start Line 173]
 --No se pueden borrar registros !!!
 --Se restauran Transacciones
@@ -190,7 +221,7 @@ DELETE FROM DimensionsTMP
       WHERE id_dimension = '1000'
 GO
 /* NOT POSSIBLE */
---Se está intentando actuar sobre la tabla dimensiones y no se puede borrar registros, solo se actualizan
+--Se estï¿½ intentando actuar sobre la tabla dimensiones y no se puede borrar registros, solo se actualizan
 --Msg 50000, Level 16, State 1, Procedure trg_avoid_delete_dimensions_instead, Line 12 [Batch Start Line 186]
 --No se pueden borrar registros !!!
 --Se restauran Transacciones

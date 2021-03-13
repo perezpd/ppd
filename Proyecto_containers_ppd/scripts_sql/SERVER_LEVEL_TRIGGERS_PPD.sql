@@ -1,10 +1,7 @@
-/* CREATE SOME TRIGGERS IN SERVER LEVEL AND DATABASE LEVEL*/
+/* CREATE SOME TRIGGERS IN SERVER LEVEL */
 
 -- Objectives:
---  · Avoid login creation after all server setup is ready
---  · Avoid some actions in the database: 
---			-> avoid delete and modify tables
---          -> 
+--  Avoid login creation after all server setup is ready
 
  USE master;
  GO
@@ -31,6 +28,6 @@ GO
 --The transaction ended in the trigger. The batch has been aborted.
 
 
-
+-- WHEN NEW LOGIN NEED TO BE CREATE WE WILL DISABLE THE TRIGGER THIS WAY
 DISABLE TRIGGER trg_avoid_create_logins ON ALL SERVER;
 GO
