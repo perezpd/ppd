@@ -1,9 +1,15 @@
+use master;
+GO
+
 
 EXEC sp_configure filestream_access_level, 2
 RECONFIGURE
 GO
 -- FileTable
 
+-- TAKE THE DB OFFLINE is like to reatarting the SERVER
+ALTER DATABASE SQLFileTable SET OFFLINE WITH ROLLBACK IMMEDIATE
+GO
 DROP DATABASE IF EXISTS SQLFileTable
 GO
 CREATE DATABASE SQLFileTable

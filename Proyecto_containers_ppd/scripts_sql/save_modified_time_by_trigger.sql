@@ -1,4 +1,0 @@
-/*
-INSERTED table has the new VALUES
-DELETED table has the old values before the execution
-*/

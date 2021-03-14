@@ -1,3 +1,11 @@
+/* OWNER PEREZ PONTE DIEGO*/
+
+/*********************************************************************************************/
+/********************************  FILESTREAM TABLES     *************************************/
+/********************           setContainerFilestream               *************************/
+/*********************************************************************************************/
+
+
 -- https://dba-presents.com/index.php/databases/sql-server/59-introduction-to-filestream
 
 -- A BLOB, or Binary Large Object, is an SQL object data type, meaning
