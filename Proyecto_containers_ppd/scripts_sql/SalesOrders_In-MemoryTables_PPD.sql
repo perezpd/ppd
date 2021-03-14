@@ -147,7 +147,7 @@ GO
 SELECT TOP (10) [SalesOrderId] as id
       ,[CustomerId] as cid
       ,[OrderDate] as odate
-  FROM [imoltp_ppd].[dbo].[SalesOrder] WITH (SNAPSHOT)
+  FROM [dbo].[SalesOrder] WITH (SNAPSHOT)
 
 --id	cid		odate
 --98856	98856	2021-03-12 23:21:11.633
