@@ -149,7 +149,14 @@ BEGIN -- start of the code inside the procedure
 	SELECT name
 	FROM master.dbo.sysdatabases
 	-- case insensitive names for the DB names 
-	WHERE name IN ('containers_ppd_test','containers_ppd_test_TR','PruebaFilestream','caledario_eventos_ppd','PruebaFilestream','PPD_Contained')
+	WHERE name IN ('caledario_eventos_ppd',
+					'ContainerBillFiles_ppd',
+					'containers_ppd_test',
+					'containers_ppd_test_TR',
+					'containers_ppd_v1',
+					'PPD_Contained',
+					'PruebaFilestream',
+					'HR_oracle')
 
 -- I select the bds used in my project and take the last identifier that would be the highest starting with 1
 -- and its equal to the count of DATABASES
