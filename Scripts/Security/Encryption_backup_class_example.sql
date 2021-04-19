@@ -109,4 +109,9 @@ RESTORE DATABASE Pubs
 FROM DISK = 'C:\Backups\BackupUserDB1_Encrypt.bak'
 GO
 
--- BORRO LABASE DE DATOS Y COMO ESTOY EN UN SERVER QUE TIENE EL CERTTIFICADO FUNCIONA. SI LO HAGO EN OTRO, ME DA ERROR
+-- BORRO LABASE DE DATOS Y COMO ESTOY EN UN SERVER QUE TIENE EL CERTTIFICADO FUNCIONA. 
+-- SI LO HAGO EN OTRO, ME DA ERROR
+
+--Processed 600 pages for database 'Pubs', file 'pubs' on file 1.
+--Processed 2 pages for database 'Pubs', file 'pubs_log' on file 1.
+--RESTORE DATABASE successfully processed 602 pages in 0.060 seconds (78.263 MB/sec).
