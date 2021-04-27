@@ -76,6 +76,11 @@ VALUES ('John','abc123', '451236521478'),
 		('Mike','xyz123', '789541239654')
 GO
 
+insert into Student ( Name, Password, SSN)
+VALUES ('carlos','abc12322', '111136521478'),
+		('maite','xyz12322', '111141239654')
+GO
+
 SELECT * FROM Student
 GO
 
