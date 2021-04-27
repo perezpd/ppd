@@ -154,11 +154,20 @@ GO
 
 
 -- Si intento RESTORE eneste equipo funciona
+-- instrucción no completa
+RESTORE DATABASE [PPDRecoveryWithTDE]
+  FROM DISK = 'C:\Backups\RecoveryWithTDE_Full.bak'
+  WITH MOVE 'RecoveryWithTDE' TO 'C:\data\RecoveryWithTDE_2ndServer.mdf',
+       MOVE 'RecoveryWithTDE_log' TO 'C:\data\RecoveryWithTDE_2ndServer_log.mdf';
+GO
+
+
 -- Para el ejemplo habría que cambiar de Instancia
 -- Attempt the restore without the certificate installed
 
 
--- >>>>>>>>> This is teh backup form the teacher!!!!!!!<<<<<<
+
+-- >>>>>>>>> This is the backup form the teacher!!!!!!!<<<<<<
 RESTORE DATABASE [RecoveryWithTDE]
   FROM DISK = 'C:\Backups\RecoveryWithTDE_Full.bak'
   WITH MOVE 'RecoveryWithTDE' TO 'C:\data\RecoveryWithTDE_2ndServer.mdf',
@@ -194,12 +203,13 @@ GO
 -- This is why TDE is great. If you don't have these pieces, the restore simply 
 -- won't work. Let's attempt the restore (note: your paths may be different):
 
--- Attempt the restore without the certificate installed
+-- Attempt the restore teachers bd without the certificate installed
 RESTORE DATABASE [RecoveryWithTDE]
-  FROM DISK = 'C:\BD\RecoveryWithTDE_Full.bak'
+  FROM DISK = 'C:\Backups\RecoveryWithTDE_Full.bak'
   WITH MOVE 'RecoveryWithTDE' TO 'C:\data\RecoveryWithTDE_2ndServer.mdf',
        MOVE 'RecoveryWithTDE_log' TO 'C:\data\RecoveryWithTDE_2ndServer_log.mdf';
 GO
+-- of course it failsssss we dont have the certificate
 
 --Msg 33111, Level 16, State 3, Line 130
 --Cannot find server certificate with thumbprint '0x192834B1A8B932393B9101D24B8F759A49BB1397'.
@@ -223,16 +233,19 @@ CREATE MASTER KEY
 GO 
 
 -- Though this certificate has the same name, the restore won't work
-CREATE CERTIFICATE PPD_cert
+CREATE CERTIFICATE PPD_second_cert
   WITH SUBJECT = 'TDE Cert for Test';
 GO 
 
 -- Since we don't have the corrected certificate, this will fail, too.
 RESTORE DATABASE [RecoveryWithTDE]
-  FROM DISK = N'C:\BD\RecoveryWithTDE_Full.bak'
-  WITH MOVE 'RecoveryWithTDE' TO N'C:\data\RecoveryWithTDE_2ndServer.mdf',
-       MOVE 'RecoveryWithTDE_log' TO N'C:\data\RecoveryWithTDE_2ndServer_log.mdf';
+  FROM DISK = N'C:\Backups\RecoveryWithTDE_Full.bak'
+  WITH MOVE 'RecoveryWithTDE' TO N'C:\data\RecoveryWithTDE_teachers.mdf',
+       MOVE 'RecoveryWithTDE_log' TO N'C:\data\RecoveryWithTDE_teachers_log.mdf';
 GO
+
+-- in efect it fails with teh new certificates..... 
+
 --Msg 33111, Level 16, State 3, Line 163
 --Cannot find server certificate with thumbprint '0x192834B1A8B932393B9101D24B8F759A49BB1397'.
 --Msg 3013, Level 16, State 1, Line 163
@@ -255,24 +268,24 @@ GO
 
 -- Let's do this one more time. This time, with everything,
 -- Including the private key.
-DROP CERTIFICATE PPD_cert;
+DROP CERTIFICATE PPD_teachers_cert;
 GO 
 
 -- Restoring the certificate, but without the private key.
-CREATE CERTIFICATE PPD_cert
-  FROM FILE = 'C:\SQLBackups\PPD_cert_for_tde.cer'
+CREATE CERTIFICATE PPD_teachers_cert
+  FROM FILE = 'C:\data\teacher_files\TDECert.cer'
   WITH PRIVATE KEY ( 
-    FILE = N'C:\SQLBackups\PPD_cert_key_for_tde.pvk',
- DECRYPTION BY PASSWORD = 'APrivateKeyP4ssw0rd!'
+    FILE = N'C:\data\teacher_files\TDECert_key.pvk',
+ DECRYPTION BY PASSWORD = 'Abcd1234.'
   );
 GO
 
 -- We have the correct certificate and we've also restored the 
 -- private key. Now everything should work. Finally!
 RESTORE DATABASE [RecoveryWithTDE]
-  FROM DISK = N'C:\SQLBackups\RecoveryWithTDE_Full.bak'
-  WITH MOVE 'RecoveryWithTDE' TO N'C:\SQLData\RecoveryWithTDE_2ndServer.mdf',
-       MOVE 'RecoveryWithTDE_log' TO N'C:\SQLData\RecoveryWithTDE_2ndServer_log.mdf';
+  FROM DISK = N'C:\data\teacher_files\RecoveryWithTDE_Full.bak'
+  WITH MOVE 'RecoveryWithTDE' TO N'C:\data\RecoveryWithTDE_2ndServer.mdf',
+       MOVE 'RecoveryWithTDE_log' TO N'C:\data\RecoveryWithTDE_2ndServer_log.mdf';
 GO
 
 -- With everything in place, we are finally successful!
@@ -300,8 +313,11 @@ GO
 
 -- PARA SACARLA DE RESTORING
 
-RESTORE DATABASE [RecoveryWithTDE] WITH RECOVERY
+RESTORE DATABASE [PPDRecoveryWithTDE] WITH RECOVERY
 GO
+
+--RESTORE DATABASE successfully processed 0 pages in 0.155 seconds (0.000 MB/sec).
+
 
 -- RESTORE DATABASE successfully processed 0 pages in 0.339 seconds (0.000 MB/sec).
 
