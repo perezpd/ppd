@@ -46,4 +46,19 @@ SELECT * FROM [Mgmt].[cliente_ppd]
 --1002			Inmobiliaria Salamanca	1008
 
 
+-- creating an user with no login to avoid errors
+DROP USER IF EXISTS VendedorVeronica
+GO
+CREATE USER VendedorVeronica WITHOUT LOGIN;
+GO
+-- adding user EncargadoLuis to ROLE OfficeMgmt
+ALTER ROLE Personal
+	ADD MEMBER VendedorVeronica;
+GO
+
+
+/* UPDATE PERMISSION ON TABLE presupuestos TO Personal*/
+GRANT SELECT, INSERT, UPDATE  ON [Mgmt].[presupuesto_ppd] TO Personal ;  
+GO
+
 
