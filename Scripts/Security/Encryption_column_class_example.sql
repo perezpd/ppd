@@ -259,7 +259,7 @@ SELECT
  FROM sys.symmetric_keys;
 GO
 
--- aparece en master> security> symmetric keys  peor n en la BBDD de HospitalDb
+-- aparece en master> security> symmetric keys  pero no en la BBDD de HospitalDb
 --Keyname						KeyID	KeyLength	KeyAlgorithm
 --##MS_DatabaseMasterKey##	101		256			AES_256
 
