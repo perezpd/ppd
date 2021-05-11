@@ -51,13 +51,13 @@ DROP USER IF EXISTS VendedorVeronica
 GO
 CREATE USER VendedorVeronica WITHOUT LOGIN;
 GO
--- adding user EncargadoLuis to ROLE OfficeMgmt
+-- adding user VendedorVeronica to ROLE Personal
 ALTER ROLE Personal
 	ADD MEMBER VendedorVeronica;
 GO
 
 
-/* UPDATE PERMISSION ON TABLE presupuestos TO Personal*/
+/* UPDATE PERMISSION ON TABLE presupuestos TO ROLE Personal*/
 GRANT SELECT, INSERT, UPDATE  ON [Mgmt].[presupuesto_ppd] TO Personal ;  
 GO
 
