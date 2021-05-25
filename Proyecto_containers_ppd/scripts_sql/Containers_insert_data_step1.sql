@@ -168,9 +168,9 @@ INSERT INTO [Sales].[medio_transporte_ppd]
            ,[transportista_ppd_id_trans]
            ,[tarifa_ppd_id_tarifa])
      VALUES
-           ('2323 DBR','Camion 4 ejes doble rueda',1002,1002,1001), --20 PALLET WIDE
-           ('1290 JKR','Camion trailer 2 ejes traseros doble rueda',1004,1003,1002), --40 FEET DRY VAN
-           ('3423 FYZ','Camion trailer 3 ejes traseros doble rueda',1006,1003,1003) --40 FEET PALLET WIDE
+           ('2323 DBR','Camion 4 ejes doble rueda',1002,1000,1001), --20 PALLET WIDE
+           ('1290 JKR','Camion trailer 2 ejes traseros doble rueda',1004,1001,1002), --40 FEET DRY VAN
+           ('3423 FYZ','Camion trailer 3 ejes traseros doble rueda',1006,1001,1003) --40 FEET PALLET WIDE
 GO
 
 
