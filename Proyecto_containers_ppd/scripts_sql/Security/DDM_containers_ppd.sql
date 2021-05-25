@@ -72,8 +72,8 @@ GO
 SELECT * FROM [Sales].[transportista_ppd];
 GO
 --id_trans	nombre	CIF	modelo	direccion_ppd_id_direccion
---1002	Envíos Ruiz	22248900P	Tamaño de 20 y de 40 FEET	1000
---1003	Transportes Rayo	12000678Y	Tamaño de 40 FEET	1001
+--1000	Envíos Ruiz	22248900P	Tamaño de 20 y de 40 FEET	1000
+--1001	Transportes Rayo	12000678Y	Tamaño de 40 FEET	1001
 
 
 -- /********* Partial Data Mask  *******/
@@ -83,15 +83,9 @@ SELECT * FROM [Sales].[medio_transporte_ppd];
 GO
 
 --id_mediot	matricula	tipo	modelo_cont_ppd_id_modelo	transportista_ppd_id_trans	tarifa_ppd_id_tarifa
---1000	2323 DBR	Camion 4 ejes doble rueda	1002	1002	1001
---1001	1290 JKR	Camion trailer 2 ejes traseros doble rueda	1004	1003	1002
---1002	3423 FYZ	Camion trailer 3 ejes traseros doble rueda	1006	1003	1003
---1003	2323 DBR	Camion 4 ejes doble rueda	1002	1002	1001
---1004	1290 JKR	Camion trailer 2 ejes traseros doble rueda	1004	1003	1002
---1005	3423 FYZ	Camion trailer 3 ejes traseros doble rueda	1006	1003	1003
---1006	2323 DBR	Camion 4 ejes doble rueda	1002	1002	1001
---1007	1290 JKR	Camion trailer 2 ejes traseros doble rueda	1004	1003	1002
---1008	3423 FYZ	Camion trailer 3 ejes traseros doble rueda	1006	1003	1003
+--1002		2323 DBR	Camion 4 ejes doble rueda					1002	1000	1001
+--1003		1290 JKR	Camion trailer 2 ejes traseros doble rueda	1004	1001	1002
+--1004		3423 FYZ	Camion trailer 3 ejes traseros doble rueda	1006	1001	1003
 
 
 ALTER TABLE [Sales].[medio_transporte_ppd]
@@ -110,15 +104,13 @@ EXEC AS USER = 'VendedorAngel';
 GO
 PRINT USER
 GO
--- VendedorAngel
+-- VendedorAngel only could see part of the matricula
 SELECT top 5  id_mediot,	matricula,	tipo FROM [Sales].[medio_transporte_ppd];
 GO
---id_mediot	matricula	tipo
---1000		XXXX DBR	Camion 4 ejes doble rueda
---1001		XXXX JKR	Camion trailer 2 ejes traseros doble rueda
---1002		XXXX FYZ	Camion trailer 3 ejes traseros doble rueda
---1003		XXXX DBR	Camion 4 ejes doble rueda
---1004		XXXX JKR	Camion trailer 2 ejes traseros doble rueda
+--id_mediot		matricula	tipo
+--1002			XXXX DBR	Camion 4 ejes doble rueda
+--1003			XXXX JKR	Camion trailer 2 ejes traseros doble rueda
+--1004			XXXX FYZ	Camion trailer 3 ejes traseros doble rueda
 
 -- RETURN TO DBO 
 REVERT;
@@ -181,9 +173,9 @@ GO
 SELECT * FROM [Sales].[transportista_ppd];
 GO
 
---id_trans	nombre	CIF	modelo	direccion_ppd_id_direccion
---1002	Envíos Ruiz	22248900P	Tamaño de 20 y de 40 FEET	1000
---1003	Transportes Rayo	12000678Y	Tamaño de 40 FEET	1001
+--id_trans	nombre				CIF			modelo						direccion_ppd_id_direccion
+--1002		Envíos Ruiz			22248900P	Tamaño de 20 y de 40 FEET	1000
+--1003		Transportes Rayo	12000678Y	Tamaño de 40 FEET			1001
 
 ALTER TABLE [Sales].[transportista_ppd]
 ALTER COLUMN nombre ADD MASKED WITH (FUNCTION = 'partial(0,"Forbidden",0)')
@@ -215,8 +207,8 @@ GO
 
 -- according current masks EncargadoLuis is not able to see CIF and nombre
 --id_trans	nombre		CIF		modelo						direccion_ppd_id_direccion
---1002		Forbidden	xxxx	Tamaño de 20 y de 40 FEET	1000
---1003		Forbidden	xxxx	Tamaño de 40 FEET			1001
+--1000		Forbidden	xxxx	Tamaño de 20 y de 40 FEET	1000
+--1001		Forbidden	xxxx	Tamaño de 40 FEET			1001
 REVERT;
 GO
 
@@ -230,7 +222,7 @@ GO
 GRANT UNMASK TO [Personal]
 GO
 
--- test with an user inside personal role
+-- test with an user inside personal role> should see unmasked columns
 EXEC AS USER = 'VendedorAngel';
 GO
 PRINT USER
@@ -238,7 +230,9 @@ GO
 -- VendedorAngel
 SELECT top 5  * FROM [Sales].[transportista_ppd];
 GO
-
+--id_trans	nombre			CIF			modelo						direccion_ppd_id_direccion
+--1000		Envíos Ruiz		22248900P	Tamaño de 20 y de 40 FEET	1000
+--1001		Transportes Rayo 12000678Y	Tamaño de 40 FEET			1001
 REVERT
 GO
 
@@ -246,12 +240,15 @@ EXEC AS USER = 'EncargadoLuis';
 GO
 PRINT USER
 GO
--- VendedorAngel
+-- VendedorAngel is in role Sales and sales still DON'T have gant psermission to unmask
 SELECT top 5  * FROM [Sales].[transportista_ppd];
 GO
-
+--id_trans	nombre		CIF		modelo						direccion_ppd_id_direccion
+--1000		Forbidden	xxxx	Tamaño de 20 y de 40 FEET	1000
+--1001		Forbidden	xxxx	Tamaño de 40 FEET			1001
 REVERT
 GO
+
 
 
 
