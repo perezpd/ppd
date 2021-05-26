@@ -1,6 +1,15 @@
+/* OWNER PEREZ PONTE DIEGO*/
+
+/*********************************************************************************************/
+/*******************      TRANSPARENT DATA ENCRYPTION (TDE)       ****************************/
+/*******************          ENCRYPTS THE MDF FILE!!!            ****************************/
+/****************  TWE MUST PRESERVE THE SECURITY OF THE CERTIFICATE  ************************/
+/*********************************************************************************************/
+
+/*******              this is a source previuos script                      ******************/
+
 -- 22/04/2021
--- TRANSPARENT DATA ENCRYPTION (TDE)
--- ENCRYPTS THE MDF FILE!!! WE MUST PRESERVE THE SECURITY OF THE CERTIFICATE
+
 USE master;
 GO 
 -- CREATE MASTER KEY
@@ -10,13 +19,13 @@ CREATE MASTER KEY
 GO 
 
 -- CREATE CERTIFICATE
-CREATE CERTIFICATE PPD_cert
+CREATE CERTIFICATE PPD_cert_1
   WITH SUBJECT = 'PPD Cert for Test TDE';
 GO 
 
 -- BACKUP THE CERTIFICATE IN C:\data
 
--- VER EN SSMS EL CERTIFICADO    -BD MASTER -SECURITY -CERTIFICATES
+-- See certificate in SSMS: -BD MASTER -> -SECURITY -> -CERTIFICATES
 
 
 -- CERTIFICATES T-SQL
