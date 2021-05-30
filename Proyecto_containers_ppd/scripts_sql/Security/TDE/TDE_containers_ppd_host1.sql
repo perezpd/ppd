@@ -20,8 +20,8 @@ CREATE MASTER KEY
 GO 
 
 -- CREATE CERTIFICATE
-CREATE CERTIFICATE PPD_cert_1
-  WITH SUBJECT = 'PPD Cert for Test TDE';
+CREATE CERTIFICATE PPD_containers_cert
+  WITH SUBJECT = 'PPD Cert for Containers TDE';
 GO 
 
 -- BACKUP THE CERTIFICATE IN C:\data
@@ -37,14 +37,14 @@ ORDER BY name DESC
 GO
 
 --name	certificate_id	principal_id	pvt_key_encryption_type	pvt_key_encryption_type_desc	is_active_for_begin_dialog	issuer_name	cert_serial_number	sid	string_sid	subject	expiry_date	start_date	thumbprint	attested_by	pvt_key_last_backup_date	key_length
---PPD_cert_1	258	1	MK	ENCRYPTED_BY_MASTER_KEY	1	PPD Cert for Test TDE	42 b4 2e 71 28 14 bf a7 4b c4 0c 3f f4 25 cb ff	0x0106000000000009010000009E605DA54BCBDD69A4B5C57A57B8127E2677D10F	S-1-9-1-2774360222-1776143179-2059777444-2115156055-265385766	PPD Cert for Test TDE	2022-05-26 15:17:38.000	2021-05-26 15:17:38.000	0x9E605DA54BCBDD69A4B5C57A57B8127E2677D10F	NULL	NULL	2048
+--PPD_containers_cert	260	1	MK	ENCRYPTED_BY_MASTER_KEY	1	PPD Cert for Containers TDE	5c 62 c8 d4 8b af 3f b0 42 22 c3 7b b9 16 2e ca	0x01060000000000090100000032066ACD79F04464CA2FA8D4ADAEFD9EC1056D8A	S-1-9-1-3446277682-1682239609-3567792074-2667425453-2322400705	PPD Cert for Containers TDE	2022-05-30 11:58:17.000	2021-05-30 11:58:17.000	0x32066ACD79F04464CA2FA8D4ADAEFD9EC1056D8A	NULL	NULL	2048
 
 -- Back up the certificate and its private key
 -- Remember the password!
-BACKUP CERTIFICATE PPD_cert_1
-  TO FILE = 'C:\data\certificates\PPD_cert_1_for_tde.cer'
+BACKUP CERTIFICATE PPD_containers_cert
+  TO FILE = 'C:\data\certificates\PPD_PPD_containers_cert_for_tde.cer'
   WITH PRIVATE KEY ( 
-    FILE = 'C:\data\certificates\PPD_cert_1_key_for_tde.pvk',
+    FILE = 'C:\data\certificates\PPD_containers_cert_key_for_tde.pvk',
  ENCRYPTION BY PASSWORD = 'Abcd1234.'
   );
 GO
@@ -53,19 +53,19 @@ GO
 
 
 
-DROP DATABASE IF EXISTS PPDRecoveryWithTDE
+DROP DATABASE IF EXISTS PPDContainersWithTDE
 GO
 -- Create our test database
-CREATE DATABASE [PPDRecoveryWithTDE];
+CREATE DATABASE [PPDContainersWithTDE];
 GO 
 
 -- Create the DEK (DATABASE ENCRYPTION KEY)so we can turn on encryption
-USE [PPDRecoveryWithTDE];
+USE [PPDContainersWithTDE];
 GO 
 
 CREATE DATABASE ENCRYPTION KEY
   WITH ALGORITHM = AES_256
-  ENCRYPTION BY SERVER CERTIFICATE PPD_cert_1;
+  ENCRYPTION BY SERVER CERTIFICATE PPD_containers_cert;
 GO 
 
 -- INFORMATION
@@ -76,7 +76,8 @@ GO
 -- encryption_state 1 and encryptor_type = CERTIFICATE
 /*
 database_id	encryption_state	create_date	regenerate_date	modify_date	set_date	opened_date	key_algorithm	key_length	encryptor_thumbprint	encryptor_type	percent_complete
-10	1	2021-05-26 16:14:04.600	2021-05-26 16:14:04.600	2021-05-26 16:14:04.600	1900-01-01 00:00:00.000	2021-05-26 16:14:04.600	AES	256	0x9E605DA54BCBDD69A4B5C57A57B8127E2677D10F	CERTIFICATE	0
+2			3	2021-05-30 11:04:18.237	2021-05-30 11:04:18.237	2021-05-30 11:04:18.237	1900-01-01 00:00:00.000	2021-05-30 11:04:18.237	AES	256	0x	ASYMMETRIC KEY	0
+11			1	2021-05-30 12:02:19.263	2021-05-30 12:02:19.263	2021-05-30 12:02:19.263	1900-01-01 00:00:00.000	2021-05-30 12:02:19.263	AES	256	0x32066ACD79F04464CA2FA8D4ADAEFD9EC1056D8A	CERTIFICATE	0
 */
 
 -- Exit out of the database. If we have an active 
@@ -93,7 +94,7 @@ GO
 -- Turn on TDE we can do it two ways:
 -- T-SQL OR SSMS
 
-ALTER DATABASE [PPDRecoveryWithTDE]  SET ENCRYPTION ON;
+ALTER DATABASE [PPDContainersWithTDE]  SET ENCRYPTION ON;
 GO 
 
 --This starts the encryption process on the database. 
@@ -119,7 +120,7 @@ GO
 
 --database_id	encryption_state	create_date	regenerate_date	modify_date	set_date	opened_date	key_algorithm	key_length	encryptor_thumbprint	encryptor_type	percent_complete
 --2				3	2021-05-26 16:44:36.393	2021-05-26 16:44:36.393	2021-05-26 16:44:36.393	1900-01-01 00:00:00.000	2021-05-26 16:44:36.393	AES	256	0x	ASYMMETRIC KEY	0
---10			3	2021-05-26 16:14:04.600	2021-05-26 16:14:04.600	2021-05-26 16:14:04.600	2021-05-26 16:44:36.387	2021-05-26 16:14:04.600	AES	256	0x9E605DA54BCBDD69A4B5C57A57B8127E2677D10F	CERTIFICATE	0
+--10			3	2021-05-26 16:14:04.600	2021-05-26 16:14:04.600	2021-05-26 16:14:04.600	2021-05-26 16:44:36.387	2021-05-26 16:14:04.600	AES	256	0x32066ACD79F04464CA2FA8D4ADAEFD9EC1056D8A	CERTIFICATE	0
 
 -- to associate the database to its id
 SELECT DB_Name(database_id) AS 'Database', encryption_state 
@@ -128,24 +129,24 @@ GO
 
 --Database				encryption_state
 --tempdb				3
---PPDRecoveryWithTDE	3
+--PPDContainersWithTDE	3
 
 -- Now is time to backup the database files so we can restore it later elsewhere
-BACKUP DATABASE [PPDRecoveryWithTDE]
-TO DISK = 'C:\Backups\PPDRecoveryWithTDE_Full.bak';
+BACKUP DATABASE [PPDContainersWithTDE]
+TO DISK = 'C:\Backups\PPDContainersWithTDE_Full.bak';
 GO 
 
---Processed 368 pages for database 'PPDRecoveryWithTDE', file 'PPDRecoveryWithTDE' on file 1.
---Processed 3 pages for database 'PPDRecoveryWithTDE', file 'PPDRecoveryWithTDE_log' on file 1.
+--Processed 368 pages for database 'PPDContainersWithTDE', file 'PPDContainersWithTDE' on file 1.
+--Processed 3 pages for database 'PPDContainersWithTDE', file 'PPDContainersWithTDE_log' on file 1.
 --BACKUP DATABASE successfully processed 371 pages in 0.113 seconds (25.589 MB/sec).
 
 
-BACKUP LOG [PPDRecoveryWithTDE]
-TO DISK = 'C:\Backups\PPDRecoveryWithTDE_log.bak'
+BACKUP LOG [PPDContainersWithTDE]
+TO DISK = 'C:\Backups\PPDContainersWithTDE_log.bak'
 With NORECOVERY
 GO
 
---Processed 4 pages for database 'PPDRecoveryWithTDE', file 'PPDRecoveryWithTDE_log' on file 1.
+--Processed 4 pages for database 'PPDContainersWithTDE', file 'PPDContainersWithTDE_log' on file 1.
 --BACKUP LOG successfully processed 4 pages in 0.066 seconds (0.436 MB/sec).
 
 ------------------------------------
@@ -157,7 +158,8 @@ GO
 -- ----> and finally RESTORE THE BACKUP WITH CERTIFICATE
 
 ------------------------------------
-
+--RESTORE DATABASE  [PPDContainersWithTDE] WITH RECOVERY;
+--GO
 
 -- CONCLUSIONS
 --    This performs allow us to protect our data, see the proyect documentation
