@@ -1,0 +1,94 @@
+MONGODB COMPOSE
+
+DBMS MONGODB
+GUI MONGODB https://github.com/mongo-express/mongo-express
+
+
+https://hub.docker.com/_/mongo
+
+manuel@ubuntu:~$ mkdir mongodb_compose
+manuel@ubuntu:~$ cd mongodb_compose
+manuel@ubuntu:~/mongodb_compose$ 
+
+-------------- docker-compose.yaml
+
+# Use root/example as user/password credentials
+version: '3.1'
+
+services:
+
+  mongo:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: Abcd1234.
+
+  mongo-express:
+    image: mongo-express
+    restart: always
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: Abcd1234.
+
+----------------------------------
+
+manuel@ubuntu:~/mongodb_compose$ ls
+docker-compose.yaml
+manuel@ubuntu:~/mongodb_compose$ docker-compose up -d
+Creating network "mongodb_compose_default" with the default driver
+Pulling mongo-express (mongo-express:)...
+latest: Pulling from library/mongo-express
+ddad3d7c1e96: Pull complete
+3a8370f05d5d: Pull complete
+71a8563b7fea: Pull complete
+119c7e14957d: Pull complete
+c06612553eef: Pull complete
+931f05f69fde: Pull complete
+2766ec5ce375: Pull complete
+a60269e588ca: Pull complete
+Digest: sha256:df245e8376f3412c3e508a36ffa5f87b9d79ce5df868b82e6169cda53e8b3030
+Status: Downloaded newer image for mongo-express:latest
+Creating mongodb_compose_mongo_1         ... done
+Creating mongodb_compose_mongo-express_1 ... done
+
+
+CONTAINER ID   IMAGE                              COMMAND                  CREATED              STATUS          PORTS                                                NAMES
+bb76dc1e0f25   mongo-express                      "tini -- /docker-ent…"   About a minute ago   Up 46 seconds   0.0.0.0:8081->8081/tcp                               mongodb_compose_mongo-express_1
+7ff0fe5f0dbe   mongo                              "docker-entrypoint.s…"   About a minute ago   Up 58 seconds   27017/tcp                                            mongodb_compose_mongo_1
+
+
+manuel@ubuntu:~/mongodb_compose$ docker network ls
+NETWORK ID     NAME                      DRIVER    SCOPE
+aa05988bcd0e   bridge                    bridge    local
+3835cc6a6000   host                      host      local
+2028ec1feb94   mongodb_compose_default   bridge    local
+
+
+Lanzando mongoexpress
+
+http://localhost:8081/
+
+http://localhost:8081, or http://host-ip:8081 
+
+
+docker-compose down --volumes
+
+manuel@ubuntu:~/mongodb_compose$ docker-compose down --volumes
+Stopping mongodb_compose_mongo-express_1 ... done
+Stopping mongodb_compose_mongo_1         ... done
+Removing mongodb_compose_mongo-express_1 ... done
+Removing mongodb_compose_mongo_1         ... done
+Removing network mongodb_compose_default
+
+
+SI INTENTAS
+
+
+http://localhost:8081
+
+
+No se puede conectar
+
