@@ -30,6 +30,8 @@ CREATE TABLE Mgmt.cliente_ppd
     (
      id_cliente INTEGER IDENTITY(1000,1) NOT NULL PRIMARY KEY ,
      nombre VARCHAR (80) ,
+	 cif VARCHAR (9) NOT NULL,
+	 iban VARCHAR (34) NOT NULL,
      direccion_ppd_id_direccion INTEGER NOT NULL
     );
 GO

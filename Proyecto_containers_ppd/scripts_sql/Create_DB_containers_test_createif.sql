@@ -114,3 +114,24 @@ GO
 ALTER ROLE Personal
 	ADD MEMBER VendedorAngel;
 GO
+
+-- Create Containers DB admin user with login called Containers_Admin
+USE [master]
+GO
+CREATE LOGIN [Containers_Admin] WITH PASSWORD='Abcd1234.', 
+DEFAULT_DATABASE=[containers_ppd_test], 
+CHECK_EXPIRATION=OFF, 
+CHECK_POLICY=OFF
+GO
+use [containers_ppd_test]
+
+GO
+use [master]
+
+GO
+USE [containers_ppd_test]
+GO
+CREATE USER [Containers_Admin] FOR LOGIN [Containers_Admin] WITH DEFAULT_SCHEMA=[dbo]
+GO
+
+

@@ -128,6 +128,21 @@ INSERT INTO [Mgmt].[direccion_ppd]
            ('Terminal de ','Gran Canaria, 22',null,'25874','Tenerife','Gran Canaria','España') --1003
 GO
 
+-- some 
+INSERT INTO [Mgmt].[cliente_ppd]
+           ([cif],[nombre],[iban],[direccion_ppd_id_direccion])
+     VALUES
+           ('1111111A'
+           ,'Estructuras NOROESTE'
+           ,'ES36 2222 5555 2222 1111 8888',1005),
+		   ('2222222B'
+           ,'Prefabricados PFR'
+           ,'ES31 3333 5555 4563 1231 9674',1004),
+		   ('3333333C'
+           ,'Estructuras NOROESTE'
+           ,'ES32 4444 1234 4432 6784 2452',1003)
+GO
+
 
 INSERT INTO [Sales].[transportista_ppd]
            ([nombre]
