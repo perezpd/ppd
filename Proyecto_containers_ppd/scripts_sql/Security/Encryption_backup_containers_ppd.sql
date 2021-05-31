@@ -48,19 +48,19 @@ ENCRYPTION BY PASSWORD = 'Abcd1234.'
 GO
 
 -- BACKUP MASTER KEY
-BACKUP MASTER KEY TO FILE = 'C:\Backups\BackupMasterKey.key'
+BACKUP MASTER KEY TO FILE = 'C:\Backups\BackupMasterKeyPPD.key'
 ENCRYPTION BY PASSWORD ='Abcd1234.'
 GO
 
 
 --BACKUP DATABASE WITH ENCRYPTION OPTION & REQUIRED ENCRYPTION ALGORITHM
 BACKUP DATABASE [containers_ppd_test]
-TO DISK = 'C:\BackupsPPD\BackupContainers1_Encrypt.bak'
+TO DISK = 'C:\Backups\BackupContainers1_Encrypt.bak'
 WITH
 ENCRYPTION
 (
 ALGORITHM = AES_256,
-SERVER CERTIFICATE = DBBackupEncryptCert
+SERVER CERTIFICATE = CertificateContainersDBcert
 ),
 STATS = 10 -- this is green in SSMS beacuse it is doing a % increment
 GO
